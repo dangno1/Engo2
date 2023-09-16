@@ -1,0 +1,28 @@
+.trademark {
+  padding-top: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.trademark__title {
+  width: 793px;
+  flex-shrink: 0;
+  color: #000;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Outfit;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.27;
+  letter-spacing: -1px;
+  padding-bottom: 87px;
+}
+
+.trademark__img {
+    align-items: center;
+    display: flex;
+    gap: 105px;
+    padding-bottom: 127px;
+}

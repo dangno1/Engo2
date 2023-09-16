@@ -1,0 +1,256 @@
+.about {
+  background-color: #F7F5F1;
+  padding-bottom: 70px;
+}
+
+.customer--extend {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.customer__title {
+  padding-top: 120px;
+  padding-bottom: 30px;
+  color: #2d3958;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Outfit;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.16;
+  letter-spacing: -2px;
+}
+
+.customer__text {
+  color: #7b88a8;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Outfit;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: -1px;
+}
+
+.customer__people {
+  padding-left: 223px;
+  padding-top: 80px;
+  padding-bottom: 120px;
+  display: flex;
+  gap: 30px;
+}
+
+.customer__people-extend {
+  padding-left: unset;
+}
+
+.customer__people-after {
+  position: relative;
+}
+
+.customer__people-after::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  background-color: #4F77FF;
+  top: 28px;
+  right: -105px;
+  border-radius: 50px 50px 50px 0px;
+}
+
+.customer__people-bf {
+  position: relative;
+}
+
+.customer__people-bf::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+  background-color: #4F77FF;
+  top: -245px;
+  left: -110px;
+  border-radius: 50px 50px 0px 50px;
+}
+
+.customer__people-item {
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid #e7e5ea;
+  background: #fff;
+  // box-shadow: 0px 20px 50px 0px rgba(79, 119, 255, 0.2);
+}
+
+.customer__people-item--boxshdow:hover {
+  // box-shadow: none;
+  transition: 0.2s;
+  box-shadow: 0px 20px 50px 0px rgba(79, 119, 255, 0.2);
+}
+
+.customer__people-item--bottom {
+  border-radius: 20px 0px 0px 20px;
+  box-shadow: none;
+  opacity: 0.7;
+}
+
+.customer__people-img img {
+  border-radius: 50%;
+}
+
+.customer__people-name {
+  padding-top: 5px;
+  color: #2d3958;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Outfit;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: -1px;
+}
+
+.customer__people-brand {
+  color: #7b88a8;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.62;
+}
+
+.customer__people-amazing {
+  padding-top: 20px;
+  padding-bottom: 25px;
+  color: #2d3958;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Outfit;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.55;
+  letter-spacing: 0.4px;
+}
+
+.customer__people-text {
+  color: #7b88a8;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.55;
+  letter-spacing: -0.3px;
+  // position: relative;
+}
+
+// .customer__people-text::after {
+//   content: "";
+//   position: absolute;
+//   top: 0px;
+//   left: 0px;
+//   width: 60px;
+//   height: 60px;
+//   flex-shrink: 0;
+//   background-color: #4F77FF;
+// }
+
+.customer__text {
+  position: relative;
+}
+
+.customer__text::after {
+  display: block;
+  position: absolute;
+  left: 1420px;
+  top: -65px;
+  content: "";
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  background-color: #292f3a;
+  border-radius: 50%;
+}
+
+.customer__text-left {
+  position: relative;
+  right: -307px;
+  top: -31px;
+  z-index: 1;
+}
+
+.customer__text-right {
+  position: relative;
+  z-index: 1;
+  top: -31px;
+  right: -322px;
+}
+
+.customer__text-botoom {
+  left: 325px;
+  position: relative;
+  top: 40px;
+}
+
+.customer__people-mouse {
+  position: relative;
+  top: -165px;
+  left: 100px;
+}
+
+.customer__text--bf {
+  font-size: 18px;
+}
+
+.customer__text--bf::after {
+  width: unset;
+  height: unset;
+}
+
+.customer__title--extend {
+  width: 740px;
+}
+
+.customer__people-box {
+  width: 90px;
+  height: 90px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.customer__people-box--violet {
+  background-color: rgba(#886cff, 0.2);
+}
+
+.customer__people-box--blue {
+  background-color: rgba(#4f77ff, 0.2);
+}
+
+.customer__people-box--yellow {
+  background-color: rgba(#ff9513, 0.2);
+}
+
+.customer__people-amazing--extend {
+  padding-top: 38px;
+  color: #120f1f;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Outfit;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: -1px;
+}

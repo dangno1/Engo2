@@ -1,0 +1,64 @@
+.lockable__bg {
+  background-color: #f7f5f1;
+  display: flex;
+  gap: 30px;
+  padding: 100px 65px 127px 65px;
+}
+
+.lockable__left {
+  color: #2d3958;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Outfit;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.27;
+  letter-spacing: -1px;
+}
+
+.lockable__center {
+  display: flex;
+  gap: 30px;
+}
+
+.lockable__center-icon {
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lockable__center-icon--violet {
+  background-color: rgba(#886cff, 0.8);
+}
+
+.lockable__center-icon--blue {
+  background-color: rgba(#4f77ff, 0.9);
+}
+
+.lockable__center-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lockable__center-top {
+  color: #2d3958;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Outfit;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.55;
+  letter-spacing: 0.4px;
+}
+
+.lockable__center-bottom {
+  color: #7b88a8;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.62;
+}

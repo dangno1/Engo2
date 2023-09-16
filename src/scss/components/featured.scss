@@ -1,0 +1,134 @@
+.featured {
+  padding-top: 120px;
+  display: flex;
+  gap: 130px;
+}
+
+.featured__left {
+  padding-left: 70px;
+}
+
+.featured__left-information {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.featured__left-information::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  background-color: #61dcdf;
+  left: -95px;
+  bottom: 99px;
+  border-radius: 50px 50px 0px 50px;
+}
+
+.featured__left-address {
+  color: #2d3958;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Outfit;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -1px;
+}
+
+.featured__left-price {
+  padding-bottom: 25px;
+  color: #7b88a8;
+  text-align: right;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Outfit;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: -1px;
+}
+
+.featured__left-text {
+  color: #7b88a8;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.55;
+  letter-spacing: -0.3px;
+}
+
+.featured__right-title {
+  padding-top: 62px;
+  color: #2d3958;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Outfit;
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 1.19;
+  letter-spacing: -0.84px;
+}
+
+.featured__right-text {
+  padding-top: 40px;
+  color: #788190;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.55;
+  letter-spacing: -0.3px;
+}
+
+.featured__right-view {
+  padding-top: 60px;
+  color: #886cff;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Outfit;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: -0.3px;
+  text-transform: uppercase;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.featured__right-bottom {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding-top: 98px;
+}
+
+.featured__right-bottom-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 1px solid #e7e5ea;
+}
+
+.featured__left-img {
+  border-radius: 20px;
+  overflow: hidden;
+  img {
+    border-radius: 20px;
+    width: 100%;
+    transition: 0.5s;
+    vertical-align: middle;
+  }
+}
+
+.featured__left-img:hover {
+  img {
+    transform: scale(1.1);
+  }
+}
+
