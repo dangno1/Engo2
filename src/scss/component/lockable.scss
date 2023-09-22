@@ -2,17 +2,15 @@
   background-color: #f7f5f1;
   display: flex;
   gap: 30px;
-  padding: 100px 65px 127px 65px;
+  padding: 100px 65px 100px 65px;
 }
 
 .lockable__left {
-  color: #2d3958;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: Outfit;
   font-size: 36px;
   font-weight: 500;
   line-height: 1.27;
   letter-spacing: -1px;
+  width: 50%;
 }
 
 .lockable__center {
@@ -45,9 +43,6 @@
 }
 
 .lockable__center-top {
-  color: #2d3958;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: Outfit;
   font-size: 18px;
   font-weight: 500;
   line-height: 1.55;
@@ -55,9 +50,6 @@
 }
 
 .lockable__center-bottom {
-  color: #7b88a8;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: DM Sans;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.62;

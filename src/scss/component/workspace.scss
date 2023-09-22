@@ -1,0 +1,43 @@
+.workspace {
+  padding-bottom: 120px;
+}
+
+.workspace__title-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.workspace__title {
+  width: 55%;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.16;
+  letter-spacing: -2px;
+}
+
+.workspace__title span {
+  background: linear-gradient(186deg, #61dcdf 0.38%, #886cff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.workspace__text {
+  padding-top: 30px;
+  padding-bottom: 90px;
+  text-align: center;
+  font-family: Outfit;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: -1px;
+  width: 50%;
+}
+
+.workspace__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,12 +1,15 @@
 .setups {
-  background-color: #f7f5f1;
-  height: 793px;
+  padding-bottom: 120px;
+  position: relative;
+  // background-color: #f7f5f1;
+  background-image: url(../img/BGtest.png);
+  background-size: 100% 793px;
+  background-repeat: no-repeat;
 }
 
 .setups__title {
   color: #2d3958;
   text-align: center;
-  font-feature-settings: "clig" off, "liga" off;
   font-family: Outfit;
   font-size: 48px;
   font-weight: 500;
@@ -19,7 +22,6 @@
 .setups__text {
   color: #7b88a8;
   text-align: center;
-  font-feature-settings: "clig" off, "liga" off;
   font-family: Outfit;
   font-size: 22px;
   font-weight: 400;
@@ -39,8 +41,6 @@
 .setups__time-text {
   color: #7b88a8;
   text-align: right;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: DM Sans;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.55;
@@ -53,8 +53,6 @@
   border-radius: 5px;
   background: #34c635;
   color: #fff;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: DM Sans;
   font-size: 14px;
   font-weight: 400;
   line-height: 1/71;
@@ -76,7 +74,6 @@
 .setups__item-freelance {
   color: #4f77ff;
   text-align: center;
-  font-feature-settings: "clig" off, "liga" off;
   font-family: Outfit;
   font-size: 18px;
   font-weight: 500;
@@ -88,7 +85,6 @@
 .setups__item-price {
   color: #2d3958;
   text-align: center;
-  font-feature-settings: "clig" off, "liga" off;
   font-family: Outfit;
   font-size: 36px;
   font-weight: 500;
@@ -105,19 +101,17 @@
 .setups__item-text {
   color: #696871;
   text-align: center;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: DM Sans;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.62;
-  padding: 0px 90px 40px 90px;
+  padding: 10px 0px 40px 0px;
+  width: 100%;
 }
 
 .setups__item-content {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  padding-left: 50px;
   padding-bottom: 58px;
 }
 
@@ -130,7 +124,6 @@
 .setups__item-button {
   color: #fff;
   text-align: center;
-  font-feature-settings: "clig" off, "liga" off;
   font-family: Outfit;
   font-size: 15px;
   font-weight: 500;
@@ -138,7 +131,7 @@
   letter-spacing: -0.3px;
   text-transform: uppercase;
   background-color: #4f77ff;
-  width: 670px;
+  width: 590px;
   height: 60px;
   flex-shrink: 0;
   border-radius: 0px 0px 10px 10px;
@@ -146,5 +139,53 @@
 }
 
 .setups__item-button:hover {
-    background-color: #2b469c;
+  background-color: #2b469c;
+}
+
+.setups__time-box {
+  width: 72px;
+  height: 33px;
+  flex-shrink: 0;
+  background-color: #e7e5ea;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  padding-left: 7px;
+  cursor: pointer;
+}
+
+.setups__time-box--green {
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: #34c635;
+}
+
+.setups__padding {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.setups__item-bf {
+  position: relative;
+}
+
+.setups__item-bf::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-color: #ffc623;
+  border-radius: 50px 50px 50px 0px;
+  top: 0;
+  right: -75px;
+}
+
+.setups__item-content-text {
+  color: #2d3958;
+  font-family: Outfit;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: -1px;
 }

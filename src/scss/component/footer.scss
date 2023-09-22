@@ -1,10 +1,16 @@
 .page-footer {
   background: #292f3a;
+  z-index: 1;
+  position: sticky;
 }
 
 .footer__logo {
   display: flex;
   padding-top: 100px;
+
+  @media (max-width: 992px) {
+    padding-top: 80px;
+  }
 }
 
 .footer__logo div {
@@ -21,6 +27,15 @@
 
 .footer__item {
   padding-top: 105px;
+  @media (max-width: 992px) {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media (max-width: 768px) {
+    padding-top: 50px;
+  }
 }
 
 .footer__title {
@@ -35,11 +50,17 @@
 }
 
 .footer__center {
+  a {
+    text-decoration: none;
+    color: #e7e5ea;
+  }
+}
+
+.footer__center {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
-  color: #e7e5ea;
   font-feature-settings: "clig" off, "liga" off;
   font-family: Outfit;
   font-size: 14px;
@@ -47,6 +68,10 @@
   line-height: 1.71;
   letter-spacing: -0.3px;
   text-transform: uppercase;
+  @media (max-width: 768px) {
+    flex-direction: unset;
+    gap: 20px;
+  }
 }
 
 .footer__text {
@@ -85,11 +110,7 @@
 }
 
 .footer__line {
-  height: 1px;
-  width: 100%;
-  opacity: 0.3;
-  background: #7b88a8;
-  flex-shrink: 0;
+  border-bottom: 1px solid rgba(#7b88a8, 0.3);
 }
 
 .footer__bottom {

@@ -1,6 +1,6 @@
 .solution {
   padding-top: 120px;
-  background: #F8FAFC;
+  background: #f8fafc;
   padding-bottom: 140px;
 }
 
@@ -23,29 +23,34 @@
   cursor: pointer;
   img {
     border-radius: 20px;
-    padding-bottom: 20px;
   }
 }
 
+.solution__body-padding {
+    padding-bottom: 20px;
+}
+
 .solution__body-title {
-  color: #2d3958;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: Outfit;
   font-size: 22px;
   font-weight: 400;
   line-height: 1.45;
   letter-spacing: -1px;
+  a {
+    text-decoration: none;
+    color: #2d3958;
+  }
 }
 
 .solution__body-text {
   padding-top: 20px;
-  color: #7b88a8;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: DM Sans;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.55;
   letter-spacing: -0.3px;
+  a {
+    text-decoration: none;
+    color: #7b88a8;
+  }
 }
 
 .solution__body-time {

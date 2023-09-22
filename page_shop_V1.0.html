@@ -1,813 +1,866 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page_Shop_V1.0</title>
-    <link rel="stylesheet" href="./src/scss/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=PT+Serif&family=Roboto&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page_Block_v1.0</title>
+    <link rel="stylesheet" href="./src/scss/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Outfit:wght@300&family=PT+Serif&family=Roboto&display=swap"
-        rel="stylesheet">
-</head>
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Outfit:wght@300;400&family=PT+Serif&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400&family=Outfit:wght@300;400&family=PT+Serif&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-    <header class="page-header">
-        <div class="container">
-            <div class="page-header__row">
-                <div class="page-header__left">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="44" viewBox="0 0 32 44" fill="none">
-                        <g clip-path="url(#clip0_301_6510)">
-                            <path
-                                d="M32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.3131 1.68571 20.2435 0 16 0C11.7565 0 7.68687 1.68571 4.68629 4.68629C1.68571 7.68687 0 11.7565 0 16C0 16.2133 3.91006e-07 16.4267 0.0170671 16.64V16H16.0171V32C20.2576 31.9955 24.3229 30.3078 27.3197 27.3077C30.3166 24.3076 32 20.2405 32 16Z"
-                                fill="#61DCDF" />
-                            <path
-                                d="M0 17V44H16V32.3071H15.9872C11.8545 32.3071 7.88218 30.7135 4.90207 27.8602C1.92197 25.0069 0.165306 21.1151 0 17Z"
-                                fill="#886CFF" />
-                            <path
-                                d="M0 16V16.64C0.165262 20.7693 1.92146 24.6746 4.90077 27.5378C7.88007 30.401 11.8514 32 15.9829 32H16V16H0Z"
-                                fill="#F9E492" />
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_301_6510">
-                                <rect width="32" height="44" fill="white" />
-                            </clipPath>
-                        </defs>
-                    </svg>
-                    <div class="page-header__text">
-                        Pollock
-                    </div>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__row">
+          <div class="header__left">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="44"
+              viewBox="0 0 32 44"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_301_6510)">
+                <path
+                  d="M32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.3131 1.68571 20.2435 0 16 0C11.7565 0 7.68687 1.68571 4.68629 4.68629C1.68571 7.68687 0 11.7565 0 16C0 16.2133 3.91006e-07 16.4267 0.0170671 16.64V16H16.0171V32C20.2576 31.9955 24.3229 30.3078 27.3197 27.3077C30.3166 24.3076 32 20.2405 32 16Z"
+                  fill="#61DCDF"
+                />
+                <path
+                  d="M0 17V44H16V32.3071H15.9872C11.8545 32.3071 7.88218 30.7135 4.90207 27.8602C1.92197 25.0069 0.165306 21.1151 0 17Z"
+                  fill="#886CFF"
+                />
+                <path
+                  d="M0 16V16.64C0.165262 20.7693 1.92146 24.6746 4.90077 27.5378C7.88007 30.401 11.8514 32 15.9829 32H16V16H0Z"
+                  fill="#F9E492"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_301_6510">
+                  <rect width="32" height="44" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <h5 class="header__text">Pollock</h5>
+          </div>
+          <div class="header__right">
+            <div
+              class="header__overlay"
+              id="menuHamburger"
+              onclick="closeNav()"
+            >
+              <a class="header__closebtn">&times;</a>
+              <div class="header__menu">
+                <ul>
+                  <li class="header__item">
+                    <a href="./index.html">Home</a>
+                  </li>
+                  <li class="header__item">
+                    <a href="./page_portfolio_V1.0.html">Services</a>
+                  </li>
+                  <li class="header__item">
+                    <a href="#">About</a>
+                  </li>
+                  <li class="header__item">
+                    <a href="./page_shop_V1.0.html" class="header__box--green"><p>Pages</p></a>
+                  </li>
+                  <li class="header__item">
+                    <a href="./page_block_V1.0.html">Blog</a>
+                  </li>
+                  <li class="header__item">
+                    <a href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="header__action">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 21 21"
+                  fill="none"
+                >
+                  <circle
+                    cx="9"
+                    cy="9"
+                    r="8"
+                    stroke="#7B88A8"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.5 14.958L19.5 19.958"
+                    stroke="#7B88A8"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <div class="header__cart">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20px"
+                    height="20px"
+                    viewBox="0 0 20 22"
+                    fill="none"
+                  >
+                    <path
+                      d="M2.53715 9.47134C2.80212 7.48412 4.49726 6 6.50207 6H13.4979C15.5027 6 17.1979 7.48412 17.4628 9.47135L18.3962 16.4713C18.7159 18.8693 16.8504 21 14.4313 21H5.56873C3.14958 21 1.2841 18.8693 1.60382 16.4713L2.53715 9.47134Z"
+                      stroke="#7B88A8"
+                      stroke-width="1.5"
+                    />
+                    <path
+                      d="M14 8V5C14 2.79086 12.2091 1 10 1V1C7.79086 1 6 2.79086 6 5L6 8"
+                      stroke="#7B88A8"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
                 </div>
-                <div class="page-header__right">
-                    <div class="page-heade__overlay" id="menuHamburger" onclick="closeNav()">
-                        <a class="page-header__closebtn">&times;</a>
-                        <div class="page-header__menu">
-                            <ul>
-                                <li class="page-header__item"><a href="./index.html">Home</a></li>
-                                <li class="page-header__item"><a href="./page_block_post_V1.0.html">Services</a></li>
-                                <li class="page-header__item"><a href="./page_Block_v1.0.html">About</a></li>
-                                <li class="page-header__item"><a href="./page_portfolio_V1.0.html" class="page-header__box--green">
-                                        <p>Pages</p>
-                                    </a></li>
-                                <li class="page-header__item"><a href="./page_shop_single_product_V1.0.html">Blog</a></li>
-                                <li class="page-header__item"><a href="./page_shop_V1.0.html">Contact</a></li>
-                            </ul>
-                        </div>
-                        <div class="page-header__action">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 21 21"
-                                fill="none">
-                                <circle cx="9" cy="9" r="8" stroke="#7B88A8" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M14.5 14.958L19.5 19.958" stroke="#7B88A8" stroke-width="1.5"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                            <div class="page-header__cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 20 22"
-                                    fill="none">
-                                    <path
-                                        d="M2.53715 9.47134C2.80212 7.48412 4.49726 6 6.50207 6H13.4979C15.5027 6 17.1979 7.48412 17.4628 9.47135L18.3962 16.4713C18.7159 18.8693 16.8504 21 14.4313 21H5.56873C3.14958 21 1.2841 18.8693 1.60382 16.4713L2.53715 9.47134Z"
-                                        stroke="#7B88A8" stroke-width="1.5" />
-                                    <path d="M14 8V5C14 2.79086 12.2091 1 10 1V1C7.79086 1 6 2.79086 6 5L6 8"
-                                        stroke="#7B88A8" stroke-width="1.5" stroke-linecap="round" />
-                                </svg>
-                            </div>
-                            <div class="page-header__button">
-                                <div class="button button--blue">Sign Up</div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="header__button">
+                  <div class="button button--blue">Sign Up</div>
                 </div>
-                <div class="page-heade__showbtn" onclick="openNav()">
-                    <span class="page-heade__line"></span>
-                    <span class="page-heade__line"></span>
-                    <span class="page-heade__line"></span>
-                </div>
+              </div>
             </div>
+          </div>
+          <div class="header__showbtn" onclick="openNav()">
+            <span class="header__line"></span>
+            <span class="header__line"></span>
+            <span class="header__line"></span>
+          </div>
         </div>
+      </div>
     </header>
-    <section class="page-section">
-        <div class="background-left"></div>
-        <div class="background-bottom"></div>
-        <div class="background-top"></div>
-        <div class="banner">
-            <div class="container">
-                <div class="banner__title">
-                    Our Shop
-                </div>
-                <div class="banner__text">
-                    homepage <span>/</span> <span>shop</span>
-                </div>
+    <div class="main">
+      <section class="page-section">
+        <div class="background">
+          <div class="container">
+            <div class="banner">
+              <h4 class="banner__title">Our Shop</h4>
+              <div class="banner__text">
+                <a href="#">homepage</a><span>/</span>
+                <span><a href="#">shop</a></span>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-    <section class="page-section">
+      </section>
+      <section class="page-section">
         <div class="information">
             <div class="container">
                 <div class="row">
-                    <div class="col" style="--col-xs: 12; --col-sm: 8; --col-md: 8; --col-lg: 3;">
-                        <div class="information__left information__left--border">
-                            <div class="information__category">
-                                <div class="information__category-header">
-                                    <div class="information__right-title">
-                                        Category
-                                    </div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none">
-                                        <g opacity="0.7">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M16.7071 14.7071C16.3466 15.0676 15.7794 15.0953 15.3871 14.7903L15.2929 14.7071L12 11.415L8.70711 14.7071C8.34662 15.0676 7.77939 15.0953 7.3871 14.7903L7.29289 14.7071C6.93241 14.3466 6.90468 13.7794 7.2097 13.3871L7.29289 13.2929L11.2929 9.29289C11.6534 8.93241 12.2206 8.90468 12.6129 9.2097L12.7071 9.29289L16.7071 13.2929C17.0976 13.6834 17.0976 14.3166 16.7071 14.7071Z"
-                                                fill="#888682" />
-                                        </g>
-                                    </svg>
-                                </div>
-                                <div class="information__line"></div>
-                                <div class="information__category-item">
-                                    <div class="information__category-item-left">
-                                        <label class="information__category-checkbox">
-                                            <div>
-                                                <input type="checkbox">
-                                                <span>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.64645 3.64645C8.84171 3.45118 9.15829 3.45118 9.35355 3.64645C9.5338 3.82669 9.54766 4.1103 9.39515 4.30645L9.35355 4.35355L5.35355 8.35355C5.17331 8.5338 4.8897 8.54766 4.69355 8.39515L4.64645 8.35355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.82669 5.4662 3.1103 5.45234 3.30645 5.60485L3.35355 5.64645L5 7.2925L8.64645 3.64645Z" fill="white"/>
-                                                    </svg>
-                                                </span>
-                                            </div>
-                                            <div>
-                                                App
-                                            </div> 
-                                        </label>
-                                    </div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none">
-                                        <g opacity="0.7">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M7.29289 9.29289C7.65338 8.93241 8.22061 8.90468 8.6129 9.2097L8.70711 9.29289L12 12.585L15.2929 9.29289C15.6534 8.93241 16.2206 8.90468 16.6129 9.2097L16.7071 9.29289C17.0676 9.65338 17.0953 10.2206 16.7903 10.6129L16.7071 10.7071L12.7071 14.7071C12.3466 15.0676 11.7794 15.0953 11.3871 14.7903L11.2929 14.7071L7.29289 10.7071C6.90237 10.3166 6.90237 9.68342 7.29289 9.29289Z"
-                                                fill="#888682" />
-                                        </g>
-                                    </svg>
-                                </div>
-                                <div class="information__category-item">
-                                    <div class="information__category-item-left">
-                                        <label class="information__category-checkbox">
-                                            <div>
-                                                <input type="checkbox">
-                                                <span>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.64645 3.64645C8.84171 3.45118 9.15829 3.45118 9.35355 3.64645C9.5338 3.82669 9.54766 4.1103 9.39515 4.30645L9.35355 4.35355L5.35355 8.35355C5.17331 8.5338 4.8897 8.54766 4.69355 8.39515L4.64645 8.35355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.82669 5.4662 3.1103 5.45234 3.30645 5.60485L3.35355 5.64645L5 7.2925L8.64645 3.64645Z" fill="white"/>
-                                                    </svg>
-                                                </span>
-                                            </div>
-                                            <div>
-                                                Audio
-                                            </div> 
-                                        </label>
-                                    </div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none">
-                                        <g opacity="0.7">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M7.29289 9.29289C7.65338 8.93241 8.22061 8.90468 8.6129 9.2097L8.70711 9.29289L12 12.585L15.2929 9.29289C15.6534 8.93241 16.2206 8.90468 16.6129 9.2097L16.7071 9.29289C17.0676 9.65338 17.0953 10.2206 16.7903 10.6129L16.7071 10.7071L12.7071 14.7071C12.3466 15.0676 11.7794 15.0953 11.3871 14.7903L11.2929 14.7071L7.29289 10.7071C6.90237 10.3166 6.90237 9.68342 7.29289 9.29289Z"
-                                                fill="#888682" />
-                                        </g>
-                                    </svg>
-                                </div>
-                                <div class="information__category-item">
-                                    <div class="information__category-item-left">
-                                        <label class="information__category-checkbox">
-                                            <div>
-                                                <input type="checkbox">
-                                                <span>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.64645 3.64645C8.84171 3.45118 9.15829 3.45118 9.35355 3.64645C9.5338 3.82669 9.54766 4.1103 9.39515 4.30645L9.35355 4.35355L5.35355 8.35355C5.17331 8.5338 4.8897 8.54766 4.69355 8.39515L4.64645 8.35355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.82669 5.4662 3.1103 5.45234 3.30645 5.60485L3.35355 5.64645L5 7.2925L8.64645 3.64645Z" fill="white"/>
-                                                    </svg>
-                                                </span>
-                                            </div>
-                                            <div>
-                                                Electronics
-                                            </div> 
-                                        </label>
-                                    </div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none">
-                                        <g opacity="0.7">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M16.7071 14.7071C16.3466 15.0676 15.7794 15.0953 15.3871 14.7903L15.2929 14.7071L12 11.415L8.70711 14.7071C8.34662 15.0676 7.77939 15.0953 7.3871 14.7903L7.29289 14.7071C6.93241 14.3466 6.90468 13.7794 7.2097 13.3871L7.29289 13.2929L11.2929 9.29289C11.6534 8.93241 12.2206 8.90468 12.6129 9.2097L12.7071 9.29289L16.7071 13.2929C17.0976 13.6834 17.0976 14.3166 16.7071 14.7071Z"
-                                                fill="#888682" />
-                                        </g>
-                                    </svg>
-                                </div>
-                                <div class="information__category-left">
-                                    <div class="information__category-item-left">
-                                        <label class="information__category-checkbox">
-                                            <div>
-                                                <input type="checkbox">
-                                                <span>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.64645 3.64645C8.84171 3.45118 9.15829 3.45118 9.35355 3.64645C9.5338 3.82669 9.54766 4.1103 9.39515 4.30645L9.35355 4.35355L5.35355 8.35355C5.17331 8.5338 4.8897 8.54766 4.69355 8.39515L4.64645 8.35355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.82669 5.4662 3.1103 5.45234 3.30645 5.60485L3.35355 5.64645L5 7.2925L8.64645 3.64645Z" fill="white"/>
-                                                    </svg>
-                                                </span>
-                                            </div>
-                                            <div>
-                                                Accessories
-                                            </div> 
-                                        </label>
-                                    </div>
-                                    <div class="information__category-item-left">
-                                        <label class="information__category-checkbox">
-                                            <div>
-                                                <input type="checkbox">
-                                                <span>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.64645 3.64645C8.84171 3.45118 9.15829 3.45118 9.35355 3.64645C9.5338 3.82669 9.54766 4.1103 9.39515 4.30645L9.35355 4.35355L5.35355 8.35355C5.17331 8.5338 4.8897 8.54766 4.69355 8.39515L4.64645 8.35355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.82669 5.4662 3.1103 5.45234 3.30645 5.60485L3.35355 5.64645L5 7.2925L8.64645 3.64645Z" fill="white"/>
-                                                    </svg>
-                                                </span>
-                                            </div>
-                                            <div>
-                                                Camera
-                                            </div> 
-                                        </label>
-                                    </div>
-                                    <div class="information__category-item-left">
-                                        <label class="information__category-checkbox">
-                                            <div>
-                                                <input type="checkbox">
-                                                <span>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.64645 3.64645C8.84171 3.45118 9.15829 3.45118 9.35355 3.64645C9.5338 3.82669 9.54766 4.1103 9.39515 4.30645L9.35355 4.35355L5.35355 8.35355C5.17331 8.5338 4.8897 8.54766 4.69355 8.39515L4.64645 8.35355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.82669 5.4662 3.1103 5.45234 3.30645 5.60485L3.35355 5.64645L5 7.2925L8.64645 3.64645Z" fill="white"/>
-                                                    </svg>
-                                                </span>
-                                            </div>
-                                            <div>
-                                                Computer
-                                            </div> 
-                                        </label>
-                                    </div>
-                                    <div class="information__category-item-left">
-                                        <label class="information__category-checkbox">
-                                            <div>
-                                                <input type="checkbox">
-                                                <span>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.64645 3.64645C8.84171 3.45118 9.15829 3.45118 9.35355 3.64645C9.5338 3.82669 9.54766 4.1103 9.39515 4.30645L9.35355 4.35355L5.35355 8.35355C5.17331 8.5338 4.8897 8.54766 4.69355 8.39515L4.64645 8.35355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.82669 5.4662 3.1103 5.45234 3.30645 5.60485L3.35355 5.64645L5 7.2925L8.64645 3.64645Z" fill="white"/>
-                                                    </svg>
-                                                </span>
-                                            </div>
-                                            <div>
-                                                Headphones
-                                            </div> 
-                                        </label>
-                                    </div>
-                                    <div class="information__category-item-left">
-                                        <label class="information__category-checkbox">
-                                            <div>
-                                                <input type="checkbox">
-                                                <span>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.64645 3.64645C8.84171 3.45118 9.15829 3.45118 9.35355 3.64645C9.5338 3.82669 9.54766 4.1103 9.39515 4.30645L9.35355 4.35355L5.35355 8.35355C5.17331 8.5338 4.8897 8.54766 4.69355 8.39515L4.64645 8.35355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.82669 5.4662 3.1103 5.45234 3.30645 5.60485L3.35355 5.64645L5 7.2925L8.64645 3.64645Z" fill="white"/>
-                                                    </svg>
-                                                </span>
-                                            </div>
-                                            <div>
-                                                Smartphone
-                                            </div> 
-                                        </label>
-                                    </div>
-                                    <div class="information__category-item-left">
-                                        <label class="information__category-checkbox">
-                                            <div>
-                                                <input type="checkbox">
-                                                <span>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.64645 3.64645C8.84171 3.45118 9.15829 3.45118 9.35355 3.64645C9.5338 3.82669 9.54766 4.1103 9.39515 4.30645L9.35355 4.35355L5.35355 8.35355C5.17331 8.5338 4.8897 8.54766 4.69355 8.39515L4.64645 8.35355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.82669 5.4662 3.1103 5.45234 3.30645 5.60485L3.35355 5.64645L5 7.2925L8.64645 3.64645Z" fill="white"/>
-                                                    </svg>
-                                                </span>
-                                            </div>
-                                            <div>
-                                                TV
-                                            </div> 
-                                        </label>
-                                    </div>
-                                    <div class="information__category-item-left">
-                                        <label class="information__category-checkbox">
-                                            <div>
-                                                <input type="checkbox">
-                                                <span>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.64645 3.64645C8.84171 3.45118 9.15829 3.45118 9.35355 3.64645C9.5338 3.82669 9.54766 4.1103 9.39515 4.30645L9.35355 4.35355L5.35355 8.35355C5.17331 8.5338 4.8897 8.54766 4.69355 8.39515L4.64645 8.35355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.82669 5.4662 3.1103 5.45234 3.30645 5.60485L3.35355 5.64645L5 7.2925L8.64645 3.64645Z" fill="white"/>
-                                                    </svg>
-                                                </span>
-                                            </div>
-                                            <div>
-                                                Video
-                                            </div> 
-                                        </label>
-                                    </div>
-                                </div>
+                    <div class="col" style="--col-lg: 3;">
+                        <div>
+                            <div class="page-heade__showbtn" onclick="openNav1()">
+                                <span class="header__line"></span>
+                                <span class="header__line"></span>
+                                <span class="header__line"></span>
                             </div>
-                            <div class="information__brand">
-                                <div class="information__category-header">
-                                    <div class="information__right-title">
-                                        Brand
-                                    </div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none">
-                                        <g opacity="0.7">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                            <div class="information__left-menu" id="menuBodyHamburger">
+                                <a class="information__left-closebtn" onclick="closeNav1()">&times;</a>
+                                <div class="category">
+                                    <div class="title">
+                                        <h5 class="title__item">
+                                            Category
+                                        </h5>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none">
+                                            <g opacity="0.7">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
                                                 d="M16.7071 14.7071C16.3466 15.0676 15.7794 15.0953 15.3871 14.7903L15.2929 14.7071L12 11.415L8.70711 14.7071C8.34662 15.0676 7.77939 15.0953 7.3871 14.7903L7.29289 14.7071C6.93241 14.3466 6.90468 13.7794 7.2097 13.3871L7.29289 13.2929L11.2929 9.29289C11.6534 8.93241 12.2206 8.90468 12.6129 9.2097L12.7071 9.29289L16.7071 13.2929C17.0976 13.6834 17.0976 14.3166 16.7071 14.7071Z"
                                                 fill="#888682" />
-                                        </g>
-                                    </svg>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="category__item">
+                                        <div>
+                                            <label class="category__checkbox">
+                                                <div>
+                                                    <input type="checkbox">
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.64645 3.64645C8.84171 3.45118 9.15829 3.45118 9.35355 3.64645C9.5338 3.82669 9.54766 4.1103 9.39515 4.30645L9.35355 4.35355L5.35355 8.35355C5.17331 8.5338 4.8897 8.54766 4.69355 8.39515L4.64645 8.35355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.82669 5.4662 3.1103 5.45234 3.30645 5.60485L3.35355 5.64645L5 7.2925L8.64645 3.64645Z" fill="white"/>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                                <h5 class="category__text">
+                                                    App
+                                                </h5> 
+                                            </label>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none">
+                                            <g opacity="0.7">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M7.29289 9.29289C7.65338 8.93241 8.22061 8.90468 8.6129 9.2097L8.70711 9.29289L12 12.585L15.2929 9.29289C15.6534 8.93241 16.2206 8.90468 16.6129 9.2097L16.7071 9.29289C17.0676 9.65338 17.0953 10.2206 16.7903 10.6129L16.7071 10.7071L12.7071 14.7071C12.3466 15.0676 11.7794 15.0953 11.3871 14.7903L11.2929 14.7071L7.29289 10.7071C6.90237 10.3166 6.90237 9.68342 7.29289 9.29289Z"
+                                                    fill="#888682" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="category__item">
+                                        <div>
+                                            <label class="category__checkbox">
+                                                <div>
+                                                    <input type="checkbox">
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.64645 3.64645C8.84171 3.45118 9.15829 3.45118 9.35355 3.64645C9.5338 3.82669 9.54766 4.1103 9.39515 4.30645L9.35355 4.35355L5.35355 8.35355C5.17331 8.5338 4.8897 8.54766 4.69355 8.39515L4.64645 8.35355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.82669 5.4662 3.1103 5.45234 3.30645 5.60485L3.35355 5.64645L5 7.2925L8.64645 3.64645Z" fill="white"/>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                                <h5 class="category__text">
+                                                    Audio
+                                                </h5> 
+                                            </label>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none">
+                                            <g opacity="0.7">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M7.29289 9.29289C7.65338 8.93241 8.22061 8.90468 8.6129 9.2097L8.70711 9.29289L12 12.585L15.2929 9.29289C15.6534 8.93241 16.2206 8.90468 16.6129 9.2097L16.7071 9.29289C17.0676 9.65338 17.0953 10.2206 16.7903 10.6129L16.7071 10.7071L12.7071 14.7071C12.3466 15.0676 11.7794 15.0953 11.3871 14.7903L11.2929 14.7071L7.29289 10.7071C6.90237 10.3166 6.90237 9.68342 7.29289 9.29289Z"
+                                                    fill="#888682" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="category__item">
+                                        <div>
+                                            <label class="category__checkbox">
+                                                <div>
+                                                    <input type="checkbox">
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.64645 3.64645C8.84171 3.45118 9.15829 3.45118 9.35355 3.64645C9.5338 3.82669 9.54766 4.1103 9.39515 4.30645L9.35355 4.35355L5.35355 8.35355C5.17331 8.5338 4.8897 8.54766 4.69355 8.39515L4.64645 8.35355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.82669 5.4662 3.1103 5.45234 3.30645 5.60485L3.35355 5.64645L5 7.2925L8.64645 3.64645Z" fill="white"/>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                                <h5 class="category__text">
+                                                    Electronics
+                                                </h5> 
+                                            </label>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none">
+                                            <g opacity="0.7">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M16.7071 14.7071C16.3466 15.0676 15.7794 15.0953 15.3871 14.7903L15.2929 14.7071L12 11.415L8.70711 14.7071C8.34662 15.0676 7.77939 15.0953 7.3871 14.7903L7.29289 14.7071C6.93241 14.3466 6.90468 13.7794 7.2097 13.3871L7.29289 13.2929L11.2929 9.29289C11.6534 8.93241 12.2206 8.90468 12.6129 9.2097L12.7071 9.29289L16.7071 13.2929C17.0976 13.6834 17.0976 14.3166 16.7071 14.7071Z"
+                                                    fill="#888682" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="category__left">
+                                        <div>
+                                            <label class="category__checkbox">
+                                                <div>
+                                                    <input type="checkbox">
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.64645 3.64645C8.84171 3.45118 9.15829 3.45118 9.35355 3.64645C9.5338 3.82669 9.54766 4.1103 9.39515 4.30645L9.35355 4.35355L5.35355 8.35355C5.17331 8.5338 4.8897 8.54766 4.69355 8.39515L4.64645 8.35355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.82669 5.4662 3.1103 5.45234 3.30645 5.60485L3.35355 5.64645L5 7.2925L8.64645 3.64645Z" fill="white"/>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                                <div class="category__text" class="category__text">
+                                                    Accessories
+                                                </div> 
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <label class="category__checkbox">
+                                                <div>
+                                                    <input type="checkbox">
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.64645 3.64645C8.84171 3.45118 9.15829 3.45118 9.35355 3.64645C9.5338 3.82669 9.54766 4.1103 9.39515 4.30645L9.35355 4.35355L5.35355 8.35355C5.17331 8.5338 4.8897 8.54766 4.69355 8.39515L4.64645 8.35355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.82669 5.4662 3.1103 5.45234 3.30645 5.60485L3.35355 5.64645L5 7.2925L8.64645 3.64645Z" fill="white"/>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                                <div class="category__text">
+                                                    Camera
+                                                </div> 
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <label class="category__checkbox">
+                                                <div>
+                                                    <input type="checkbox">
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.64645 3.64645C8.84171 3.45118 9.15829 3.45118 9.35355 3.64645C9.5338 3.82669 9.54766 4.1103 9.39515 4.30645L9.35355 4.35355L5.35355 8.35355C5.17331 8.5338 4.8897 8.54766 4.69355 8.39515L4.64645 8.35355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.82669 5.4662 3.1103 5.45234 3.30645 5.60485L3.35355 5.64645L5 7.2925L8.64645 3.64645Z" fill="white"/>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                                <div class="category__text">
+                                                    Computer
+                                                </div> 
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <label class="category__checkbox">
+                                                <div>
+                                                    <input type="checkbox">
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.64645 3.64645C8.84171 3.45118 9.15829 3.45118 9.35355 3.64645C9.5338 3.82669 9.54766 4.1103 9.39515 4.30645L9.35355 4.35355L5.35355 8.35355C5.17331 8.5338 4.8897 8.54766 4.69355 8.39515L4.64645 8.35355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.82669 5.4662 3.1103 5.45234 3.30645 5.60485L3.35355 5.64645L5 7.2925L8.64645 3.64645Z" fill="white"/>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                                <div class="category__text">
+                                                    Headphones
+                                                </div> 
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <label class="category__checkbox">
+                                                <div>
+                                                    <input type="checkbox">
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.64645 3.64645C8.84171 3.45118 9.15829 3.45118 9.35355 3.64645C9.5338 3.82669 9.54766 4.1103 9.39515 4.30645L9.35355 4.35355L5.35355 8.35355C5.17331 8.5338 4.8897 8.54766 4.69355 8.39515L4.64645 8.35355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.82669 5.4662 3.1103 5.45234 3.30645 5.60485L3.35355 5.64645L5 7.2925L8.64645 3.64645Z" fill="white"/>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                                <div class="category__text">
+                                                    Smartphone
+                                                </div> 
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <label class="category__checkbox">
+                                                <div>
+                                                    <input type="checkbox">
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.64645 3.64645C8.84171 3.45118 9.15829 3.45118 9.35355 3.64645C9.5338 3.82669 9.54766 4.1103 9.39515 4.30645L9.35355 4.35355L5.35355 8.35355C5.17331 8.5338 4.8897 8.54766 4.69355 8.39515L4.64645 8.35355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.82669 5.4662 3.1103 5.45234 3.30645 5.60485L3.35355 5.64645L5 7.2925L8.64645 3.64645Z" fill="white"/>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                                <div class="category__text">
+                                                    TV
+                                                </div> 
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <label class="category__checkbox">
+                                                <div>
+                                                    <input type="checkbox">
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.64645 3.64645C8.84171 3.45118 9.15829 3.45118 9.35355 3.64645C9.5338 3.82669 9.54766 4.1103 9.39515 4.30645L9.35355 4.35355L5.35355 8.35355C5.17331 8.5338 4.8897 8.54766 4.69355 8.39515L4.64645 8.35355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.82669 5.4662 3.1103 5.45234 3.30645 5.60485L3.35355 5.64645L5 7.2925L8.64645 3.64645Z" fill="white"/>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                                <div class="category__text">
+                                                    Video
+                                                </div> 
+                                            </label>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="information__line"></div>
-                                <div class="information__brand-left">
-                                    <div class="information__category-item-left">
-                                        <label class="information__category-checkbox">
-                                            <div>
-                                                <input type="checkbox">
-                                                <span>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.64645 3.64645C8.84171 3.45118 9.15829 3.45118 9.35355 3.64645C9.5338 3.82669 9.54766 4.1103 9.39515 4.30645L9.35355 4.35355L5.35355 8.35355C5.17331 8.5338 4.8897 8.54766 4.69355 8.39515L4.64645 8.35355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.82669 5.4662 3.1103 5.45234 3.30645 5.60485L3.35355 5.64645L5 7.2925L8.64645 3.64645Z" fill="white"/>
-                                                    </svg>
-                                                </span>
-                                            </div>
-                                            <div>
-                                                Apple
-                                            </div> 
-                                        </label>
+                                <div class="category__brand">
+                                    <div class="title">
+                                        <h5 class="title__item">
+                                            Brand
+                                        </h5>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none">
+                                            <g opacity="0.7">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M16.7071 14.7071C16.3466 15.0676 15.7794 15.0953 15.3871 14.7903L15.2929 14.7071L12 11.415L8.70711 14.7071C8.34662 15.0676 7.77939 15.0953 7.3871 14.7903L7.29289 14.7071C6.93241 14.3466 6.90468 13.7794 7.2097 13.3871L7.29289 13.2929L11.2929 9.29289C11.6534 8.93241 12.2206 8.90468 12.6129 9.2097L12.7071 9.29289L16.7071 13.2929C17.0976 13.6834 17.0976 14.3166 16.7071 14.7071Z"
+                                                    fill="#888682" />
+                                            </g>
+                                        </svg>
                                     </div>
-                                    <div class="information__category-item-left">
-                                        <label class="information__category-checkbox">
-                                            <div>
-                                                <input type="checkbox">
-                                                <span>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.64645 3.64645C8.84171 3.45118 9.15829 3.45118 9.35355 3.64645C9.5338 3.82669 9.54766 4.1103 9.39515 4.30645L9.35355 4.35355L5.35355 8.35355C5.17331 8.5338 4.8897 8.54766 4.69355 8.39515L4.64645 8.35355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.82669 5.4662 3.1103 5.45234 3.30645 5.60485L3.35355 5.64645L5 7.2925L8.64645 3.64645Z" fill="white"/>
-                                                    </svg>
-                                                </span>
-                                            </div>
-                                            <div>
-                                                Bose
-                                            </div> 
-                                        </label>
-                                    </div>
-                                    <div class="information__category-item-left">
-                                        <label class="information__category-checkbox">
-                                            <div>
-                                                <input type="checkbox">
-                                                <span>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.64645 3.64645C8.84171 3.45118 9.15829 3.45118 9.35355 3.64645C9.5338 3.82669 9.54766 4.1103 9.39515 4.30645L9.35355 4.35355L5.35355 8.35355C5.17331 8.5338 4.8897 8.54766 4.69355 8.39515L4.64645 8.35355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.82669 5.4662 3.1103 5.45234 3.30645 5.60485L3.35355 5.64645L5 7.2925L8.64645 3.64645Z" fill="white"/>
-                                                    </svg>
-                                                </span>
-                                            </div>
-                                            <div>
-                                                Dell
-                                            </div> 
-                                        </label>
-                                    </div>
-                                    <div class="information__category-item-left">
-                                        <label class="information__category-checkbox">
-                                            <div>
-                                                <input type="checkbox">
-                                                <span>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.64645 3.64645C8.84171 3.45118 9.15829 3.45118 9.35355 3.64645C9.5338 3.82669 9.54766 4.1103 9.39515 4.30645L9.35355 4.35355L5.35355 8.35355C5.17331 8.5338 4.8897 8.54766 4.69355 8.39515L4.64645 8.35355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.82669 5.4662 3.1103 5.45234 3.30645 5.60485L3.35355 5.64645L5 7.2925L8.64645 3.64645Z" fill="white"/>
-                                                    </svg>
-                                                </span>
-                                            </div>
-                                            <div>
-                                                LG
-                                            </div> 
-                                        </label>
-                                    </div>
-                                    <div class="information__category-item-left">
-                                        <label class="information__category-checkbox">
-                                            <div>
-                                                <input type="checkbox">
-                                                <span>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.64645 3.64645C8.84171 3.45118 9.15829 3.45118 9.35355 3.64645C9.5338 3.82669 9.54766 4.1103 9.39515 4.30645L9.35355 4.35355L5.35355 8.35355C5.17331 8.5338 4.8897 8.54766 4.69355 8.39515L4.64645 8.35355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.82669 5.4662 3.1103 5.45234 3.30645 5.60485L3.35355 5.64645L5 7.2925L8.64645 3.64645Z" fill="white"/>
-                                                    </svg>
-                                                </span>
-                                            </div>
-                                            <div>
-                                                Samsung
-                                            </div> 
-                                        </label>
-                                    </div>
-                                    <div class="information__category-item-left">
-                                        <label class="information__category-checkbox">
-                                            <div>
-                                                <input type="checkbox">
-                                                <span>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.64645 3.64645C8.84171 3.45118 9.15829 3.45118 9.35355 3.64645C9.5338 3.82669 9.54766 4.1103 9.39515 4.30645L9.35355 4.35355L5.35355 8.35355C5.17331 8.5338 4.8897 8.54766 4.69355 8.39515L4.64645 8.35355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.82669 5.4662 3.1103 5.45234 3.30645 5.60485L3.35355 5.64645L5 7.2925L8.64645 3.64645Z" fill="white"/>
-                                                    </svg>
-                                                </span>
-                                            </div>
-                                            <div>
-                                                Sony
-                                            </div> 
-                                        </label>
+                                    <div class="category__brand-left">
+                                        <div>
+                                            <label class="category__checkbox">
+                                                <div>
+                                                    <input type="checkbox">
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.64645 3.64645C8.84171 3.45118 9.15829 3.45118 9.35355 3.64645C9.5338 3.82669 9.54766 4.1103 9.39515 4.30645L9.35355 4.35355L5.35355 8.35355C5.17331 8.5338 4.8897 8.54766 4.69355 8.39515L4.64645 8.35355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.82669 5.4662 3.1103 5.45234 3.30645 5.60485L3.35355 5.64645L5 7.2925L8.64645 3.64645Z" fill="white"/>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                                <div class="category__text">
+                                                    Apple
+                                                </div> 
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <label class="category__checkbox">
+                                                <div>
+                                                    <input type="checkbox">
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.64645 3.64645C8.84171 3.45118 9.15829 3.45118 9.35355 3.64645C9.5338 3.82669 9.54766 4.1103 9.39515 4.30645L9.35355 4.35355L5.35355 8.35355C5.17331 8.5338 4.8897 8.54766 4.69355 8.39515L4.64645 8.35355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.82669 5.4662 3.1103 5.45234 3.30645 5.60485L3.35355 5.64645L5 7.2925L8.64645 3.64645Z" fill="white"/>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                                <div>
+                                                    Bose
+                                                </div> 
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <label class="category__checkbox">
+                                                <div>
+                                                    <input type="checkbox">
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                            <path fill-rule class="category__text"="evenodd" clip-rule="evenodd" d="M8.64645 3.64645C8.84171 3.45118 9.15829 3.45118 9.35355 3.64645C9.5338 3.82669 9.54766 4.1103 9.39515 4.30645L9.35355 4.35355L5.35355 8.35355C5.17331 8.5338 4.8897 8.54766 4.69355 8.39515L4.64645 8.35355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.82669 5.4662 3.1103 5.45234 3.30645 5.60485L3.35355 5.64645L5 7.2925L8.64645 3.64645Z" fill="white"/>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                                <div class="category__text">
+                                                    Dell
+                                                </div> 
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <label class="category__checkbox">
+                                                <div>
+                                                    <input type="checkbox">
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.64645 3.64645C8.84171 3.45118 9.15829 3.45118 9.35355 3.64645C9.5338 3.82669 9.54766 4.1103 9.39515 4.30645L9.35355 4.35355L5.35355 8.35355C5.17331 8.5338 4.8897 8.54766 4.69355 8.39515L4.64645 8.35355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.82669 5.4662 3.1103 5.45234 3.30645 5.60485L3.35355 5.64645L5 7.2925L8.64645 3.64645Z" fill="white"/>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                                <div class="category__text">
+                                                    LG
+                                                </div> 
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <label class="category__checkbox">
+                                                <div>
+                                                    <input type="checkbox">
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.64645 3.64645C8.84171 3.45118 9.15829 3.45118 9.35355 3.64645C9.5338 3.82669 9.54766 4.1103 9.39515 4.30645L9.35355 4.35355L5.35355 8.35355C5.17331 8.5338 4.8897 8.54766 4.69355 8.39515L4.64645 8.35355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.82669 5.4662 3.1103 5.45234 3.30645 5.60485L3.35355 5.64645L5 7.2925L8.64645 3.64645Z" fill="white"/>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                                <div class="category__text">
+                                                    Samsung
+                                                </div> 
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <label class="category__checkbox">
+                                                <div>
+                                                    <input type="checkbox">
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.64645 3.64645C8.84171 3.45118 9.15829 3.45118 9.35355 3.64645C9.5338 3.82669 9.54766 4.1103 9.39515 4.30645L9.35355 4.35355L5.35355 8.35355C5.17331 8.5338 4.8897 8.54766 4.69355 8.39515L4.64645 8.35355L2.64645 6.35355C2.45118 6.15829 2.45118 5.84171 2.64645 5.64645C2.82669 5.4662 3.1103 5.45234 3.30645 5.60485L3.35355 5.64645L5 7.2925L8.64645 3.64645Z" fill="white"/>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                                <div class="category__text">
+                                                    Sony
+                                                </div> 
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="information__price">
-                                <div class="information__category-header">
-                                    <div class="information__right-title">
-                                        Price
+                                <div class="category__price">
+                                    <div class="title">
+                                        <h5 class="title__item">
+                                            Price
+                                        </h5>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none">
+                                            <g opacity="0.7">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M16.7071 14.7071C16.3466 15.0676 15.7794 15.0953 15.3871 14.7903L15.2929 14.7071L12 11.415L8.70711 14.7071C8.34662 15.0676 7.77939 15.0953 7.3871 14.7903L7.29289 14.7071C6.93241 14.3466 6.90468 13.7794 7.2097 13.3871L7.29289 13.2929L11.2929 9.29289C11.6534 8.93241 12.2206 8.90468 12.6129 9.2097L12.7071 9.29289L16.7071 13.2929C17.0976 13.6834 17.0976 14.3166 16.7071 14.7071Z"
+                                                    fill="#888682" />
+                                            </g>
+                                        </svg>
                                     </div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none">
-                                        <g opacity="0.7">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M16.7071 14.7071C16.3466 15.0676 15.7794 15.0953 15.3871 14.7903L15.2929 14.7071L12 11.415L8.70711 14.7071C8.34662 15.0676 7.77939 15.0953 7.3871 14.7903L7.29289 14.7071C6.93241 14.3466 6.90468 13.7794 7.2097 13.3871L7.29289 13.2929L11.2929 9.29289C11.6534 8.93241 12.2206 8.90468 12.6129 9.2097L12.7071 9.29289L16.7071 13.2929C17.0976 13.6834 17.0976 14.3166 16.7071 14.7071Z"
-                                                fill="#888682" />
-                                        </g>
-                                    </svg>
-                                </div>
-                                <div class="information__line"></div>
-                                <div class="information__price-line">
-                                    <div class="information__price-line-gray"></div>
-                                    <div class="information__price-line-blue"></div>
-                                </div>
-                                <div class="information__price-center">
-                                    <span>
-                                        $149
-                                    </span>
-                                    <span>
-                                        $2,999
-                                    </span>
-                                </div>
-                                <div class="information__price-bottom">
-                                    <div class="information__price-limit">
-                                        Price: $99 — $1999
+                                    <div class="category__price-line">
+                                        <div class="category__price-line-gray"></div>
+                                        <div class="category__price-line-blue"></div>
                                     </div>
-                                    <div class="information__price-limit information__price-limit--blue">
-                                        Filter
+                                    <div class="category__price-center">
+                                        <span>
+                                            $149
+                                        </span>
+                                        <span>
+                                            $2,999
+                                        </span>
+                                    </div>
+                                    <div class="category__price-bottom">
+                                        <div class="category__price-limit">
+                                            Price: $99 — $1999
+                                        </div>
+                                        <div class="category__price-limit category__price-limit--blue">
+                                            Filter
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col" style="--col-xs: 12; --col-sm: 4; --col-md: 4; --col-lg: 9;">
-                        <div class="information__right-header">
-                            <div class="information__right-title">
+                    <div class="col" style="--col-xs: 12; --col-sm: 12; --col-md: 12; --col-lg: 9;">
+                        <div class="title title--extend">
+                            <h5 class="title__item">
                                 Devices
-                            </div>
-                            <div class="information__select">
+                            </h5>
+                            <div class="search__select search__select--extend">
                                 <select name="" id="">
-                                    <option value="select">Shorting By</option>
+                                  <option value="select">Shorting By</option>
                                 </select>
-                            </div>
+                              </div>
                         </div>
-                        <div class="information__line"></div>
-                        <div class="information__right-body">
+                        <div class="product">
                             <div class="row">
                                 <div class="col" style="--col-xs: 12; --col-sm: 6; --col-md: 6; --col-lg: 4;">
-                                    <div class="information__right-item">
-                                        <div class="information__img">
-                                            <a href="#">
+                                    <div class="product__item">
+                                        <div class="product__img">
+                                            <a href="./page_shop_single_product_V1.0.html">
                                                 <img src="./src/img/Img (12).png" alt="">
                                             </a>
                                         </div>
-                                        <div class="information__right-name">
-                                            S22 128GB
-                                        </div>
-                                        <div class="information__right-price">
+                                        <h5 class="product__name">
+                                            <a href="#">S22 128GB</a>
+                                        
+                                        </h5>
+                                        <div class="product__price">
                                             From $299
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col" style="--col-xs: 12; --col-sm: 6; --col-md: 6; --col-lg: 4;">
-                                    <div class="information__right-item">
-                                        <div class="information__img">
-                                            <a href="#">
+                                    <div class="product__item">
+                                        <div class="product__img">
+                                            <a href="./page_shop_single_product_V1.0.html">
                                                 <img src="./src/img/Img (13).png" alt="">
                                             </a>
                                         </div>
-                                        <div class="information__right-name">
-                                            Watch 4
-                                        </div>
-                                        <div class="information__right-price">
+                                        <h5 class="product__name">
+                                            <a href="#">Watch 4</a>
+                                    
+                                        </h5>
+                                        <div class="product__price">
                                             From $399 </div>
                                     </div>
                                 </div>
                                 <div class="col" style="--col-xs: 12; --col-sm: 6; --col-md: 6; --col-lg: 4;">
-                                    <div class="information__right-item">
-                                        <div class="information__img">
-                                            <a href="#">
+                                    <div class="product__item">
+                                        <div class="product__img">
+                                            <a href="./page_shop_single_product_V1.0.html">
                                                 <img src="./src/img/Img (14).png" alt="">
                                             </a>
                                         </div>
-                                        <div class="information__right-name">
-                                            Z Fold 2
-                                        </div>
-                                        <div class="information__right-price">
+                                        <h5 class="product__name">
+                                            <a href="#">Z Fold 2</a>
+                                    
+                                        </h5>
+                                        <div class="product__price">
                                             From $499 </div>
                                     </div>
                                 </div>
                                 <div class="col" style="--col-xs: 12; --col-sm: 6; --col-md: 6; --col-lg: 4;">
-                                    <div class="information__right-item">
-                                        <div class="information__img">
-                                            <a href="#">
+                                    <div class="product__item">
+                                        <div class="product__img">
+                                            <a href="./page_shop_single_product_V1.0.html">
                                                 <img src="./src/img/Img (15).png" alt="">
                                             </a>
                                         </div>
-                                        <div class="information__right-name">
-                                            Tab S7 FE
-                                        </div>
-                                        <div class="information__right-price">
+                                        <h5 class="product__name">
+                                            <a href="#">Tab S7 FE</a>
+                                        
+                                        </h5>
+                                        <div class="product__price">
                                             From $699 </div>
                                     </div>
                                 </div>
                                 <div class="col" style="--col-xs: 12; --col-sm: 6; --col-md: 6; --col-lg: 4;">
-                                    <div class="information__right-item">
-                                        <div class="information__img">
-                                            <a href="#">
+                                    <div class="product__item">
+                                        <div class="product__img">
+                                            <a href="./page_shop_single_product_V1.0.html">
                                                 <img src="./src/img/Img (16).png" alt="">
                                             </a>
                                         </div>
-                                        <div class="information__right-name">
-                                            The Freestyle
-                                        </div>
-                                        <div class="information__right-price">
+                                        <h5 class="product__name">
+                                            <a href="#">The Freestyle</a>
+                                        </h5>
+                                        <div class="product__price">
                                             From $2,999 </div>
                                     </div>
                                 </div>
                                 <div class="col" style="--col-xs: 12; --col-sm: 6; --col-md: 6; --col-lg: 4;">
-                                    <div class="information__right-item">
-                                        <div class="information__img">
-                                            <a href="#">
+                                    <div class="product__item">
+                                        <div class="product__img">
+                                            <a href="./page_shop_single_product_V1.0.html">
                                                 <img src="./src/img/Img (17).png" alt="">
                                             </a>
                                         </div>
-                                        <div class="information__right-name">
-                                            Neo QLED 8K
+                                        <h5 class="product__name">
+                                            <a href="#">Neo QLED 8K</a>
+                                        
 
-                                        </div>
-                                        <div class="information__right-price">
+                                        </h5>
+                                        <div class="product__price">
                                             From $2,999 </div>
                                     </div>
                                 </div>
                                 <div class="col" style="--col-xs: 12; --col-sm: 6; --col-md: 6; --col-lg: 4;">
-                                    <div class="information__right-item">
-                                        <div class="information__img">
-                                            <a href="#">
+                                    <div class="product__item">
+                                        <div class="product__img">
+                                            <a href="./page_shop_single_product_V1.0.html">
                                                 <img src="./src/img/Img (18).png" alt="">
                                             </a>
                                         </div>
-                                        <div class="information__right-name">
-                                            S22+ 256GB
-                                        </div>
-                                        <div class="information__right-price">
+                                        <h5 class="product__name">
+                                            <a href="#">S22+ 256GB</a>
+                                        
+                                        </h5>
+                                        <div class="product__price">
                                             From $799 </div>
                                     </div>
                                 </div>
                                 <div class="col" style="--col-xs: 12; --col-sm: 6; --col-md: 6; --col-lg: 4;">
-                                    <div class="information__right-item">
-                                        <div class="information__img">
-                                            <a href="#">
+                                    <div class="product__item">
+                                        <div class="product__img">
+                                            <a href="./page_shop_single_product_V1.0.html">
                                                 <img src="./src/img/Img (19).png" alt="">
                                             </a>
                                         </div>
-                                        <div class="information__right-name">
-                                            Buds Pro
-                                        </div>
-                                        <div class="information__right-price">
+                                        <h5 class="product__name">
+                                            <a href="#">Buds Pro</a>
+                                    
+                                        </h5>
+                                        <div class="product__price">
                                             From $149 </div>
                                     </div>
                                 </div>
                                 <div class="col" style="--col-xs: 12; --col-sm: 6; --col-md: 6; --col-lg: 4;">
-                                    <div class="information__right-item">
-                                        <div class="information__img">
-                                            <a href="#">
+                                    <div class="product__item">
+                                        <div class="product__img">
+                                            <a href="./page_shop_single_product_V1.0.html">
                                                 <img src="./src/img/Img (20).png" alt="">
                                             </a>
                                         </div>
-                                        <div class="information__right-name">
-                                            S22 Ultra
+                                        <h5 class="product__name">
+                                            <a href="#">S22 Ultra</a>
+                                        
 
-                                        </div>
-                                        <div class="information__right-price">
+                                        </h5>
+                                        <div class="product__price">
                                             From $999 </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="information__line"></div>
-                        <div class="information__pagination information__pagination--distance">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
-                                fill="none">
-                                <path d="M8.75 3.5L5.25 7L8.75 10.5" stroke="#7B88A8" stroke-width="1.5"
-                                    stroke-linecap="round" stroke-linejoin="round" />
+                        <div class="pagination">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 14 14"
+                              fill="none"
+                            >
+                              <path
+                                d="M8.75 3.5L5.25 7L8.75 10.5"
+                                stroke="./page_block_sigle_post_V1.0.html7B88A8"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
                             </svg>
-                            <div class="information__number">
-                                1
-                            </div>
-                            <div class="information__two">
-                                2
-                            </div>
-                            <div class="information__number">
-                                3
-                            </div>
-                            <div class="information__number">
-                                4
-                            </div>
-                            <div class="information__number">
-                                ...
-                            </div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
-                                fill="none">
-                                <path d="M5.25 10.5L8.75 7L5.25 3.5" stroke="#7B88A8" stroke-width="1.5"
-                                    stroke-linecap="round" stroke-linejoin="round" />
+                            <div class="pagination__number">1</div>
+                            <div class="pagination__two">2</div>
+                            <div class="pagination__number">3</div>
+                            <div class="pagination__number">4</div>
+                            <div class="pagination__number">...</div>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 14 14"
+                              fill="none"
+                            >
+                              <path
+                                d="M5.25 10.5L8.75 7L5.25 3.5"
+                                stroke="#7B88A8"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
                             </svg>
-                        </div>
+                          </div>
                     </div>
                 </div>
             </div>
     </section>
-    <section class="page-section">
-        <div class="page-section--bg">
-            <svg style="position: absolute; right: 0; z-index: -1;" xmlns="http://www.w3.org/2000/svg" width="888"
-                height="500" viewBox="0 0 888 500" fill="none">
-                <g opacity="0.3" filter="url(#filter0_f_320_1124)">
-                    <path
-                        d="M961 499.891C961 705.281 790.644 871.782 580.5 871.782C370.356 871.782 200 705.281 200 499.891C200 294.501 370.356 128 580.5 128C790.644 128 961 294.501 961 499.891Z"
-                        fill="#886CFF" />
-                </g>
-                <defs>
-                    <filter id="filter0_f_320_1124" x="0" y="-72" width="1161" height="1143.78"
-                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-                        <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_320_1124" />
-                    </filter>
-                </defs>
-            </svg>
-            <div class="contact">
-                <div class="container">
-                    <div class="contact__title contact__title--distance">
-                        Get help, find answers, download drivers, manuals and much more
-                    </div>
-                    <div class="contact__text contact__text--distance">
-                        Contact us online through chat and get support from an expert
-                    </div>
-                    <div class="contact__email">
-                        <div class="button button--blue">Chat Now</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="page-footer">
-        <div class="footer">
+      <section class="page-section">
+        <div class="background-contact">
+          <div class="contact">
             <div class="container">
-                <div class="row">
-                    <div class="col" style="--col-xs: 12; --col-sm: 12; --col-md: 3; --col-lg: 2;">
-                        <div class="footer__logo">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="44" viewBox="0 0 32 44"
-                                fill="none">
-                                <g clip-path="url(#clip0_312_1142)">
-                                    <path
-                                        d="M32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.3131 1.68571 20.2435 0 16 0C11.7565 0 7.68687 1.68571 4.68629 4.68629C1.68571 7.68687 0 11.7565 0 16C0 16.2133 3.91006e-07 16.4267 0.0170671 16.64V16H16.0171V32C20.2576 31.9955 24.3229 30.3078 27.3197 27.3077C30.3166 24.3076 32 20.2405 32 16Z"
-                                        fill="#61DCDF" />
-                                    <path
-                                        d="M0 17V44H16V32.3071H15.9872C11.8545 32.3071 7.88218 30.7135 4.90207 27.8602C1.92197 25.0069 0.165306 21.1151 0 17Z"
-                                        fill="#886CFF" />
-                                    <path
-                                        d="M0 16V16.64C0.165262 20.7693 1.92146 24.6746 4.90077 27.5378C7.88007 30.401 11.8514 32 15.9829 32H16V16H0Z"
-                                        fill="#F9E492" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_312_1142">
-                                        <rect width="32" height="44" fill="white" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <div>Pollock</div>
-                        </div>
-                    </div>
-                    <div class="col" style="--col-xs: 12; --col-sm: 6; --col-md: 3; --col-lg: 2;">
-                        <div class="footer__item">
-                            <div class="footer__title">
-                                Company
-                            </div>
-                            <div class="footer__center">
-                                <div>
-                                    About
-                                </div>
-                                <div>
-                                    Work
-                                </div>
-                                <div>
-                                    Careers
-                                </div>
-                                <div>
-                                    Pricing
-                                </div>
-                                <div>
-                                    Blog
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col" style="--col-xs: 12; --col-sm: 6; --col-md: 3; --col-lg: 2;">
-                        <div class="footer__item">
-                            <div class="footer__title">
-                                Services
-                            </div>
-                            <div class="footer__center">
-                                <div>
-                                    About
-                                </div>
-                                <div>
-                                    Work
-                                </div>
-                                <div>
-                                    Careers
-                                </div>
-                                <div>
-                                    Pricing
-                                </div>
-                                <div>
-                                    Blog
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col" style="--col-xs: 12; --col-sm: 6; --col-md: 3; --col-lg: 2;">
-                        <div class="footer__item">
-                            <div class="footer__title">
-                                Contact
-                            </div>
-                            <div class="footer__center">
-                                <div>
-                                    About
-                                </div>
-                                <div>
-                                    Work
-                                </div>
-                                <div>
-                                    Careers
-                                </div>
-                                <div>
-                                    Pricing
-                                </div>
-                                <div>
-                                    Blog
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col" style="--col-xs: 12; --col-sm: 6; --col-md: 12; --col-lg: 4;">
-                        <div class="footer__item">
-                            <div class="footer__title">
-                                Newsletter
-                            </div>
-                            <div class="footer__text">
-                                Subscribe to our newsletter to keep up to date on our marketing, website, design
-                                services, and tips.
-                            </div>
-                            <div class="footer__item-button">
-                                <input type="text" placeholder="Enter email">
-                                <div class="button button--blue">Submit</div>
-                            </div>
-                            <div class="footer__text-bottom">
-                                We hate spam as much as you do. We will never, ever send you such emails.
-                            </div>
-                        </div>
-                    </div>
+                <div class="contact__title contact__title--distance">
+                    Get help, find answers, download drivers, manuals and much more
                 </div>
-                <div class="footer__line"></div>
-                <div class="footer__bottom">
-                    <div class="footer__bottom-left">
-                        © 2022 Pollock LLC. All Rights Reserved. Terms & Conditions. Privacy Policy.
-                    </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="196" height="52" viewBox="0 0 196 52" fill="none">
-                        <circle cx="26" cy="26" r="26" fill="#4F77FF" />
-                        <path
-                            d="M27.6497 35.893V26.0503H30.6079L31 22.5862H27.6497L27.6547 20.8522C27.6547 19.9487 27.7462 19.4648 29.1297 19.4648H30.9793V16H28.0204C24.4663 16 23.2155 17.6804 23.2155 20.5068V22.5864H21V26.0509H23.2155V35.7535C24.0786 35.9148 24.9709 36 25.8846 36C26.4748 36 27.0644 35.9643 27.6497 35.893Z"
-                            fill="white" />
-                        <circle cx="98" cy="26" r="26" fill="#4F77FF" />
-                        <path
-                            d="M111 18.3677C110.033 18.7692 109.003 19.0354 107.929 19.1646C109.034 18.54 109.877 17.5585 110.274 16.3754C109.243 16.9569 108.106 17.3677 106.894 17.5969C105.915 16.6108 104.521 16 103 16C100.049 16 97.6734 18.2677 97.6734 21.0477C97.6734 21.4477 97.7091 21.8323 97.7969 22.1985C93.3655 21.9938 89.4444 19.9831 86.8102 16.92C86.3504 17.6754 86.0806 18.54 86.0806 19.4708C86.0806 21.2185 87.0312 22.7677 88.4483 23.6646C87.5919 23.6492 86.7517 23.4138 86.04 23.0431C86.04 23.0585 86.04 23.0785 86.04 23.0985C86.04 25.5508 87.8876 27.5877 90.3105 28.0569C89.8766 28.1692 89.4037 28.2231 88.913 28.2231C88.5717 28.2231 88.2272 28.2046 87.9039 28.1369C88.5945 30.1354 90.5543 31.6046 92.8845 31.6523C91.071 32.9954 88.7684 33.8046 86.2756 33.8046C85.8385 33.8046 85.4192 33.7862 85 33.7354C87.3611 35.1769 90.1594 36 93.177 36C102.986 36 108.348 28.3077 108.348 21.64C108.348 21.4169 108.34 21.2015 108.329 20.9877C109.386 20.2769 110.275 19.3892 111 18.3677Z"
-                            fill="white" />
-                        <circle cx="170" cy="26" r="26" fill="#4F77FF" />
-                        <path
-                            d="M160 18.3232C160 17.6498 160.236 17.0943 160.709 16.6566C161.182 16.2188 161.797 16 162.554 16C163.297 16 163.899 16.2155 164.358 16.6465C164.831 17.0909 165.068 17.67 165.068 18.3838C165.068 19.0303 164.838 19.569 164.378 20C163.905 20.4444 163.284 20.6667 162.514 20.6667H162.493C161.75 20.6667 161.149 20.4444 160.689 20C160.23 19.5556 160 18.9966 160 18.3232ZM160.264 36V22.5051H164.764V36H160.264ZM167.257 36H171.757V28.4646C171.757 27.9933 171.811 27.6296 171.919 27.3737C172.108 26.9158 172.395 26.5286 172.78 26.2121C173.166 25.8956 173.649 25.7374 174.23 25.7374C175.743 25.7374 176.5 26.7542 176.5 28.7879V36H181V28.2626C181 26.2694 180.527 24.7576 179.581 23.7273C178.635 22.697 177.385 22.1818 175.831 22.1818C174.088 22.1818 172.73 22.9293 171.757 24.4242V24.4646H171.736L171.757 24.4242V22.5051H167.257C167.284 22.936 167.297 24.2761 167.297 26.5253C167.297 28.7744 167.284 31.9326 167.257 36Z"
-                            fill="white" />
-                    </svg>
+                <div class="contact__text">
+                    Contact us online through chat and get support from an expert
                 </div>
+              <div class="contact__email">
+                <form class="contact__email-flex">
+                  <div class="button button--blue">Chat Now</div>
+                </form>
+              </div>
             </div>
+          </div>
         </div>
+      </section>
+    </div>
+    <footer class="page-footer">
+      <div class="footer">
+        <div class="container">
+          <div class="row footer__line">
+            <div
+              class="col"
+              style="--col-xs: 12; --col-sm: 12; --col-md: 3; --col-lg: 2"
+            >
+              <div class="footer__logo">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="44"
+                  viewBox="0 0 32 44"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_312_1142)">
+                    <path
+                      d="M32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.3131 1.68571 20.2435 0 16 0C11.7565 0 7.68687 1.68571 4.68629 4.68629C1.68571 7.68687 0 11.7565 0 16C0 16.2133 3.91006e-07 16.4267 0.0170671 16.64V16H16.0171V32C20.2576 31.9955 24.3229 30.3078 27.3197 27.3077C30.3166 24.3076 32 20.2405 32 16Z"
+                      fill="#61DCDF"
+                    />
+                    <path
+                      d="M0 17V44H16V32.3071H15.9872C11.8545 32.3071 7.88218 30.7135 4.90207 27.8602C1.92197 25.0069 0.165306 21.1151 0 17Z"
+                      fill="#886CFF"
+                    />
+                    <path
+                      d="M0 16V16.64C0.165262 20.7693 1.92146 24.6746 4.90077 27.5378C7.88007 30.401 11.8514 32 15.9829 32H16V16H0Z"
+                      fill="#F9E492"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_312_1142">
+                      <rect width="32" height="44" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <div>Pollock</div>
+              </div>
+            </div>
+            <div
+              class="col"
+              style="--col-xs: 12; --col-sm: 6; --col-md: 3; --col-lg: 2"
+            >
+              <div class="footer__item">
+                <div class="footer__title">Company</div>
+                <div class="footer__center">
+                  <a href="#">About</a>
+                  <a href="#">Work</a>
+                  <a href="#">Careers</a>
+                  <a href="#">Pricing</a>
+                  <a href="#">Blog</a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col"
+              style="--col-xs: 12; --col-sm: 6; --col-md: 3; --col-lg: 2"
+            >
+              <div class="footer__item">
+                <div class="footer__title">Services</div>
+                <div class="footer__center">
+                  <a href="#">Branding</a>
+                  <a href="#">Websites</a>
+                  <a href="#">Development</a>
+                  <a href="#">Strategy</a>
+                  <a href="#">Platforms</a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col"
+              style="--col-xs: 12; --col-sm: 6; --col-md: 3; --col-lg: 2"
+            >
+              <div class="footer__item">
+                <div class="footer__title">Contact</div>
+                <div class="footer__center">
+                  <a href="#">Help Desk</a>
+                  <a href="#">Docs</a>
+                  <a href="#">Open a Ticket</a>
+                  <a href="#">Chat</a>
+                  <a href="#">Forum</a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col"
+              style="--col-xs: 12; --col-sm: 6; --col-md: 12; --col-lg: 4"
+            >
+              <div class="footer__item">
+                <div class="footer__title">Newsletter</div>
+                <div class="footer__text">
+                  Subscribe to our newsletter to keep up to date on our
+                  marketing, website, design services, and tips.
+                </div>
+                <div class="footer__item-button">
+                  <input type="text" placeholder="Enter email" />
+                  <div class="button button--blue">Submit</div>
+                </div>
+                <div class="footer__text-bottom">
+                  We hate spam as much as you do. We will never, ever send you
+                  such emails.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__bottom-left">
+              © 2022 Pollock LLC. All Rights Reserved. Terms & Conditions.
+              Privacy Policy.
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="196"
+              height="52"
+              viewBox="0 0 196 52"
+              fill="none"
+            >
+              <circle cx="26" cy="26" r="26" fill="#4F77FF" />
+              <path
+                d="M27.6497 35.893V26.0503H30.6079L31 22.5862H27.6497L27.6547 20.8522C27.6547 19.9487 27.7462 19.4648 29.1297 19.4648H30.9793V16H28.0204C24.4663 16 23.2155 17.6804 23.2155 20.5068V22.5864H21V26.0509H23.2155V35.7535C24.0786 35.9148 24.9709 36 25.8846 36C26.4748 36 27.0644 35.9643 27.6497 35.893Z"
+                fill="white"
+              />
+              <circle cx="98" cy="26" r="26" fill="#4F77FF" />
+              <path
+                d="M111 18.3677C110.033 18.7692 109.003 19.0354 107.929 19.1646C109.034 18.54 109.877 17.5585 110.274 16.3754C109.243 16.9569 108.106 17.3677 106.894 17.5969C105.915 16.6108 104.521 16 103 16C100.049 16 97.6734 18.2677 97.6734 21.0477C97.6734 21.4477 97.7091 21.8323 97.7969 22.1985C93.3655 21.9938 89.4444 19.9831 86.8102 16.92C86.3504 17.6754 86.0806 18.54 86.0806 19.4708C86.0806 21.2185 87.0312 22.7677 88.4483 23.6646C87.5919 23.6492 86.7517 23.4138 86.04 23.0431C86.04 23.0585 86.04 23.0785 86.04 23.0985C86.04 25.5508 87.8876 27.5877 90.3105 28.0569C89.8766 28.1692 89.4037 28.2231 88.913 28.2231C88.5717 28.2231 88.2272 28.2046 87.9039 28.1369C88.5945 30.1354 90.5543 31.6046 92.8845 31.6523C91.071 32.9954 88.7684 33.8046 86.2756 33.8046C85.8385 33.8046 85.4192 33.7862 85 33.7354C87.3611 35.1769 90.1594 36 93.177 36C102.986 36 108.348 28.3077 108.348 21.64C108.348 21.4169 108.34 21.2015 108.329 20.9877C109.386 20.2769 110.275 19.3892 111 18.3677Z"
+                fill="white"
+              />
+              <circle cx="170" cy="26" r="26" fill="#4F77FF" />
+              <path
+                d="M160 18.3232C160 17.6498 160.236 17.0943 160.709 16.6566C161.182 16.2188 161.797 16 162.554 16C163.297 16 163.899 16.2155 164.358 16.6465C164.831 17.0909 165.068 17.67 165.068 18.3838C165.068 19.0303 164.838 19.569 164.378 20C163.905 20.4444 163.284 20.6667 162.514 20.6667H162.493C161.75 20.6667 161.149 20.4444 160.689 20C160.23 19.5556 160 18.9966 160 18.3232ZM160.264 36V22.5051H164.764V36H160.264ZM167.257 36H171.757V28.4646C171.757 27.9933 171.811 27.6296 171.919 27.3737C172.108 26.9158 172.395 26.5286 172.78 26.2121C173.166 25.8956 173.649 25.7374 174.23 25.7374C175.743 25.7374 176.5 26.7542 176.5 28.7879V36H181V28.2626C181 26.2694 180.527 24.7576 179.581 23.7273C178.635 22.697 177.385 22.1818 175.831 22.1818C174.088 22.1818 172.73 22.9293 171.757 24.4242V24.4646H171.736L171.757 24.4242V22.5051H167.257C167.284 22.936 167.297 24.2761 167.297 26.5253C167.297 28.7744 167.284 31.9326 167.257 36Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
     </footer>
-</body>
-
+    <script src="./src/scss/script.js"></script>
+  </body>
 </html>

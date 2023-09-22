@@ -14,10 +14,12 @@
   letter-spacing: -0.3px;
   text-transform: uppercase;
   cursor: pointer;
+  border-radius: 5px;
+  // padding: 13px 24px 13px 24px;
+  padding: 13px 12px 13px 12px;
 }
 
 .button--blue {
-  border-radius: 5px;
   background: #4f77ff;
   text-align: center;
   font-feature-settings: "clig" off, "liga" off;
@@ -25,18 +27,7 @@
 
 .button--gray {
   color: #7b88a8;
-  text-align: center;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: Outfit;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 1.6;
-  letter-spacing: -0.3px;
-  text-transform: uppercase;
-  border-radius: 5px;
-  background:#E7E5EA;
-  text-align: center;
-  font-feature-settings: "clig" off, "liga" off;
+  background-color: #E7E5EA;
 }
 
 .button--services {
@@ -44,7 +35,7 @@
   border-radius: 5px;
   background: #4f77ff;
   text-align: center;
-  font-feature-settings: "clig" off, "liga" off;
+  font-family: 'Outfit';
 }
 
 .button:hover {

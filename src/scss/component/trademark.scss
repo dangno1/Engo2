@@ -1,9 +1,9 @@
 .trademark {
-  padding-top: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding-bottom: 127px;
 }
 
 .trademark__title {
@@ -21,8 +21,22 @@
 }
 
 .trademark__img {
-    align-items: center;
-    display: flex;
-    gap: 105px;
-    padding-bottom: 127px;
+  align-items: center;
+  display: flex;
+  gap: 105px;
+}
+
+.trademark__img-item {
+    overflow: hidden;
+    padding: 10px;
+    img {
+      width: 100%;
+      transition: 0.5s;
+    }
+}
+
+.trademark__img-item:hover {
+  img {
+    transform: scale(1.1);
+  }
 }

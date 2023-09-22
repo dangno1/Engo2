@@ -3,27 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>page_portfolio_V1.0</title>
+    <title>Page_Block_v1.0</title>
     <link rel="stylesheet" href="./src/scss/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=PT+Serif&family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Outfit:wght@300;400&family=PT+Serif&family=Roboto&display=swap"
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Outfit:wght@300&family=PT+Serif&family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400&family=Outfit:wght@300;400&family=PT+Serif&family=Roboto&display=swap"
       rel="stylesheet"
     />
   </head>
 
   <body>
-    <header class="page-header">
+    <header class="header">
       <div class="container">
-        <div class="page-header__row">
-          <div class="page-header__left">
+        <div class="header__row">
+          <div class="header__left">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -51,28 +51,38 @@
                 </clipPath>
               </defs>
             </svg>
-            <div class="page-header__text">Pollock</div>
+            <h5 class="header__text">Pollock</h5>
           </div>
-          <div class="page-header__right">
+          <div class="header__right">
             <div
-              class="page-heade__overlay"
+              class="header__overlay"
               id="menuHamburger"
               onclick="closeNav()"
             >
-              <a class="page-header__closebtn">&times;</a>
-              <div class="page-header__menu">
+              <a class="header__closebtn">&times;</a>
+              <div class="header__menu">
                 <ul>
-                  <li class="page-header__item"><a href="./index.html">Home</a></li>
-                  <li class="page-header__item"><a href="./page_block_post_V1.0.html">Services</a></li>
-                  <li class="page-header__item"><a href="./page_Block_v1.0.html">About</a></li>
-                  <li class="page-header__item">
-                    <a href="./page_portfolio_V1.0.html" class="page-header__box--green"><p>Pages</p></a>
+                  <li class="header__item">
+                    <a href="./index.html">Home</a>
                   </li>
-                  <li class="page-header__item"><a href="./page_shop_single_product_V1.0.html">Blog</a></li>
-                  <li class="page-header__item"><a href="./page_shop_V1.0.html">Contact</a></li>
+                  <li class="header__item">
+                    <a href="./page_portfolio_V1.0.html">Services</a>
+                  </li>
+                  <li class="header__item">
+                    <a href="#">About</a>
+                  </li>
+                  <li class="header__item">
+                    <a href="./page_shop_V1.0.html" class="header__box--green"><p>Pages</p></a>
+                  </li>
+                  <li class="header__item">
+                    <a href="./page_block_V1.0.html">Blog</a>
+                  </li>
+                  <li class="header__item">
+                    <a href="#">Contact</a>
+                  </li>
                 </ul>
               </div>
-              <div class="page-header__action">
+              <div class="header__action">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20px"
@@ -97,7 +107,7 @@
                     stroke-linejoin="round"
                   />
                 </svg>
-                <div class="page-header__cart">
+                <div class="header__cart">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20px"
@@ -118,999 +128,934 @@
                     />
                   </svg>
                 </div>
-                <div class="page-header__button">
+                <div class="header__button">
                   <div class="button button--blue">Sign Up</div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="page-heade__showbtn" onclick="openNav()">
-            <span class="page-heade__line"></span>
-            <span class="page-heade__line"></span>
-            <span class="page-heade__line"></span>
+          <div class="header__showbtn" onclick="openNav()">
+            <span class="header__line"></span>
+            <span class="header__line"></span>
+            <span class="header__line"></span>
           </div>
         </div>
       </div>
     </header>
-    <section class="page-section">
-      <div class="background-left"></div>
-      <div class="background-bottom"></div>
-      <div class="background-top"></div>
-      <div class="banner">
-        <div class="container">
-          <div class="banner__title">Our Work</div>
-          <div class="banner__text">
-            homepage <span>/</span> <span>Projects</span>
+    <div class="main">
+      <section class="page-section">
+        <div class="background">
+          <div class="container">
+            <div class="banner">
+              <h4 class="banner__title">Our Work</h4>
+              <div class="banner__text">
+                <a href="#">homepage</a><span>/</span>
+                <span><a href="#">Projects</a></span>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="page-section">
-      <div class="inspired">
-        <div class="inspired__title">Get inspired by our finest work</div>
-        <div class="inspired__img">
-          <div class="inspired__img-left">
-            <img
-              class="inspired__img-top"
-              src="./src/img/1 (1).png"
-              alt=""
-              width="100%"
-            />
-            <img
-              class="inspired__img-bottom"
-              src="./src/img/2 (1).png"
-              alt=""
-              width="100%"
-            />
-          </div>
-          <div class="inspired__img-center">
-            <img
-              class="inspired__img-bottom"
-              src="./src/img/3 (1).png"
-              alt=""
-              width="100%"
-            />
-            <img
-              class="inspired__img-top"
-              src="./src/img/4.png"
-              alt=""
-              width="100%"
-            />
-          </div>
-          <div class="inspired__img-right">
-            <img
-              class="inspired__img-top"
-              src="./src/img/5.png"
-              alt=""
-              width="100%"
-            />
-            <img
-              class="inspired__img-bottom"
-              src="./src/img/6.png"
-              alt=""
-              width="100%"
-            />
-          </div>
-        </div>
-        <div class="inspired__button">
-          <div class="button button--gray">Load More</div>
-        </div>
-      </div>
-    </section>
-    <section class="page-section">
-      <div class="customer">
-        <div class="customer__title">What our clients are saying about us</div>
-        <div class="customer__text">
-          Customer satisfaction is a primary goal for our company
-          <svg
-            class="customer__text-left"
-            xmlns="http://www.w3.org/2000/svg"
-            width="10"
-            height="14"
-            viewBox="0 0 10 14"
-            fill="none"
-          >
-            <path
-              d="M10 9.53674e-07L10 14L-3.41715e-07 7L10 9.53674e-07Z"
-              fill="white"
-            />
-          </svg>
-          <svg
-            class="customer__text-right"
-            xmlns="http://www.w3.org/2000/svg"
-            width="10"
-            height="14"
-            viewBox="0 0 10 14"
-            fill="none"
-          >
-            <path d="M0 14V0L10 7L0 14Z" fill="white" />
-          </svg>
-          <svg
-            class="customer__text-botoom"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-          >
-            <g filter="url(#filter0_d_340_1582)">
-              <path
-                d="M8.38001 12.2704C8.28001 11.9004 8.18001 11.4204 7.97001 10.7204C7.76001 10.0204 7.63001 9.86043 7.50001 9.49043C7.37001 9.12043 7.20001 8.77043 7.00001 8.31043C6.81681 7.84048 6.66318 7.35954 6.54001 6.87043C6.45677 6.45823 6.55919 6.03029 6.82001 5.70043C7.17887 5.35025 7.69669 5.21698 8.18001 5.35043C8.55866 5.51602 8.87908 5.79116 9.10001 6.14043C9.39505 6.61209 9.63654 7.11521 9.82001 7.64043C10.1018 8.36006 10.3062 9.10759 10.43 9.87043L10.52 10.3204C10.52 10.3204 10.52 9.20043 10.52 9.16043C10.52 8.16043 10.46 7.34043 10.52 6.22043C10.52 6.09043 10.58 5.63043 10.6 5.50043C10.6259 5.07039 10.8821 4.6879 11.27 4.50043C11.7153 4.30064 12.2247 4.30064 12.67 4.50043C13.0686 4.67886 13.3347 5.06444 13.36 5.50043C13.36 5.61043 13.45 6.50043 13.45 6.61043C13.45 7.61043 13.45 8.25043 13.45 8.78043C13.45 9.01043 13.45 10.4104 13.45 10.2504C13.4736 8.93089 13.5872 7.61449 13.79 6.31043C13.9085 5.90187 14.196 5.56344 14.58 5.38043C15.0549 5.19337 15.5945 5.28586 15.98 5.62043C16.2682 5.93672 16.4378 6.34312 16.46 6.77043C16.46 7.18043 16.46 7.67043 16.46 8.02043C16.46 8.89043 16.46 9.34043 16.46 10.1404C16.46 10.1404 16.46 10.4404 16.46 10.3204C16.55 10.0404 16.65 9.78043 16.73 9.58043C16.81 9.38043 16.97 8.97043 17.09 8.72043C17.2121 8.48209 17.3491 8.25164 17.5 8.03043C17.6568 7.77616 17.8919 7.57965 18.17 7.47043C18.4205 7.37361 18.6993 7.38158 18.9439 7.49255C19.1884 7.60352 19.378 7.80817 19.47 8.06043C19.5295 8.42468 19.5295 8.79618 19.47 9.16043C19.4033 9.71986 19.2862 10.2721 19.12 10.8104C18.99 11.2604 18.85 12.0404 18.78 12.4104C18.71 12.7804 18.55 13.7904 18.42 14.2304C18.2275 14.7553 17.9615 15.2503 17.63 15.7004C17.1448 16.2407 16.7437 16.8508 16.44 17.5104C16.3653 17.8383 16.3317 18.1742 16.34 18.5104C16.3384 18.8211 16.3788 19.1306 16.46 19.4304C16.0512 19.474 15.6389 19.474 15.23 19.4304C14.84 19.3704 14.36 18.5904 14.23 18.3504C14.1657 18.2216 14.034 18.1401 13.89 18.1401C13.746 18.1401 13.6143 18.2216 13.55 18.3504C13.32 18.7304 12.84 19.4204 12.5 19.4604C11.83 19.5404 10.45 19.4604 9.36001 19.4604C9.36001 19.4604 9.55001 18.4604 9.13001 18.1004C8.71001 17.7404 8.30001 17.3204 7.99001 17.0404L7.16001 16.1204C6.88001 15.7604 6.53001 15.0304 5.92001 14.1204C5.57001 13.6204 4.92001 13.0304 4.64001 12.5404C4.40493 12.1427 4.33664 11.6683 4.45001 11.2204C4.61981 10.6258 5.21067 10.2549 5.82001 10.3604C6.28351 10.391 6.72193 10.5819 7.06001 10.9004C7.32772 11.1321 7.57837 11.3827 7.81001 11.6504C7.97001 11.8404 8.01001 11.9304 8.19001 12.1604C8.37001 12.3904 8.49001 12.6204 8.40001 12.2804"
-                fill="white"
-              />
-              <path
-                d="M8.38001 12.2704C8.28001 11.9004 8.18001 11.4204 7.97001 10.7204C7.76001 10.0204 7.63001 9.86043 7.50001 9.49043C7.37001 9.12043 7.20001 8.77043 7.00001 8.31043C6.81681 7.84048 6.66318 7.35954 6.54001 6.87043C6.45677 6.45823 6.55919 6.03029 6.82001 5.70043C7.17887 5.35025 7.69669 5.21698 8.18001 5.35043C8.55866 5.51602 8.87908 5.79116 9.10001 6.14043C9.39505 6.61209 9.63654 7.11521 9.82001 7.64043C10.1018 8.36006 10.3062 9.10759 10.43 9.87043L10.52 10.3204C10.52 10.3204 10.52 9.20043 10.52 9.16043C10.52 8.16043 10.46 7.34043 10.52 6.22043C10.52 6.09043 10.58 5.63043 10.6 5.50043C10.6259 5.07039 10.8821 4.6879 11.27 4.50043C11.7153 4.30064 12.2247 4.30064 12.67 4.50043C13.0686 4.67886 13.3347 5.06444 13.36 5.50043C13.36 5.61043 13.45 6.50043 13.45 6.61043C13.45 7.61043 13.45 8.25043 13.45 8.78043C13.45 9.01043 13.45 10.4104 13.45 10.2504C13.4736 8.93089 13.5872 7.61449 13.79 6.31043C13.9085 5.90187 14.196 5.56344 14.58 5.38043C15.0549 5.19337 15.5945 5.28586 15.98 5.62043C16.2682 5.93672 16.4378 6.34312 16.46 6.77043C16.46 7.18043 16.46 7.67043 16.46 8.02043C16.46 8.89043 16.46 9.34043 16.46 10.1404C16.46 10.1404 16.46 10.4404 16.46 10.3204C16.55 10.0404 16.65 9.78043 16.73 9.58043C16.81 9.38043 16.97 8.97043 17.09 8.72043C17.2121 8.48209 17.3491 8.25164 17.5 8.03043C17.6568 7.77616 17.8919 7.57965 18.17 7.47043C18.4205 7.37361 18.6993 7.38158 18.9439 7.49255C19.1884 7.60352 19.378 7.80817 19.47 8.06043C19.5295 8.42468 19.5295 8.79618 19.47 9.16043C19.4033 9.71986 19.2862 10.2721 19.12 10.8104C18.99 11.2604 18.85 12.0404 18.78 12.4104C18.71 12.7804 18.55 13.7904 18.42 14.2304C18.2275 14.7553 17.9615 15.2503 17.63 15.7004C17.1448 16.2407 16.7437 16.8508 16.44 17.5104C16.3653 17.8383 16.3317 18.1742 16.34 18.5104C16.3384 18.8211 16.3788 19.1306 16.46 19.4304C16.0512 19.474 15.6389 19.474 15.23 19.4304C14.84 19.3704 14.36 18.5904 14.23 18.3504C14.1657 18.2216 14.034 18.1401 13.89 18.1401C13.746 18.1401 13.6143 18.2216 13.55 18.3504C13.32 18.7304 12.84 19.4204 12.5 19.4604C11.83 19.5404 10.45 19.4604 9.36001 19.4604C9.36001 19.4604 9.55001 18.4604 9.13001 18.1004C8.71001 17.7404 8.30001 17.3204 7.99001 17.0404L7.16001 16.1204C6.88001 15.7604 6.53001 15.0304 5.92001 14.1204C5.57001 13.6204 4.92001 13.0304 4.64001 12.5404C4.40493 12.1427 4.33664 11.6683 4.45001 11.2204C4.61981 10.6258 5.21067 10.2549 5.82001 10.3604C6.28351 10.391 6.72193 10.5819 7.06001 10.9004C7.32772 11.1321 7.57837 11.3827 7.81001 11.6504C7.97001 11.8404 8.01001 11.9304 8.19001 12.1604C8.37001 12.3904 8.49001 12.6204 8.40001 12.2804"
-                stroke="black"
-                stroke-width="0.75"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M15.75 16.4314V12.9796C15.75 12.773 15.5821 12.6055 15.375 12.6055C15.1679 12.6055 15 12.773 15 12.9796V16.4314C15 16.638 15.1679 16.8055 15.375 16.8055C15.5821 16.8055 15.75 16.638 15.75 16.4314Z"
-                fill="black"
-              />
-              <path
-                d="M13.76 16.4312L13.75 12.9776C13.7494 12.7715 13.581 12.6049 13.3739 12.6055C13.1668 12.6061 12.9994 12.7736 13 12.9798L13.01 16.4333C13.0106 16.6394 13.179 16.8061 13.3861 16.8055C13.5932 16.8049 13.7606 16.6373 13.76 16.4312Z"
-                fill="black"
-              />
-              <path
-                d="M11.0059 12.9795L11.0259 16.4241C11.0271 16.6327 11.1959 16.8008 11.4031 16.7996C11.6102 16.7984 11.7771 16.6283 11.7759 16.4197L11.7559 12.9751C11.7546 12.7665 11.5858 12.5984 11.3787 12.5996C11.1716 12.6008 11.0047 12.7709 11.0059 12.9795Z"
-                fill="black"
-              />
-            </g>
-            <defs>
-              <filter
-                id="filter0_d_340_1582"
-                x="-1.8"
-                y="-0.8"
-                width="27.6"
-                height="27.5424"
-                filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+      </section>
+      <section class="page-section">
+        <div class="inspired">
+          <div class="inspired__title">Get inspired by our finest work</div>
+          <div class="inspired__img">
+            <div class="row">
+              <div
+                class="col"
+                style="--col-xs: 12; --col-sm: 12; --col-md: 4; --col-lg: 4"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feColorMatrix
-                  in="SourceAlpha"
-                  type="matrix"
-                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                  result="hardAlpha"
-                />
-                <feOffset dy="1" />
-                <feGaussianBlur stdDeviation="0.9" />
-                <feColorMatrix
-                  type="matrix"
-                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.65 0"
-                />
-                <feBlend
-                  mode="normal"
-                  in2="BackgroundImageFix"
-                  result="effect1_dropShadow_340_1582"
-                />
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="effect1_dropShadow_340_1582"
-                  result="shape"
-                />
-              </filter>
-            </defs>
-          </svg>
-        </div>
-        <div class="customer__people">
-          <div class="customer__people-item customer__people-item--boxshdow">
-            <div class="customer__people-img">
-              <img src="./src/img/pp1.png" alt="" width="100%" />
-            </div>
-            <div class="customer__people-name">Monica Smith</div>
-            <div class="customer__people-brand">Brand & Co</div>
-            <div class="customer__people-amazing">Amazing!!</div>
-            <div class="customer__people-text">
-              Overall experience is awesome!! I'm a visual thinker, and I
-              couldn't function without a tool like this.
-            </div>
-            <svg
-              class="customer__people-mouse"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="25"
-              viewBox="0 0 24 25"
-              fill="none"
-            >
-              <g filter="url(#filter0_d_340_1534)">
-                <path
-                  d="M15.9231 18.0296C16.0985 18.4505 15.9299 20.0447 15 20.4142C14.0701 20.7837 12.882 20.4142 12.882 20.4142L10.726 16.1024L7 19.8284V3L18.4142 14.4142H14.1615C14.3702 14.8144 15.7003 17.4948 15.9231 18.0296Z"
-                  fill="white"
-                />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M8 5.41406V17.4141L11 14.4141L13.5 19.4141C13.5 19.4141 14.1763 19.6299 14.5 19.4141C14.8237 19.1983 15.1457 18.7636 15 18.4141C14.3123 16.7636 12.5 13.4141 12.5 13.4141H16L8 5.41406Z"
-                  fill="black"
-                />
-              </g>
-              <defs>
-                <filter
-                  id="filter0_d_340_1534"
-                  x="-1.8"
-                  y="-0.8"
-                  width="27.6"
-                  height="27.9633"
-                  filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
-                >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha"
-                  />
-                  <feOffset dy="1" />
-                  <feGaussianBlur stdDeviation="0.9" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.65 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="BackgroundImageFix"
-                    result="effect1_dropShadow_340_1534"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in="SourceGraphic"
-                    in2="effect1_dropShadow_340_1534"
-                    result="shape"
-                  />
-                </filter>
-              </defs>
-            </svg>
-          </div>
-          <div class="customer__people-item customer__people-item--boxshdow">
-            <div class="customer__people-img">
-              <img src="./src/img/pp2.png" alt="" width="100%" />
-            </div>
-            <div class="customer__people-name">Vincent Smith</div>
-            <div class="customer__people-brand">Brand & Co</div>
-            <div class="customer__people-amazing">Amazing!!</div>
-            <div class="customer__people-text">
-              Overall experience is awesome!! I'm a visual thinker, and I
-              couldn't function without a tool like this.
+                <div class="inspired__img-left">
+                  <div class="inspired__img-hover">
+                    <img
+                      class="inspired__img-top"
+                      src="./src/img/1 (1).png"
+                      alt=""
+                      width="100%"
+                    />
+                  </div>
+                  <div class="inspired__img-hover">
+                    <img
+                      class="inspired__img-bottom"
+                      src="./src/img/2 (1).png"
+                      alt=""
+                      width="100%"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col"
+                style="--col-xs: 12; --col-sm: 12; --col-md: 4; --col-lg: 4"
+              >
+                <div class="inspired__img-center">
+                  <div class="inspired__img-hover">
+                    <img
+                      class="inspired__img-bottom"
+                      src="./src/img/3 (1).png"
+                      alt=""
+                      width="100%"
+                    />
+                  </div>
+                  <div class="inspired__img-hover">
+                    <img
+                      class="inspired__img-top"
+                      src="./src/img/4.png"
+                      alt=""
+                      width="100%"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col"
+                style="--col-xs: 12; --col-sm: 12; --col-md: 4; --col-lg: 4"
+              >
+                <div class="inspired__img-right">
+                  <div class="inspired__img-hover">
+                    <img
+                      class="inspired__img-top"
+                      src="./src/img/5.png"
+                      alt=""
+                      width="100%"
+                    />
+                  </div>
+                  <div class="inspired__img-hover">
+                    <img
+                      class="inspired__img-bottom"
+                      src="./src/img/6.png"
+                      alt=""
+                      width="100%"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="customer__people-item customer__people-item--boxshdow">
-            <div class="customer__people-img">
-              <img src="./src/img/pp3.png" alt="" width="100%" />
-            </div>
-            <div class="customer__people-name">Stella Smith</div>
-            <div class="customer__people-brand">Brand & Co</div>
-            <div class="customer__people-amazing">Amazing!!</div>
-            <div class="customer__people-text">
-              Overall experience is awesome!! I'm a visual thinker, and I
-              couldn't function without a tool like this.
-            </div>
-          </div>
-          <div class="customer__people-item customer__people-item--bottom customer__people-item--boxshdow">
-            <div class="customer__people-img">
-              <img src="./src/img/Intersect.png" alt="" />
-            </div>
-            <div class="customer__people-name">Thomas Smith</div>
-            <div class="customer__people-brand">Brand & Co</div>
-            <div class="customer__people-amazing">Amazing!!</div>
-            <div class="customer__people-text">
-              Overall experience is awesome!! I'm a visual thinker, and I
-              couldn't function without a tool like this.
-            </div>
+          <div class="inspired__button">
+            <div class="button button--gray">Load More</div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="page-section">
-      <div class="project">
-        <div class="container">
-          <div class="project__header">
-            <div class="project__title">Recent projects</div>
-            <div>
+      </section>
+      <section class="page-section">
+        <div class="customer">
+          <div class="container">
+            <div class="customer__title">
+              What our clients are saying about us
+            </div>
+            <div class="customer__text">
+              Customer satisfaction is a primary goal for our company
+            </div>
+            <div class="customer__people">
               <svg
+                class="customer__people-left"
                 xmlns="http://www.w3.org/2000/svg"
-                width="124"
-                height="40"
-                viewBox="0 0 124 40"
+                width="10"
+                height="14"
+                viewBox="0 0 10 14"
                 fill="none"
               >
-                <rect x="68" width="56" height="40" rx="20" fill="#4F77FF" />
                 <path
-                  d="M85.8593 20.8594L104.059 20.8594L101.044 23.8596C100.708 24.1944 100.707 24.7386 101.041 25.075C101.376 25.4114 101.92 25.4126 102.257 25.0779L106.747 20.6091C106.747 20.6089 106.748 20.6086 106.748 20.6083C107.083 20.2735 107.085 19.7276 106.748 19.3917C106.748 19.3914 106.747 19.3911 106.747 19.3909L102.257 14.9221C101.92 14.5874 101.376 14.5886 101.041 14.9251C100.707 15.2615 100.708 15.8056 101.044 16.1404L104.059 19.1406L85.8593 19.1406C85.3847 19.1406 85 19.5254 85 20C85 20.4746 85.3847 20.8594 85.8593 20.8594Z"
+                  d="M10 9.53674e-07L10 14L-3.41715e-07 7L10 9.53674e-07Z"
                   fill="white"
                 />
-                <rect
-                  x="55.5"
-                  y="39.5"
-                  width="55"
-                  height="39"
-                  rx="19.5"
-                  transform="rotate(-180 55.5 39.5)"
-                  stroke="#E7E5EA"
-                />
-                <path
-                  d="M38.1407 19.1406L19.9409 19.1406L22.9557 16.1404C23.2921 15.8056 23.2934 15.2614 22.9586 14.925C22.6238 14.5886 22.0797 14.5874 21.7433 14.9221L17.2528 19.3909C17.2525 19.3911 17.2523 19.3914 17.2521 19.3917C16.9165 19.7265 16.9155 20.2724 17.252 20.6083C17.2523 20.6086 17.2525 20.6089 17.2528 20.6091L21.7432 25.0779C22.0795 25.4126 22.6237 25.4114 22.9585 25.0749C23.2934 24.7385 23.2921 24.1944 22.9557 23.8596L19.9409 20.8594L38.1407 20.8594C38.6153 20.8594 39 20.4746 39 20C39 19.5254 38.6153 19.1406 38.1407 19.1406Z"
-                  fill="#2D3958"
-                />
               </svg>
+              <svg
+                class="customer__people-right"
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="14"
+                viewBox="0 0 10 14"
+                fill="none"
+              >
+                <path d="M0 14V0L10 7L0 14Z" fill="white" />
+              </svg>
+              <div
+                class="customer__people-item"
+              >
+                <div class="customer__people-img">
+                  <img src="./src/img/pp1.png" alt="" width="100%" />
+                </div>
+                <div class="customer__people-name">Monica Smith</div>
+                <div class="customer__people-brand">Brand & Co</div>
+                <div class="customer__people-amazing">Amazing!!</div>
+                <div class="customer__people-text">
+                  Overall experience is awesome!! I'm a visual thinker, and I
+                  couldn't function without a tool like this.
+                </div>
+              </div>
+              <div
+                class="customer__people-item"
+              >
+                <div class="customer__people-img">
+                  <img src="./src/img/pp2.png" alt="" width="100%" />
+                </div>
+                <div class="customer__people-name">Vincent Smith</div>
+                <div class="customer__people-brand">Brand & Co</div>
+                <div class="customer__people-amazing">Amazing!!</div>
+                <div class="customer__people-text">
+                  Overall experience is awesome!! I'm a visual thinker, and I
+                  couldn't function without a tool like this.
+                </div>
+              </div>
+              <div
+                class="customer__people-item"
+              >
+                <div class="customer__people-img">
+                  <img src="./src/img/pp3.png" alt="" width="100%" />
+                </div>
+                <div class="customer__people-name">Stella Smith</div>
+                <div class="customer__people-brand">Brand & Co</div>
+                <div class="customer__people-amazing">Amazing!!</div>
+                <div class="customer__people-text">
+                  Overall experience is awesome!! I'm a visual thinker, and I
+                  couldn't function without a tool like this.
+                </div>
+              </div>
             </div>
           </div>
-          <div class="project__body">
-            <div class="project__item">
-              <img src="./src/img/pj1.png" alt="" width="100%" />
-              <div class="project__item-text">
-                <div class="project__item-top">Collaboration App</div>
-                <div class="project__item-bottom">UI Design / Development</div>
+        </div>
+      </section>
+      <section class="page-section">
+        <div class="project">
+          <div class="container">
+            <div class="project__header">
+              <div class="project__title">Recent projects</div>
+              <div class="project__directional">
+                <div class="project__directional-left">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="12"
+                    viewBox="0 0 22 12"
+                    fill="none"
+                  >
+                    <path
+                      d="M21.1407 5.14062L2.94088 5.14062L5.95575 2.14037C6.29215 1.80556 6.29344 1.26145 5.95863 0.925044C5.62381 0.5886 5.07966 0.587354 4.74325 0.922123L0.252844 5.39087C0.252543 5.39112 0.252328 5.39142 0.25207 5.39168C-0.0834729 5.72649 -0.0845472 6.27237 0.251984 6.6083C0.252285 6.60856 0.2525 6.60886 0.252758 6.60911L4.74317 11.0779C5.07953 11.4126 5.62368 11.4114 5.95854 11.0749C6.29335 10.7385 6.29206 10.1944 5.95566 9.85961L2.94088 6.85936L21.1407 6.85937C21.6153 6.85937 22 6.47463 22 5.99999C22 5.52536 21.6153 5.14062 21.1407 5.14062Z"
+                      fill="#2D3958"
+                    />
+                  </svg>
+                </div>
+                <div class="project__directional-right">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="12"
+                    viewBox="0 0 22 12"
+                    fill="none"
+                  >
+                    <path
+                      d="M0.859347 6.85938L19.0591 6.85938L16.0443 9.85963C15.7079 10.1944 15.7066 10.7386 16.0414 11.075C16.3762 11.4114 16.9203 11.4126 17.2567 11.0779L21.7472 6.60913C21.7475 6.60888 21.7477 6.60858 21.7479 6.60832C22.0835 6.27351 22.0845 5.72763 21.748 5.3917C21.7477 5.39144 21.7475 5.39114 21.7472 5.39089L17.2568 0.922143C16.9205 0.587416 16.3763 0.588576 16.0415 0.925064C15.7066 1.26147 15.7079 1.80558 16.0443 2.14039L19.0591 5.14064L0.859347 5.14064C0.384715 5.14064 -2.81029e-05 5.52538 -2.81444e-05 6.00001C-2.81859e-05 6.47464 0.384715 6.85938 0.859347 6.85938Z"
+                      fill="#2D3958"
+                    />
+                  </svg>
+                </div>
               </div>
             </div>
-            <div class="project__item">
-              <img src="./src/img/pj2.png" alt="" width="100%" />
-              <div class="project__item-text">
-                <div class="project__item-top">Learning Mobile</div>
-                <div class="project__item-bottom">UI Design / Development</div>
+            <div class="project__body">
+              <div class="project__item">
+                <img src="./src/img/pj1.png" alt="" width="100%" />
+                <div class="project__item-text">
+                  <div class="project__item-top">Collaboration App</div>
+                  <div class="project__item-bottom">
+                    UI Design / Development
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="project__item">
-              <img src="./src/img/pj3.png" alt="" width="100%" />
-              <div class="project__item-text">
-                <div class="project__item-top">Abstract Waves</div>
-                <div class="project__item-bottom">UI Design / Development</div>
+              <div class="project__item">
+                <img src="./src/img/pj2.png" alt="" width="100%" />
+                <div class="project__item-text">
+                  <div class="project__item-top">Learning Mobile</div>
+                  <div class="project__item-bottom">
+                    UI Design / Development
+                  </div>
+                </div>
+              </div>
+              <div class="project__item">
+                <img src="./src/img/pj3.png" alt="" width="100%" />
+                <div class="project__item-text">
+                  <div class="project__item-top">Abstract Waves</div>
+                  <div class="project__item-bottom">
+                    UI Design / Development
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="page-section">
-      <div class="solution">
-        <div class="container">
-          <div class="solution__title">
-            We will keep you up to date and give you tips to help you optimise
-            your company
-          </div>
-          <div class="row">
-            <div
-              class="col"
-              style="--col-xs: 12; --col-sm: 8; --col-md: 8; --col-lg: 8"
-            >
-              <div class="solution__body-item">
-                <div>
-                  <img src="./src/img/Rectangle 66.png" alt="" width="100%" />
-                  <div class="solution__body-title">
-                    10 secrets to connect with your audience through your
-                    website and blog
-                  </div>
-                  <div class="solution__body-text">
-                    It is not the same to write a blog with simple information
-                    as to write by connecting with your target.
-                  </div>
-                  <div class="solution__body-time">
-                    <div class="solution__body-day">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="17"
-                        viewBox="0 0 16 17"
-                        fill="none"
-                      >
-                        <rect
-                          x="1.25"
-                          y="2.625"
-                          width="13.5"
-                          height="13.5"
-                          rx="3.75"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                        />
-                        <path
-                          d="M1.25 6.375H14.75"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M11.375 1.5L11.375 3.75"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M4.625 1.5L4.625 3.75"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M3.875 9.375H4.625"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M7.625 9.375H8.375"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M11.375 9.375H12.125"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M3.875 12.375H4.625"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M7.625 12.375H8.375"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M11.375 12.375H12.125"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <p>May 7, 2022</p>
-                    </div>
-                    <div class="solution__body-day">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="18"
-                        height="18"
-                        viewBox="0 0 18 18"
-                        fill="none"
-                      >
-                        <circle
-                          cx="9"
-                          cy="9"
-                          r="7.5"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                        />
-                        <path
-                          d="M9 6V8.79931C9 8.92469 9.06266 9.04178 9.16699 9.11132L11.25 10.5"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                        />
-                      </svg>
-                      <p>10 min read</p>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <img
-                    src="./src/img/Rectangle 66 (1).png"
-                    alt=""
-                    width="100%"
-                  />
-                  <div class="solution__body-title">
-                    10 secrets to connect with your audience through your
-                    website and blog
-                  </div>
-                  <div class="solution__body-text">
-                    It is not the same to write a blog with simple information
-                    as to write by connecting with your target.
-                  </div>
-                  <div class="solution__body-time">
-                    <div class="solution__body-day">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="17"
-                        viewBox="0 0 16 17"
-                        fill="none"
-                      >
-                        <rect
-                          x="1.25"
-                          y="2.625"
-                          width="13.5"
-                          height="13.5"
-                          rx="3.75"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                        />
-                        <path
-                          d="M1.25 6.375H14.75"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M11.375 1.5L11.375 3.75"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M4.625 1.5L4.625 3.75"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M3.875 9.375H4.625"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M7.625 9.375H8.375"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M11.375 9.375H12.125"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M3.875 12.375H4.625"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M7.625 12.375H8.375"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M11.375 12.375H12.125"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <p>May 7, 2022</p>
-                    </div>
-                    <div class="solution__body-day">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="18"
-                        height="18"
-                        viewBox="0 0 18 18"
-                        fill="none"
-                      >
-                        <circle
-                          cx="9"
-                          cy="9"
-                          r="7.5"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                        />
-                        <path
-                          d="M9 6V8.79931C9 8.92469 9.06266 9.04178 9.16699 9.11132L11.25 10.5"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                        />
-                      </svg>
-                      <p>10 min read</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="information__line"></div>
+      </section>
+      <section class="page-section">
+        <div class="solution">
+          <div class="container">
+            <div class="solution__title">
+              We will keep you up to date and give you tips to help you optimise
+              your company
             </div>
-            <div
-              class="col"
-              style="--col-xs: 12; --col-sm: 8; --col-md: 8; --col-lg: 4"
-            >
-              <div class="solution__body-item">
-                <div>
-                  <div class="solution__body-title">
-                    10 secrets to connect with your audience through your
-                    website and blog
-                  </div>
-                  <div class="solution__body-time">
-                    <div class="solution__body-day">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="17"
-                        viewBox="0 0 16 17"
-                        fill="none"
-                      >
-                        <rect
-                          x="1.25"
-                          y="2.625"
-                          width="13.5"
-                          height="13.5"
-                          rx="3.75"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                        />
-                        <path
-                          d="M1.25 6.375H14.75"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M11.375 1.5L11.375 3.75"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M4.625 1.5L4.625 3.75"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M3.875 9.375H4.625"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M7.625 9.375H8.375"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M11.375 9.375H12.125"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M3.875 12.375H4.625"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M7.625 12.375H8.375"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M11.375 12.375H12.125"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <p>May 7, 2022</p>
+            <div class="row">
+              <div
+                class="col"
+                style="--col-xs: 12; --col-sm: 8; --col-md: 8; --col-lg: 8"
+              >
+                <div class="solution__body-item">
+                  <div>
+                    <a href="#">
+                      <img
+                        class="solution__body-padding"
+                        src="./src/img/Rectangle 66.png"
+                        alt=""
+                        width="100%"
+                      />
+                    </a>
+                    <h5 class="solution__body-title">
+                      <a href="#">
+                        10 secrets to connect with your audience through your
+                        website and blog
+                      </a>
+                    </h5>
+                    <div class="solution__body-text">
+                      <a href="#">
+                        It is not the same to write a blog with simple
+                        information as to write by connecting with your target.
+                      </a>
                     </div>
-                    <div class="solution__body-day">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="18"
-                        height="18"
-                        viewBox="0 0 18 18"
-                        fill="none"
-                      >
-                        <circle
-                          cx="9"
-                          cy="9"
-                          r="7.5"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                        />
-                        <path
-                          d="M9 6V8.79931C9 8.92469 9.06266 9.04178 9.16699 9.11132L11.25 10.5"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                        />
-                      </svg>
-                      <p>10 min read</p>
+                    <div class="solution__body-time">
+                      <div class="solution__body-day">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="17"
+                          viewBox="0 0 16 17"
+                          fill="none"
+                        >
+                          <rect
+                            x="1.25"
+                            y="2.625"
+                            width="13.5"
+                            height="13.5"
+                            rx="3.75"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                          />
+                          <path
+                            d="M1.25 6.375H14.75"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.375 1.5L11.375 3.75"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M4.625 1.5L4.625 3.75"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.875 9.375H4.625"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M7.625 9.375H8.375"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.375 9.375H12.125"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.875 12.375H4.625"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M7.625 12.375H8.375"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.375 12.375H12.125"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <p>May 7, 2022</p>
+                      </div>
+                      <div class="solution__body-day">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="18"
+                          height="18"
+                          viewBox="0 0 18 18"
+                          fill="none"
+                        >
+                          <circle
+                            cx="9"
+                            cy="9"
+                            r="7.5"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                          />
+                          <path
+                            d="M9 6V8.79931C9 8.92469 9.06266 9.04178 9.16699 9.11132L11.25 10.5"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                          />
+                        </svg>
+                        <p>10 min read</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <a href="#">
+                      <img
+                        class="solution__body-padding"
+                        src="./src/img/Rectangle 66 (1).png"
+                        alt=""
+                        width="100%"
+                      />
+                    </a>
+
+                    <h5 class="solution__body-title">
+                      <a href="#">
+                        10 secrets to connect with your audience through your
+                        website and blog
+                      </a>
+                    </h5>
+                    <div class="solution__body-text">
+                      <a href="#">
+                        It is not the same to write a blog with simple
+                        information as to write by connecting with your target.
+                      </a>
+                    </div>
+                    <div class="solution__body-time">
+                      <div class="solution__body-day">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="17"
+                          viewBox="0 0 16 17"
+                          fill="none"
+                        >
+                          <rect
+                            x="1.25"
+                            y="2.625"
+                            width="13.5"
+                            height="13.5"
+                            rx="3.75"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                          />
+                          <path
+                            d="M1.25 6.375H14.75"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.375 1.5L11.375 3.75"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M4.625 1.5L4.625 3.75"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.875 9.375H4.625"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M7.625 9.375H8.375"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.375 9.375H12.125"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.875 12.375H4.625"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M7.625 12.375H8.375"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.375 12.375H12.125"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <p>May 7, 2022</p>
+                      </div>
+                      <div class="solution__body-day">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="18"
+                          height="18"
+                          viewBox="0 0 18 18"
+                          fill="none"
+                        >
+                          <circle
+                            cx="9"
+                            cy="9"
+                            r="7.5"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                          />
+                          <path
+                            d="M9 6V8.79931C9 8.92469 9.06266 9.04178 9.16699 9.11132L11.25 10.5"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                          />
+                        </svg>
+                        <p>10 min read</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div>
-                  <img
-                    src="./src/img/Img (29).png"
-                    alt=""
-                    width="100px"
-                    height="100px"
-                  />
-                </div>
+                <div class="information__line"></div>
               </div>
-              <div class="information__line"></div>
-              <div class="solution__body-item">
-                <div>
-                  <div class="solution__body-title">
-                    What are the differences between Google Analytics and
-                    Analytics 360
+              <div
+                class="col"
+                style="--col-xs: 12; --col-sm: 8; --col-md: 8; --col-lg: 4"
+              >
+                <div class="solution__body-item">
+                  <div>
+                    <h5 class="solution__body-title">
+                      <a href="#">
+                        10 secrets to connect with your audience through your
+                        website and blog
+                      </a>
+                    </h5>
+                    <div class="solution__body-time">
+                      <div class="solution__body-day">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="17"
+                          viewBox="0 0 16 17"
+                          fill="none"
+                        >
+                          <rect
+                            x="1.25"
+                            y="2.625"
+                            width="13.5"
+                            height="13.5"
+                            rx="3.75"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                          />
+                          <path
+                            d="M1.25 6.375H14.75"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.375 1.5L11.375 3.75"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M4.625 1.5L4.625 3.75"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.875 9.375H4.625"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M7.625 9.375H8.375"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.375 9.375H12.125"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.875 12.375H4.625"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M7.625 12.375H8.375"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.375 12.375H12.125"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <p>May 7, 2022</p>
+                      </div>
+                      <div class="solution__body-day">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="18"
+                          height="18"
+                          viewBox="0 0 18 18"
+                          fill="none"
+                        >
+                          <circle
+                            cx="9"
+                            cy="9"
+                            r="7.5"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                          />
+                          <path
+                            d="M9 6V8.79931C9 8.92469 9.06266 9.04178 9.16699 9.11132L11.25 10.5"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                          />
+                        </svg>
+                        <p>10 min read</p>
+                      </div>
+                    </div>
                   </div>
-                  <div class="solution__body-time">
-                    <div class="solution__body-day">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="17"
-                        viewBox="0 0 16 17"
-                        fill="none"
-                      >
-                        <rect
-                          x="1.25"
-                          y="2.625"
-                          width="13.5"
-                          height="13.5"
-                          rx="3.75"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                        />
-                        <path
-                          d="M1.25 6.375H14.75"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M11.375 1.5L11.375 3.75"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M4.625 1.5L4.625 3.75"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M3.875 9.375H4.625"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M7.625 9.375H8.375"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M11.375 9.375H12.125"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M3.875 12.375H4.625"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M7.625 12.375H8.375"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M11.375 12.375H12.125"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <p>May 7, 2022</p>
-                    </div>
-                    <div class="solution__body-day">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="18"
-                        height="18"
-                        viewBox="0 0 18 18"
-                        fill="none"
-                      >
-                        <circle
-                          cx="9"
-                          cy="9"
-                          r="7.5"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                        />
-                        <path
-                          d="M9 6V8.79931C9 8.92469 9.06266 9.04178 9.16699 9.11132L11.25 10.5"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                        />
-                      </svg>
-                      <p>10 min read</p>
-                    </div>
+                  <div>
+                    <img
+                      src="./src/img/Img (29).png"
+                      alt=""
+                      width="100px"
+                      height="100px"
+                    />
                   </div>
                 </div>
-                <div>
-                  <img
-                    src="./src/img/Img (30).png"
-                    alt=""
-                    width="100px"
-                    height="100px"
-                  />
+                <div class="information__line"></div>
+                <div class="solution__body-item">
+                  <div>
+                    <h5 class="solution__body-title">
+                      <a href="#">
+                        What are the differences between Google Analytics and
+                        Analytics 360
+                      </a>
+                    </h5>
+                    <div class="solution__body-time">
+                      <div class="solution__body-day">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="17"
+                          viewBox="0 0 16 17"
+                          fill="none"
+                        >
+                          <rect
+                            x="1.25"
+                            y="2.625"
+                            width="13.5"
+                            height="13.5"
+                            rx="3.75"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                          />
+                          <path
+                            d="M1.25 6.375H14.75"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.375 1.5L11.375 3.75"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M4.625 1.5L4.625 3.75"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.875 9.375H4.625"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M7.625 9.375H8.375"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.375 9.375H12.125"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.875 12.375H4.625"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M7.625 12.375H8.375"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.375 12.375H12.125"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <p>May 7, 2022</p>
+                      </div>
+                      <div class="solution__body-day">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="18"
+                          height="18"
+                          viewBox="0 0 18 18"
+                          fill="none"
+                        >
+                          <circle
+                            cx="9"
+                            cy="9"
+                            r="7.5"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                          />
+                          <path
+                            d="M9 6V8.79931C9 8.92469 9.06266 9.04178 9.16699 9.11132L11.25 10.5"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                          />
+                        </svg>
+                        <p>10 min read</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <img
+                      src="./src/img/Img (30).png"
+                      alt=""
+                      width="100px"
+                      height="100px"
+                    />
+                  </div>
                 </div>
+                <div class="information__line"></div>
+                <div class="solution__body-item">
+                  <div>
+                    <h5 class="solution__body-title">
+                      <a href="#">
+                        Niche Coworking: 4 shared workspaces for designers and
+                        developers
+                      </a>
+                    </h5>
+                    <div class="solution__body-time">
+                      <div class="solution__body-day">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="17"
+                          viewBox="0 0 16 17"
+                          fill="none"
+                        >
+                          <rect
+                            x="1.25"
+                            y="2.625"
+                            width="13.5"
+                            height="13.5"
+                            rx="3.75"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                          />
+                          <path
+                            d="M1.25 6.375H14.75"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.375 1.5L11.375 3.75"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M4.625 1.5L4.625 3.75"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.875 9.375H4.625"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M7.625 9.375H8.375"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.375 9.375H12.125"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.875 12.375H4.625"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M7.625 12.375H8.375"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.375 12.375H12.125"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <p>May 7, 2022</p>
+                      </div>
+                      <div class="solution__body-day">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="18"
+                          height="18"
+                          viewBox="0 0 18 18"
+                          fill="none"
+                        >
+                          <circle
+                            cx="9"
+                            cy="9"
+                            r="7.5"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                          />
+                          <path
+                            d="M9 6V8.79931C9 8.92469 9.06266 9.04178 9.16699 9.11132L11.25 10.5"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                          />
+                        </svg>
+                        <p>10 min read</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <img
+                      src="./src/img/Img (31).png"
+                      alt=""
+                      width="100px"
+                      height="100px"
+                    />
+                  </div>
+                </div>
+                <div class="information__line"></div>
               </div>
-              <div class="information__line"></div>
-              <div class="solution__body-item">
-                <div>
-                  <div class="solution__body-title">
-                    Niche Coworking: 4 shared workspaces for designers and
-                    developers
-                  </div>
-                  <div class="solution__body-time">
-                    <div class="solution__body-day">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="17"
-                        viewBox="0 0 16 17"
-                        fill="none"
-                      >
-                        <rect
-                          x="1.25"
-                          y="2.625"
-                          width="13.5"
-                          height="13.5"
-                          rx="3.75"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                        />
-                        <path
-                          d="M1.25 6.375H14.75"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M11.375 1.5L11.375 3.75"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M4.625 1.5L4.625 3.75"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M3.875 9.375H4.625"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M7.625 9.375H8.375"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M11.375 9.375H12.125"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M3.875 12.375H4.625"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M7.625 12.375H8.375"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M11.375 12.375H12.125"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <p>May 7, 2022</p>
-                    </div>
-                    <div class="solution__body-day">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="18"
-                        height="18"
-                        viewBox="0 0 18 18"
-                        fill="none"
-                      >
-                        <circle
-                          cx="9"
-                          cy="9"
-                          r="7.5"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                        />
-                        <path
-                          d="M9 6V8.79931C9 8.92469 9.06266 9.04178 9.16699 9.11132L11.25 10.5"
-                          stroke="#4F77FF"
-                          stroke-width="1.125"
-                          stroke-linecap="round"
-                        />
-                      </svg>
-                      <p>10 min read</p>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <img
-                    src="./src/img/Img (31).png"
-                    alt=""
-                    width="100px"
-                    height="100px"
-                  />
-                </div>
-              </div>
-              <div class="information__line"></div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
     <footer class="page-footer">
       <div class="footer">
         <div class="container">
-          <div class="row">
+          <div class="row footer__line">
             <div
               class="col"
               style="--col-xs: 12; --col-sm: 12; --col-md: 3; --col-lg: 2"
@@ -1153,11 +1098,11 @@
               <div class="footer__item">
                 <div class="footer__title">Company</div>
                 <div class="footer__center">
-                  <div>About</div>
-                  <div>Work</div>
-                  <div>Careers</div>
-                  <div>Pricing</div>
-                  <div>Blog</div>
+                  <a href="#">About</a>
+                  <a href="#">Work</a>
+                  <a href="#">Careers</a>
+                  <a href="#">Pricing</a>
+                  <a href="#">Blog</a>
                 </div>
               </div>
             </div>
@@ -1168,11 +1113,11 @@
               <div class="footer__item">
                 <div class="footer__title">Services</div>
                 <div class="footer__center">
-                  <div>About</div>
-                  <div>Work</div>
-                  <div>Careers</div>
-                  <div>Pricing</div>
-                  <div>Blog</div>
+                  <a href="#">Branding</a>
+                  <a href="#">Websites</a>
+                  <a href="#">Development</a>
+                  <a href="#">Strategy</a>
+                  <a href="#">Platforms</a>
                 </div>
               </div>
             </div>
@@ -1183,11 +1128,11 @@
               <div class="footer__item">
                 <div class="footer__title">Contact</div>
                 <div class="footer__center">
-                  <div>About</div>
-                  <div>Work</div>
-                  <div>Careers</div>
-                  <div>Pricing</div>
-                  <div>Blog</div>
+                  <a href="#">Help Desk</a>
+                  <a href="#">Docs</a>
+                  <a href="#">Open a Ticket</a>
+                  <a href="#">Chat</a>
+                  <a href="#">Forum</a>
                 </div>
               </div>
             </div>
@@ -1212,7 +1157,6 @@
               </div>
             </div>
           </div>
-          <div class="footer__line"></div>
           <div class="footer__bottom">
             <div class="footer__bottom-left">
               © 2022 Pollock LLC. All Rights Reserved. Terms & Conditions.
@@ -1245,5 +1189,6 @@
         </div>
       </div>
     </footer>
+    <script src="./src/scss/script.js"></script>
   </body>
 </html>

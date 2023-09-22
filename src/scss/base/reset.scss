@@ -14,8 +14,8 @@
 
 body {
   background-color: #fff;
-  color: #666;
-  font-family: Outfit, sans-serif;
+  color: #7B88A8;
+  font-family: DM Sans;
   font-size: 14px;
   line-height: 1.6;
   // font-weight: 400;
@@ -30,7 +30,7 @@ h6 {
   font-family: Outfit, sans-serif;
   font-weight: 700;
   line-height: 1.4;
-  color: #000000;
+  color: #2D3958;
   margin: 0;
 }
 
@@ -69,4 +69,12 @@ ul {
 img {
   // width: 100%;
   vertical-align: middle;
+}
+
+input {
+  outline: none;
+}
+
+select {
+  outline: none;
 }
