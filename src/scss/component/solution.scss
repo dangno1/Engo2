@@ -6,61 +6,14 @@
 
 .solution__title {
   padding: 0px 196px 90px 196px;
-  color: #2d3958;
   text-align: center;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: Outfit;
   font-size: 48px;
   font-weight: 500;
   line-height: 1.16;
   letter-spacing: -2px;
 }
 
-.solution__body-item {
-  display: flex;
-  gap: 30px;
-  padding-top: 35px;
-  cursor: pointer;
-  img {
-    border-radius: 20px;
-  }
-}
-
 .solution__body-padding {
-    padding-bottom: 20px;
-}
-
-.solution__body-title {
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 1.45;
-  letter-spacing: -1px;
-  a {
-    text-decoration: none;
-    color: #2d3958;
-  }
-}
-
-.solution__body-text {
-  padding-top: 20px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.55;
-  letter-spacing: -0.3px;
-  a {
-    text-decoration: none;
-    color: #7b88a8;
-  }
-}
-
-.solution__body-time {
-  padding-top: 30px;
-  display: flex;
-  gap: 20px;
-  padding-bottom: 25px;
-}
-
-.solution__body-day {
-  display: flex;
-  gap: 5px;
+  padding-top: 28px;
+  padding-bottom: 7px;
 }

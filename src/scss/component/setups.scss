@@ -1,7 +1,6 @@
 .setups {
   padding-bottom: 120px;
   position: relative;
-  // background-color: #f7f5f1;
   background-image: url(../img/BGtest.png);
   background-size: 100% 793px;
   background-repeat: no-repeat;
@@ -152,6 +151,12 @@
   align-items: center;
   padding-left: 7px;
   cursor: pointer;
+}
+
+.setups__time-box.moving {
+  justify-content: end;
+  padding-right: 7px;
+  background-color: #7b88a8;
 }
 
 .setups__time-box--green {

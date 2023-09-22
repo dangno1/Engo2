@@ -1,15 +1,6 @@
 .featured {
-  padding-top: 120px;
-  padding-bottom: 130px;
-  display: flex;
-  gap: 130px;
-  padding-left: 90px;
-  padding-right: 90px;
+  padding: 120px 90px 130px 90px;
 }
-
-// .featured__left {
-//   padding-left: 90px;
-// }
 
 .featured__left-information {
   padding-top: 40px;
@@ -46,6 +37,10 @@
     text-decoration: none;
     color: #7b88a8;
   }
+}
+
+.featured__right {
+  padding-left: 100px;
 }
 
 .featured__right-title {
@@ -139,8 +134,3 @@
   bottom: 0px;
   border-radius: 50px 50px 0px 50px;
 }
-
-// .featured__right-bottom-item:hover {
-//   transition: 0.2s;
-//   box-shadow: 0px 20px 50px rgba(79, 119, 255, 0.2);
-// }

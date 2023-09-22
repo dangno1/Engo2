@@ -3,11 +3,12 @@
   justify-content: space-between;
   align-items: center;
   padding-bottom: 30px;
+  border-bottom: 1px solid #e7e5ea;
 }
 
 .title--extend {
-    padding-bottom: 9px;
-    align-items: unset;
+  padding-bottom: 9px;
+  align-items: unset;
 }
 
 .title__item {
@@ -15,8 +16,4 @@
   font-weight: 500;
   line-height: 1.55;
   letter-spacing: 0.4px;
-}
-
-.title {
-    border-bottom: 1px solid #E7E5EA;
 }

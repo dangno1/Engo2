@@ -24,10 +24,8 @@
 }
 
 .customer__people {
-  padding-top: 80px;
-  display: flex;
-  gap: 30px;
   position: relative;
+  padding: 80px 50px 0px 50px;
 }
 
 .customer__people::after {
@@ -38,7 +36,7 @@
   background-color: #292f3a;
   border-radius: 50%;
   top: -60px;
-  right: -40px;
+  right: -0px;
 }
 
 .customer__people-left {
@@ -48,7 +46,7 @@
   height: 14px;
   flex-shrink: 0;
   top: -15px;
-  right: 20px;
+  right: 65px;
   z-index: 1;
 }
 
@@ -59,69 +57,8 @@
   height: 14px;
   flex-shrink: 0;
   top: -15px;
-  right: -10px;
+  right: 30px;
   z-index: 1;
-}
-
-.customer__people-item {
-  padding: 35px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 20px;
-  border: 1px solid #e7e5ea;
-  background: #fff;
-}
-
-.customer__people-item:hover {
-  transition: 0.2s;
-  box-shadow: 0px 20px 50px 0px rgba(79, 119, 255, 0.2);
-}
-
-.customer__people-img img {
-  border-radius: 50%;
-}
-
-.customer__people-name {
-  padding-top: 5px;
-  color: #2d3958;
-  text-align: center;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 1.45;
-  letter-spacing: -1px;
-}
-
-.customer__people-brand {
-  color: #7b88a8;
-  text-align: center;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: DM Sans;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.62;
-}
-
-.customer__people-amazing {
-  padding-top: 20px;
-  padding-bottom: 25px;
-  color: #2d3958;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.55;
-  letter-spacing: 0.4px;
-}
-
-.customer__people-text {
-  color: #7b88a8;
-  text-align: center;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: DM Sans;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.55;
-  letter-spacing: -0.3px;
 }
 
 .customer__people-box {

@@ -1,6 +1,6 @@
 .project {
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 100px;
 }
 
 .project__header {
@@ -18,14 +18,8 @@
   letter-spacing: -2px;
 }
 
-.project__body {
-  display: flex;
-  gap: 30px;
-}
-
 .project__item {
   cursor: pointer;
-  // border-radius: 16px;
   width: 100%;
   img {
     border-radius: 16px;
@@ -103,20 +97,3 @@
     }
   }
 }
-
-// .project__item {
-//   overflow: hidden;
-//   border-radius: 20px;
-//   img {
-//     border-radius: 20px;
-//     width: 100%;
-//     transition: 0.5s;
-//     vertical-align: middle;
-//   }
-// }
-
-// .project__item:hover {
-//   img {
-//     transform: scale(1.1);
-//   }
-// }

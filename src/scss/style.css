@@ -816,6 +816,10 @@ select {
   left: 1px;
 }
 
+.banner__bottom-box.bg-green {
+  background-color: rgb(194, 246, 250);
+}
+
 .banner__bottom-text {
   color: #2d3958;
   font-feature-settings: "clig" off, "liga" off;
@@ -1911,6 +1915,7 @@ select {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 30px;
+  border-bottom: 1px solid #e7e5ea;
 }
 
 .title--extend {
@@ -1923,10 +1928,6 @@ select {
   font-weight: 500;
   line-height: 1.55;
   letter-spacing: 0.4px;
-}
-
-.title {
-  border-bottom: 1px solid #E7E5EA;
 }
 
 .product {
@@ -2227,10 +2228,8 @@ select {
 }
 
 .customer__people {
-  padding-top: 80px;
-  display: flex;
-  gap: 30px;
   position: relative;
+  padding: 80px 50px 0px 50px;
 }
 
 .customer__people::after {
@@ -2241,7 +2240,7 @@ select {
   background-color: #292f3a;
   border-radius: 50%;
   top: -60px;
-  right: -40px;
+  right: 0px;
 }
 
 .customer__people-left {
@@ -2251,7 +2250,7 @@ select {
   height: 14px;
   flex-shrink: 0;
   top: -15px;
-  right: 20px;
+  right: 65px;
   z-index: 1;
 }
 
@@ -2262,69 +2261,8 @@ select {
   height: 14px;
   flex-shrink: 0;
   top: -15px;
-  right: -10px;
+  right: 30px;
   z-index: 1;
-}
-
-.customer__people-item {
-  padding: 35px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 20px;
-  border: 1px solid #e7e5ea;
-  background: #fff;
-}
-
-.customer__people-item:hover {
-  transition: 0.2s;
-  box-shadow: 0px 20px 50px 0px rgba(79, 119, 255, 0.2);
-}
-
-.customer__people-img img {
-  border-radius: 50%;
-}
-
-.customer__people-name {
-  padding-top: 5px;
-  color: #2d3958;
-  text-align: center;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 1.45;
-  letter-spacing: -1px;
-}
-
-.customer__people-brand {
-  color: #7b88a8;
-  text-align: center;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: DM Sans;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.62;
-}
-
-.customer__people-amazing {
-  padding-top: 20px;
-  padding-bottom: 25px;
-  color: #2d3958;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.55;
-  letter-spacing: 0.4px;
-}
-
-.customer__people-text {
-  color: #7b88a8;
-  text-align: center;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: DM Sans;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.55;
-  letter-spacing: -0.3px;
 }
 
 .customer__people-box {
@@ -2351,7 +2289,7 @@ select {
 
 .project {
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 100px;
 }
 
 .project__header {
@@ -2367,11 +2305,6 @@ select {
   font-weight: 500;
   line-height: 1.16;
   letter-spacing: -2px;
-}
-
-.project__body {
-  display: flex;
-  gap: 30px;
 }
 
 .project__item {
@@ -2458,63 +2391,16 @@ select {
 
 .solution__title {
   padding: 0px 196px 90px 196px;
-  color: #2d3958;
   text-align: center;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: Outfit;
   font-size: 48px;
   font-weight: 500;
   line-height: 1.16;
   letter-spacing: -2px;
 }
 
-.solution__body-item {
-  display: flex;
-  gap: 30px;
-  padding-top: 35px;
-  cursor: pointer;
-}
-.solution__body-item img {
-  border-radius: 20px;
-}
-
 .solution__body-padding {
-  padding-bottom: 20px;
-}
-
-.solution__body-title {
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 1.45;
-  letter-spacing: -1px;
-}
-.solution__body-title a {
-  text-decoration: none;
-  color: #2d3958;
-}
-
-.solution__body-text {
-  padding-top: 20px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.55;
-  letter-spacing: -0.3px;
-}
-.solution__body-text a {
-  text-decoration: none;
-  color: #7b88a8;
-}
-
-.solution__body-time {
-  padding-top: 30px;
-  display: flex;
-  gap: 20px;
-  padding-bottom: 25px;
-}
-
-.solution__body-day {
-  display: flex;
-  gap: 5px;
+  padding-top: 28px;
+  padding-bottom: 7px;
 }
 
 .coworking {
@@ -2538,91 +2424,7 @@ select {
 }
 
 .coworking__text {
-  color: #7b88a8;
   text-align: center;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 1.45;
-  letter-spacing: -1px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.55;
-  letter-spacing: -0.3px;
-}
-
-.coworking__body {
-  padding-top: 80px;
-  display: flex;
-  gap: 30px;
-  position: relative;
-  padding-left: 60px;
-  padding-right: 60px;
-}
-
-.coworking__body::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 60px;
-  height: 60px;
-  flex-shrink: 0;
-  background-color: #4f77ff;
-  bottom: 0px;
-  right: -7px;
-  border-radius: 50px 50px 50px 0px;
-}
-
-.coworking__item {
-  padding: 42px 55px 60px 45px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 20px;
-  border: 1px solid #e7e5ea;
-  background: #fff;
-}
-
-.coworking__item:hover {
-  transition: 0.2s;
-  box-shadow: 0px 20px 50px 0px rgba(79, 119, 255, 0.2);
-}
-
-.coworking__box {
-  width: 90px;
-  height: 90px;
-  flex-shrink: 0;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.coworking__box--violet {
-  background-color: rgba(136, 108, 255, 0.2);
-}
-
-.coworking__box--blue {
-  background-color: rgba(79, 119, 255, 0.2);
-}
-
-.coworking__box--yellow {
-  background-color: rgba(255, 149, 19, 0.2);
-}
-
-.coworking__amazing {
-  padding-top: 38px;
-  color: #120f1f;
-  text-align: center;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 1.45;
-  letter-spacing: -1px;
-}
-
-.coworking__text {
-  color: #7b88a8;
-  text-align: center;
-  padding-top: 20px;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.55;
@@ -2640,7 +2442,7 @@ select {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-bottom: 127px;
+  padding-bottom: 120px;
 }
 
 .trademark__title {
@@ -2654,18 +2456,12 @@ select {
   font-weight: 500;
   line-height: 1.27;
   letter-spacing: -1px;
-  padding-bottom: 87px;
-}
-
-.trademark__img {
-  align-items: center;
-  display: flex;
-  gap: 105px;
+  padding-bottom: 82px;
 }
 
 .trademark__img-item {
   overflow: hidden;
-  padding: 10px;
+  padding: 5px 40px 5px 40px;
 }
 .trademark__img-item img {
   width: 100%;
@@ -2678,8 +2474,6 @@ select {
 
 .lockable__bg {
   background-color: #f7f5f1;
-  display: flex;
-  gap: 30px;
   padding: 100px 65px 100px 65px;
 }
 
@@ -2688,7 +2482,7 @@ select {
   font-weight: 500;
   line-height: 1.27;
   letter-spacing: -1px;
-  width: 50%;
+  width: 95%;
 }
 
 .lockable__center {
@@ -2734,12 +2528,7 @@ select {
 }
 
 .featured {
-  padding-top: 120px;
-  padding-bottom: 130px;
-  display: flex;
-  gap: 130px;
-  padding-left: 90px;
-  padding-right: 90px;
+  padding: 120px 90px 130px 90px;
 }
 
 .featured__left-information {
@@ -2778,6 +2567,10 @@ select {
 .featured__left-text a {
   text-decoration: none;
   color: #7b88a8;
+}
+
+.featured__right {
+  padding-left: 100px;
 }
 
 .featured__right-title {
@@ -3305,6 +3098,12 @@ select {
   cursor: pointer;
 }
 
+.setups__time-box.moving {
+  justify-content: end;
+  padding-right: 7px;
+  background-color: #7b88a8;
+}
+
 .setups__time-box--green {
   width: 21px;
   height: 21px;
@@ -3412,8 +3211,6 @@ select {
 
 .about__people {
   padding: 80px 80px 50px 80px;
-  display: flex;
-  gap: 30px;
   position: relative;
 }
 
@@ -3426,6 +3223,203 @@ select {
   border-radius: 50px 50px 0px 50px;
   top: 77px;
   left: 5px;
+}
+
+.people {
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid #e7e5ea;
+  background: #fff;
+}
+
+.people:hover {
+  transition: 0.5s;
+  box-shadow: 0px 20px 50px 0px rgba(79, 119, 255, 0.2);
+}
+
+.people__img img {
+  border-radius: 50%;
+}
+
+.people__name {
+  padding-top: 5px;
+  color: #2d3958;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: -1px;
+}
+
+.people__brand {
+  color: #7b88a8;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.62;
+}
+
+.people__amazing {
+  padding-top: 20px;
+  padding-bottom: 25px;
+  color: #2d3958;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.55;
+  letter-spacing: 0.4px;
+}
+
+.people__text {
+  color: #7b88a8;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.55;
+  letter-spacing: -0.3px;
+}
+
+.collaboration {
+  position: relative;
+  padding-top: 80px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.collaboration::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  background-color: #4f77ff;
+  bottom: 0px;
+  right: -7px;
+  border-radius: 50px 50px 50px 0px;
+}
+
+.collaboration__item {
+  padding: 42px 55px 60px 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid #e7e5ea;
+  background: #fff;
+}
+
+.collaboration__item:hover {
+  transition: 0.2s;
+  box-shadow: 0px 20px 50px 0px rgba(79, 119, 255, 0.2);
+}
+
+.collaboration__box {
+  width: 90px;
+  height: 90px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.collaboration__box--violet {
+  background-color: rgba(136, 108, 255, 0.2);
+}
+
+.collaboration__box--blue {
+  background-color: rgba(79, 119, 255, 0.2);
+}
+
+.collaboration__box--yellow {
+  background-color: rgba(255, 149, 19, 0.2);
+}
+
+.collaboration__amazing {
+  padding-top: 38px;
+  color: #120f1f;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: -1px;
+}
+
+.collaboration__text {
+  color: #7b88a8;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.55;
+  letter-spacing: -0.3px;
+}
+
+.secrets {
+  border-bottom: 1px solid #e7e5ea;
+  cursor: pointer;
+  overflow: hidden;
+}
+.secrets a img {
+  border-radius: 20px;
+}
+
+.secrets__img {
+  border-radius: 20px;
+  overflow: hidden;
+}
+.secrets__img img {
+  border-radius: 20px;
+  width: 100%;
+  transition: 0.5s;
+  vertical-align: middle;
+}
+
+.secrets__img:hover img {
+  transform: scale(1.1);
+}
+
+.secrets__pb {
+  padding-bottom: 20px;
+}
+
+.secrets__title {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: -1px;
+}
+.secrets__title a {
+  text-decoration: none;
+  color: #2d3958;
+}
+
+.secrets__text {
+  padding-top: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.55;
+  letter-spacing: -0.3px;
+}
+.secrets__text a {
+  text-decoration: none;
+  color: #7b88a8;
+}
+
+.secrets__time {
+  padding-top: 30px;
+  display: flex;
+  gap: 20px;
+  padding-bottom: 25px;
+}
+
+.secrets__day {
+  display: flex;
+  gap: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
