@@ -15,6 +15,15 @@
   font-weight: 500;
   line-height: 1.16;
   letter-spacing: -2px;
+  @media (max-width: 992px) {
+    width: 100%;
+  }
+  @media (max-width: 576px) {
+    font-size: 45px;
+  }
+  @media (max-width: 375px) {
+    font-size: 31px;
+  }
 }
 
 .workspace__title span {
@@ -34,10 +43,17 @@
   line-height: 1.45;
   letter-spacing: -1px;
   width: 50%;
+  @media (max-width: 576px) {
+    width: 86%;
+  }
+  @media (max-width: 375px) {
+    width: 100%;
+    font-size: 18px;
+  }
 }
 
 .workspace__button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -1,12 +1,12 @@
 function openNav() {
-  document.getElementById("menuHamburger").style.width = "40%";
+  document.getElementById("menuHamburger").style.width = "100%";
 }
 function closeNav() {
   document.getElementById("menuHamburger").style.width = "";
 }
 
 function openNav1() {
-  document.getElementById("menuBodyHamburger").style.width = "50%";
+  document.getElementById("menuBodyHamburger").style.width = "100%";
 }
 function closeNav1() {
   document.getElementById("menuBodyHamburger").style.width = "";

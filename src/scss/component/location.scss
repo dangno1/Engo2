@@ -2,6 +2,9 @@
   padding-left: 90px;
   padding-right: 90px;
   padding-bottom: 70px;
+  @media (max-width: 375px) {
+    padding: 90px 0px 70px 0px;
+  }
 }
 
 .location__bf {
@@ -17,6 +20,10 @@
   left: -85px;
   background-color: blue;
   border-radius: 50px 50px 0px 50px;
+  @media (max-width: 375px) {
+    width: 0;
+    height: 0;
+  }
 }
 
 .location__title-center {
@@ -33,6 +40,16 @@
   font-weight: 500;
   line-height: 1.16;
   letter-spacing: -2px;
+  @media (max-width: 992px) {
+    width: 100%;
+    font-size: 40px;
+  }
+  @media (max-width: 576px) {
+    font-size: 35px;
+  }
+  @media (max-width: 375px) {
+    font-size: 25px;
+  }
 }
 
 .location__title span {
@@ -48,7 +65,6 @@
   overflow: hidden;
   img {
     border-radius: 45px;
-    width: 100%;
     transition: 0.5s;
     vertical-align: middle;
   }

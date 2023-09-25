@@ -16,6 +16,16 @@
   line-height: 1.16;
   letter-spacing: -2px;
   width: 740px;
+  @media (max-width: 992px) {
+    width: 100%;
+    font-size: 40px;
+  }
+  @media (max-width: 576px) {
+    font-size: 40px;
+  }
+  @media (max-width: 375px) {
+    font-size: 30px;
+  }
 }
 
 .coworking__text {

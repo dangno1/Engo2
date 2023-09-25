@@ -35,6 +35,16 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  @media (max-width: 992px) {
+    width: 100%;
+    font-size: 60px;
+  }
+  @media (max-width: 576px) {
+    font-size: 55px;
+  }
+  @media (max-width: 375px) {
+    font-size: 30px;
+  }
 }
 
 .banner__text {
@@ -63,6 +73,9 @@
   font-weight: 400;
   letter-spacing: -0.3px;
   text-transform: unset;
+  @media (max-width: 576px) {
+    width: 100%;
+  }
 }
 
 .banner__text span {
@@ -112,7 +125,6 @@
 
 .banner__bottom-text {
   color: #2d3958;
-  font-feature-settings: "clig" off, "liga" off;
   font-family: Outfit;
   font-size: 15px;
   font-weight: 500;

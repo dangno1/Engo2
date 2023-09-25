@@ -16,6 +16,15 @@
   letter-spacing: -2px;
   padding-top: 120px;
   padding-bottom: 30px;
+  @media (max-width: 992px) {
+    font-size: 40px;
+  }
+  @media (max-width: 576px) {
+    font-size: 40px;
+  }
+  @media (max-width: 375px) {
+    font-size: 27px;
+  }
 }
 
 .setups__text {
@@ -68,6 +77,12 @@
   border-radius: 10px 10px 0px 0px;
   border: 1px solid #e7e5ea;
   background: #fff;
+  @media (max-width: 992px) {
+    padding: 35px 20px 0px 20px;
+  }
+  @media (max-width: 375px) {
+    padding: 35px 20px 0px 20px;
+  }
 }
 
 .setups__item-freelance {
@@ -112,6 +127,10 @@
   flex-direction: column;
   gap: 15px;
   padding-bottom: 58px;
+  @media (max-width: 992px) {
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .setups__item-content-item {
@@ -130,8 +149,7 @@
   letter-spacing: -0.3px;
   text-transform: uppercase;
   background-color: #4f77ff;
-  width: 590px;
-  height: 60px;
+  padding-bottom: 17px;
   flex-shrink: 0;
   border-radius: 0px 0px 10px 10px;
   padding-top: 17px;
@@ -169,6 +187,9 @@
 .setups__padding {
   padding-left: 80px;
   padding-right: 80px;
+  @media (max-width: 375px) {
+    padding: 0;
+  }
 }
 
 .setups__item-bf {
@@ -184,6 +205,10 @@
   border-radius: 50px 50px 50px 0px;
   top: 0;
   right: -75px;
+  @media (max-width: 375px) {
+    width: 0;
+    height: 0;
+  }
 }
 
 .setups__item-content-text {
@@ -193,4 +218,7 @@
   font-weight: 400;
   line-height: 1.45;
   letter-spacing: -1px;
+  @media (max-width: 375px) {
+    font-size: 17px;
+  }
 }

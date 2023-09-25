@@ -103,20 +103,18 @@
   right: 0px;
 }
 
-// .information__left--border {
-//   border: none;
-// }
-
 .information__menu ul {
   display: flex;
   gap: 40px;
   justify-content: center;
   padding-bottom: 16px;
+  @media (max-width: 500px) {
+    flex-wrap: wrap;
+  }
 }
 
 .information__menu-item {
   display: flex;
-  font-feature-settings: "clig" off, "liga" off;
   font-family: Outfit;
   font-size: 18px;
   font-style: normal;
@@ -151,11 +149,14 @@
 .information__similar {
   padding-top: 70px;
   padding-bottom: 80px;
-text-align: center;
-font-size: 42px;
-font-weight: 500;
-line-height: 1.19;
-letter-spacing: -0.84px;
+  text-align: center;
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 1.19;
+  letter-spacing: -0.84px;
+  @media (max-width: 500px) {
+    font-size: 33px;
+  }
 }
 
 .information__left-closebtn {
@@ -163,10 +164,25 @@ letter-spacing: -0.84px;
   @media (max-width: 1200px) {
     display: block;
     position: absolute;
-    right: 10px;
+    right: 20px;
     font-size: 50px;
     color: #2d3958;
     cursor: pointer;
-    top: -20px;
+    top: 70px;
+  }
+}
+
+.information__left-menu {
+  @media (max-width: 1200px) {
+    position: absolute;
+    height: 100vh;
+    width: 0;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: all 0.5s ease-out;
+    display: flex;
+    flex-direction: column;
   }
 }

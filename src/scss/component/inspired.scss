@@ -7,14 +7,24 @@
 .inspired__title {
   color: #2d3958;
   text-align: center;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: Outfit;
   font-size: 64px;
   font-style: normal;
   font-weight: 500;
   line-height: 1.12;
   letter-spacing: -2px;
   padding-bottom: 90px;
+  @media (max-width: 1200px) {
+    font-size: 55px;
+  }
+  @media (max-width: 992px) {
+    font-size: 45px;
+  }
+  @media (max-width: 768px) {
+    font-size: 40px;
+  }
+  @media (max-width: 375px) {
+    font-size: 32px;
+  }
 }
 
 .inspired__img {
@@ -31,12 +41,6 @@
   flex-shrink: 0;
   align-self: stretch;
   border-radius: 20px;
-}
-
-.inspired__img-left {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 30px;
 }
 
 .inspired__img-hover {
@@ -57,12 +61,6 @@
 }
 
 .inspired__img-center {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 30px;
-}
-
-.inspired__img-right {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 30px;

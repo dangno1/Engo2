@@ -5,6 +5,9 @@
 .productdetail__imgs {
   display: flex;
   gap: 30px;
+  @media (max-width: 500px) {
+    flex-wrap: wrap;
+  }
 }
 
 .productdetail__right {
@@ -13,6 +16,9 @@
   gap: 30px;
   padding-left: 100px;
   padding-bottom: 100px;
+  @media (max-width: 500px) {
+    padding-left: 0;
+  }
 }
 
 .productdetail__name {
@@ -157,7 +163,7 @@
 }
 
 .productdetail__sectors {
-    span {
-        color: #4f77ff;
-    }
+  span {
+    color: #4f77ff;
+  }
 }

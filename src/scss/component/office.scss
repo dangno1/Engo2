@@ -8,6 +8,13 @@
 .office__padding {
   padding-left: 130px;
   padding-right: 130px;
+  @media (max-width: 375px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @media (max-width: 576px) {
+    padding-left: 50px;
+  }
 }
 
 .office__title-center {
@@ -23,6 +30,16 @@
   font-weight: 500;
   line-height: 1.16;
   letter-spacing: -2px;
+  @media (max-width: 992px) {
+    width: 100%;
+    font-size: 40px;
+  }
+  @media (max-width: 576px) {
+    font-size: 47px;
+  }
+  @media (max-width: 375px) {
+    font-size: 30px;
+  }
 }
 
 .office__title span {
@@ -47,6 +64,12 @@
   padding: 60px 100px 40px 100px;
   border-radius: 20px;
   z-index: 1;
+  @media (max-width: 768px) {
+    padding: 60px 50px 40px 50px;
+  }
+  @media (max-width: 375px) {
+    padding: 60px 20px 40px 20px;
+  }
 }
 
 .office__item-space {
@@ -65,6 +88,12 @@
   letter-spacing: -1px;
   padding-bottom: 30px;
   width: 100%;
+  @media (max-width: 576px) {
+    font-size: 30px;
+  }
+  @media (max-width: 375px) {
+    font-size: 25px;
+  }
 }
 
 .office__item-text {
@@ -88,7 +117,6 @@
 
 .office__item-more-text {
   color: #7b88a8;
-  font-feature-settings: "clig" off, "liga" off;
   font-family: Outfit;
   font-size: 14px;
   font-weight: 500;
@@ -167,6 +195,10 @@
   top: 185px;
   right: -65px;
   border-radius: 50px 50px 50px 0px;
+  @media (max-width: 375px) {
+    width: 0;
+    height: 0;
+  }
 }
 
 .office__item-img {
@@ -205,4 +237,8 @@
   bottom: 0;
   right: -115px;
   border-radius: 50px 50px 50px 0px;
+  @media (max-width: 375px) {
+    width: 0;
+    height: 0;
+  }
 }

@@ -1,5 +1,8 @@
 .featured {
   padding: 120px 90px 130px 90px;
+  @media (max-width: 375px) {
+    padding: 30px 40px 30px 40px;
+  }
 }
 
 .featured__left-information {
@@ -41,6 +44,9 @@
 
 .featured__right {
   padding-left: 100px;
+  @media (max-width: 992px) {
+    padding-left: unset;
+  }
 }
 
 .featured__right-title {
@@ -50,6 +56,9 @@
   line-height: 1.19;
   letter-spacing: -0.84px;
   width: 75%;
+  @media (max-width: 375px) {
+    font-size: 30px;
+  }
 }
 
 .featured__right-text {
@@ -89,6 +98,9 @@
   gap: 15px;
   align-items: center;
   padding-top: 98px;
+  @media (max-width: 375px) {
+    padding-top: 50px;
+  }
 }
 
 .featured__right-bottom-item {
