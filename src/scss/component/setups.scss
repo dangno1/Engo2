@@ -4,12 +4,14 @@
   background-image: url(../img/BGtest.png);
   background-size: 100% 793px;
   background-repeat: no-repeat;
+  @media (max-width: 992px) {
+    background-image: unset;
+    // background-size: 100% 100%;
+  }
 }
 
 .setups__title {
-  color: #2d3958;
   text-align: center;
-  font-family: Outfit;
   font-size: 48px;
   font-weight: 500;
   line-height: 1.16;
@@ -73,7 +75,7 @@
 }
 
 .setups__item {
-  padding: 35px 123px 0px 100px;
+  padding: 35px 45px 0px 60px;
   border-radius: 10px 10px 0px 0px;
   border: 1px solid #e7e5ea;
   background: #fff;
@@ -88,7 +90,6 @@
 .setups__item-freelance {
   color: #4f77ff;
   text-align: center;
-  font-family: Outfit;
   font-size: 18px;
   font-weight: 500;
   line-height: 1.55;
@@ -99,7 +100,6 @@
 .setups__item-price {
   color: #2d3958;
   text-align: center;
-  font-family: Outfit;
   font-size: 36px;
   font-weight: 500;
   line-height: 1.27;
@@ -128,8 +128,8 @@
   gap: 15px;
   padding-bottom: 58px;
   @media (max-width: 992px) {
-    justify-content: center;
-    align-items: center;
+    // justify-content: center;
+    // align-items: center;
   }
 }
 
@@ -137,6 +137,7 @@
   display: flex;
   gap: 12px;
   align-items: center;
+  padding-bottom: 15px;
 }
 
 .setups__item-button {
@@ -172,23 +173,28 @@
 }
 
 .setups__time-box.moving {
-  justify-content: end;
   padding-right: 7px;
   background-color: #7b88a8;
+  .setups__time-box--green {
+    transform: translateX(37px);
+  }
 }
 
 .setups__time-box--green {
+  transition: all 0.5s;
   width: 21px;
   height: 21px;
   border-radius: 50%;
   background-color: #34c635;
 }
 
+
+
 .setups__padding {
   padding-left: 80px;
   padding-right: 80px;
-  @media (max-width: 375px) {
-    padding: 0;
+  @media (max-width: 576px) {
+    padding: unset;
   }
 }
 
@@ -205,20 +211,36 @@
   border-radius: 50px 50px 50px 0px;
   top: 0;
   right: -75px;
-  @media (max-width: 375px) {
+  @media (max-width: 576px) {
     width: 0;
     height: 0;
   }
 }
 
 .setups__item-content-text {
-  color: #2d3958;
-  font-family: Outfit;
   font-size: 22px;
   font-weight: 400;
   line-height: 1.45;
   letter-spacing: -1px;
+  a {
+    text-decoration: none;
+    color: #2d3958;
+  }
   @media (max-width: 375px) {
     font-size: 17px;
+  }
+}
+
+.setups__item-content-text:hover {
+  a {
+    color: #003cff;
+    transition: 0.3s;
+  }
+}
+
+
+.setups__item-mr {
+  @media (max-width: 992px) {
+    margin: 0 auto;
   }
 }

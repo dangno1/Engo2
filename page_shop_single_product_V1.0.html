@@ -148,7 +148,7 @@
       <section class="page-section">
         <div class="background">
           <div class="container">
-            <div class="banner">
+            <div class="banner banner__extend">
               <h4 class="banner__title">Our Shop</h4>
               <div class="banner__text">
                 <a href="#">homepage</a><span>/</span>
@@ -159,70 +159,76 @@
         </div>
       </section>
       <section class="page-section">
-        <div class="information">
+        <div class="productdetail">
           <div class="container">
             <div class="row">
               <div
                 class="col"
                 style="--col-xs: 12; --col-sm: 12; --col-md: 6; --col-lg: 6"
               >
-                <div class="productdetail">
-                  <div class="productdetail__img">
-                    <a href="#">
-                      <img src="./src/img/Img (21).png" alt="" width="100%" />
-                      <svg
-                        class="information__right-zoom"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="21"
-                        height="22"
-                        viewBox="0 0 21 22"
-                        fill="none"
-                      >
-                        <ellipse
-                          cx="9"
-                          cy="9.47288"
-                          rx="8"
-                          ry="7.96604"
-                          stroke="#888682"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M6 9.47266H12"
-                          stroke="#888682"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M9 6.48543L9 12.46"
-                          stroke="#888682"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M14.5 15.4052L19.5 20.3841"
-                          stroke="#888682"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                  <div class="productdetail__imgs">
-                    <a href="#">
+                <div class="productdetail__img">
+                  <a href="#">
+                    <div class="productdetail__img-hover">
+                      <img src="./src/img/Img (21).png" alt="" />
+                    </div>
+                    <svg
+                      class="information__right-zoom"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="21"
+                      height="22"
+                      viewBox="0 0 21 22"
+                      fill="none"
+                    >
+                      <ellipse
+                        cx="9"
+                        cy="9.47288"
+                        rx="8"
+                        ry="7.96604"
+                        stroke="#888682"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M6 9.47266H12"
+                        stroke="#888682"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M9 6.48543L9 12.46"
+                        stroke="#888682"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M14.5 15.4052L19.5 20.3841"
+                        stroke="#888682"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="productdetail__imgs">
+                  <a href="#">
+                    <div class="productdetail__img-hover">
                       <img src="./src/img/1.png" alt="" />
-                    </a>
-                    <a href="#">
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="productdetail__img-hover">
                       <img src="./src/img/2.png" alt="" />
-                    </a>
-                    <a href="#">
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="productdetail__img-hover">
                       <img src="./src/img/3.png" alt="" />
-                    </a>
-                  </div>
+                    </div>
+                  </a>
                 </div>
               </div>
               <div
@@ -374,7 +380,7 @@
                     </div>
                     <div class="productdetail__operation">
                       <div class="productdetail__quantity">
-                        <div class="productdetail__number">1</div>
+                        <input value="1" class="productdetail__number" />
                         <div>
                           <svg
                             class="productdetail__increase"
@@ -413,7 +419,6 @@
                             </g>
                           </svg>
                         </div>
-                        <!-- <input type="number" placeholder="1"> -->
                       </div>
                       <div>
                         <div class="button button--blue">Add To Cart</div>
@@ -422,42 +427,73 @@
                     <div class="productdetail__bottom">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        width="233"
-                        height="18"
-                        viewBox="0 0 233 18"
+                        width="20"
+                        height="17"
+                        viewBox="0 0 20 17"
                         fill="none"
                       >
                         <path
-                          d="M151.431 3.36929H148.607C148.087 3.36929 147.665 3.7494 147.665 4.21829V6.76531H151.431C151.538 6.76317 151.64 6.80809 151.704 6.88577C151.767 6.96344 151.785 7.06417 151.752 7.15585L151.055 9.02367C150.991 9.1951 150.813 9.31099 150.612 9.31233H147.665V15.6799C147.665 15.9143 147.454 16.1044 147.194 16.1044H144.84C144.58 16.1044 144.369 15.9143 144.369 15.6799V9.31233H142.957C142.697 9.31233 142.486 9.12228 142.486 8.88783V7.18982C142.486 6.95537 142.697 6.76531 142.957 6.76531H144.369V4.21829C144.369 2.34272 146.056 0.822266 148.136 0.822266H151.431C151.691 0.822266 151.902 1.01232 151.902 1.24677V2.94478C151.902 3.17923 151.691 3.36929 151.431 3.36929Z"
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M10.1799 2.52369C11.2578 1.41652 12.7679 0.765431 14.3663 0.71875C17.1921 0.71875 19.4829 2.86587 19.4829 5.51449C19.4829 8.65022 15.7638 12.0868 13.5333 14.148C13.3325 14.3335 13.1437 14.5079 12.9708 14.67L10.8498 16.658C10.719 16.7807 10.5417 16.8497 10.3567 16.8499H10.0032C9.8182 16.8497 9.64085 16.7807 9.51012 16.658L7.38904 14.67C7.21616 14.5079 7.0274 14.3335 6.82659 14.148C4.59605 12.0868 0.876953 8.65022 0.876953 5.51449C0.876953 2.86587 3.16775 0.71875 5.9936 0.71875C7.59194 0.765431 9.10206 1.41652 10.1799 2.52369ZM10.1807 14.8185L12.2273 12.9264C14.1158 11.1825 17.6231 7.92142 17.6231 5.51483C17.6231 4.70088 17.2762 3.92065 16.6595 3.34756C16.0429 2.77447 15.2075 2.45603 14.3391 2.463C12.8928 2.58885 11.5872 3.32756 10.7947 4.46849C10.7059 4.57721 10.5686 4.64154 10.4226 4.64288H10.0039C9.78656 4.64233 9.58123 4.54931 9.44574 4.39001C8.66578 3.29113 7.39669 2.58257 5.99433 2.463C4.19606 2.463 2.73828 3.82935 2.73828 5.51483C2.73828 7.92142 6.24551 11.1825 8.13402 12.9264L10.1807 14.8185Z"
                           fill="#7B88A8"
                         />
+                      </svg>
+
+                      <div class="productdetail__bottom-bf"></div>
+
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="21"
+                        height="16"
+                        viewBox="0 0 21 16"
+                        fill="none"
+                      >
                         <path
                           fill-rule="evenodd"
                           clip-rule="evenodd"
-                          d="M186.741 1.6709H179.208C176.608 1.6709 174.5 3.57146 174.5 5.91593V12.708C174.5 15.0525 176.608 16.953 179.208 16.953H186.741C189.341 16.953 191.449 15.0525 191.449 12.708V5.91593C191.449 3.57146 189.341 1.6709 186.741 1.6709ZM189.801 12.7086C189.796 14.2305 188.429 15.4632 186.741 15.4678H179.209C177.521 15.4632 176.154 14.2305 176.148 12.7086V5.9165C176.154 4.39453 177.521 3.16189 179.209 3.15723H186.741C188.429 3.16189 189.796 4.39453 189.801 5.9165V12.7086ZM187.447 6.12761C187.967 6.12761 188.389 5.7475 188.389 5.27862C188.389 4.80973 187.967 4.42963 187.447 4.42963C186.927 4.42963 186.506 4.80973 186.506 5.27862C186.506 5.7475 186.927 6.12761 187.447 6.12761ZM182.973 5.49317C180.633 5.49317 178.736 7.20367 178.736 9.31369C178.736 11.4237 180.633 13.1342 182.973 13.1342C185.314 13.1342 187.211 11.4237 187.211 9.31369C187.213 8.29973 186.767 7.32665 185.972 6.60968C185.177 5.8927 184.098 5.49091 182.973 5.49317ZM180.385 9.31237C180.385 10.6018 181.544 11.6471 182.974 11.6471C184.404 11.6471 185.563 10.6018 185.563 9.31237C185.563 8.02291 184.404 6.9776 182.974 6.9776C181.544 6.9776 180.385 8.02291 180.385 9.31237Z"
+                          d="M18.1817 0.670898H2.1747C1.06965 0.670898 0.173828 1.47864 0.173828 2.47504V13.2999C0.173828 14.2963 1.06965 15.104 2.1747 15.104H18.1817C19.2867 15.104 20.1825 14.2963 20.1825 13.2999V2.47504C20.1825 1.47864 19.2867 0.670898 18.1817 0.670898ZM18.1808 2.47644V5.09244L10.8276 9.73809C10.4365 9.98281 9.91807 9.98281 9.52703 9.73809L2.17383 5.09244V2.47644H18.1808ZM2.17383 6.98535V13.2999H18.1808V6.98535L11.828 10.9906C10.8366 11.6154 9.51797 11.6154 8.52659 10.9906L2.17383 6.98535Z"
                           fill="#7B88A8"
                         />
+                      </svg>
+
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="10"
+                        height="17"
+                        viewBox="0 0 10 17"
+                        fill="none"
+                      >
                         <path
-                          d="M232.851 3.76364C232.365 4.34806 231.778 4.85785 231.112 5.27332C231.112 5.42599 231.112 5.57865 231.112 5.7398C231.117 8.51216 229.889 11.1705 227.703 13.1189C225.516 15.0672 222.555 16.1426 219.482 16.104C217.705 16.1093 215.952 15.7436 214.358 15.0353C214.272 15.0015 214.217 14.9249 214.217 14.8403V14.747C214.217 14.6252 214.326 14.5265 214.461 14.5265C216.208 14.4746 217.892 13.9286 219.275 12.9659C217.694 12.9372 216.272 12.0929 215.618 10.7947C215.585 10.7238 215.595 10.6424 215.645 10.5801C215.695 10.5177 215.777 10.4833 215.862 10.4893C216.343 10.5329 216.828 10.4926 217.291 10.3706C215.546 10.044 214.235 8.73787 214.048 7.13922C214.041 7.06253 214.079 6.98825 214.148 6.94321C214.217 6.89817 214.307 6.88888 214.386 6.9187C214.854 7.105 215.36 7.20313 215.872 7.20707C214.343 6.30223 213.682 4.58118 214.264 3.01729C214.324 2.86532 214.468 2.75306 214.644 2.72175C214.819 2.69045 215 2.74472 215.119 2.86462C217.183 4.84457 220.017 6.02442 223.026 6.15538C222.949 5.87809 222.911 5.59312 222.913 5.30725C222.942 3.80828 223.97 2.47297 225.518 1.92646C227.065 1.37995 228.825 1.73039 229.974 2.81373C230.757 2.67923 231.514 2.44206 232.221 2.10978C232.273 2.08063 232.339 2.08063 232.39 2.10978C232.423 2.1565 232.423 2.21573 232.39 2.26245C232.048 2.96946 231.47 3.56244 230.736 3.95872C231.378 3.89152 232.01 3.75484 232.616 3.55161C232.667 3.52027 232.734 3.52027 232.785 3.55161C232.828 3.56926 232.86 3.603 232.873 3.64386C232.885 3.68471 232.877 3.72853 232.851 3.76364Z"
+                          d="M9.43139 3.36929H6.60664C6.08661 3.36929 5.66505 3.7494 5.66505 4.21829V6.76531H9.43139C9.53849 6.76317 9.64005 6.80809 9.70372 6.88577C9.7674 6.96344 9.78522 7.06417 9.75153 7.15585L9.05476 9.02367C8.99055 9.1951 8.81288 9.31099 8.61221 9.31233H5.66505V15.6799C5.66505 15.9143 5.45427 16.1044 5.19426 16.1044H2.84029C2.58028 16.1044 2.3695 15.9143 2.3695 15.6799V9.31233H0.957121C0.697109 9.31233 0.486328 9.12228 0.486328 8.88783V7.18982C0.486328 6.95537 0.697109 6.76531 0.957121 6.76531H2.3695V4.21829C2.3695 2.34272 4.05575 0.822266 6.13584 0.822266H9.43139C9.69141 0.822266 9.90219 1.01232 9.90219 1.24677V2.94478C9.90219 3.17923 9.69141 3.36929 9.43139 3.36929Z"
                           fill="#7B88A8"
                         />
+                      </svg>
+
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="16"
+                        viewBox="0 0 18 16"
+                        fill="none"
+                      >
                         <path
                           fill-rule="evenodd"
                           clip-rule="evenodd"
-                          d="M117.182 1.6709H101.175C100.07 1.6709 99.1738 2.47864 99.1738 3.47504V14.2999C99.1738 15.2963 100.07 16.104 101.175 16.104H117.182C118.287 16.104 119.183 15.2963 119.183 14.2999V3.47504C119.183 2.47864 118.287 1.6709 117.182 1.6709ZM117.181 3.47644V6.09244L109.828 10.7381C109.437 10.9828 108.918 10.9828 108.527 10.7381L101.174 6.09244V3.47644H117.181ZM101.174 7.98535V14.2999H117.181V7.98535L110.828 11.9906C109.837 12.6154 108.518 12.6154 107.527 11.9906L101.174 7.98535Z"
+                          d="M12.7406 0.670898H5.20793C2.60781 0.670898 0.5 2.57146 0.5 4.91593V11.708C0.5 14.0525 2.60781 15.953 5.20793 15.953H12.7406C15.3407 15.953 17.4485 14.0525 17.4485 11.708V4.91593C17.4485 2.57146 15.3407 0.670898 12.7406 0.670898ZM15.8014 11.7086C15.7963 13.2305 14.4292 14.4632 12.7413 14.4678H5.20859C3.52066 14.4632 2.15361 13.2305 2.14844 11.7086V4.9165C2.15361 3.39453 3.52066 2.16189 5.20859 2.15723H12.7413C14.4292 2.16189 15.7963 3.39453 15.8014 4.9165V11.7086ZM13.4474 5.12761C13.9675 5.12761 14.389 4.7475 14.389 4.27862C14.389 3.80973 13.9675 3.42963 13.4474 3.42963C12.9274 3.42963 12.5059 3.80973 12.5059 4.27862C12.5059 4.7475 12.9274 5.12761 13.4474 5.12761ZM8.97346 4.49317C6.63336 4.49317 4.73633 6.20367 4.73633 8.31369C4.73633 10.4237 6.63336 12.1342 8.97346 12.1342C11.3136 12.1342 13.2106 10.4237 13.2106 8.31369C13.2131 7.29973 12.7675 6.32665 11.9723 5.60968C11.1772 4.8927 10.098 4.49091 8.97346 4.49317ZM6.38477 8.31237C6.38477 9.60182 7.54406 10.6471 8.97413 10.6471C10.4042 10.6471 11.5635 9.60182 11.5635 8.31237C11.5635 7.02291 10.4042 5.9776 8.97413 5.9776C7.54406 5.9776 6.38477 7.02291 6.38477 8.31237Z"
                           fill="#7B88A8"
                         />
-                        <line
-                          x1="59.9395"
-                          y1="2.17818e-08"
-                          x2="59.9395"
-                          y2="17.5467"
-                          stroke="#E7E5EA"
-                        />
+                      </svg>
+
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="19"
+                        height="16"
+                        viewBox="0 0 19 16"
+                        fill="none"
+                      >
                         <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M10.1799 3.52369C11.2578 2.41652 12.7679 1.76543 14.3663 1.71875C17.1921 1.71875 19.4829 3.86587 19.4829 6.51449C19.4829 9.65022 15.7638 13.0868 13.5333 15.148C13.3325 15.3335 13.1437 15.5079 12.9708 15.67L10.8498 17.658C10.719 17.7807 10.5417 17.8497 10.3567 17.8499H10.0032C9.8182 17.8497 9.64085 17.7807 9.51012 17.658L7.38904 15.67C7.21616 15.5079 7.0274 15.3335 6.82659 15.148C4.59605 13.0868 0.876953 9.65022 0.876953 6.51449C0.876953 3.86587 3.16775 1.71875 5.9936 1.71875C7.59194 1.76543 9.10206 2.41652 10.1799 3.52369ZM10.1807 15.8185L12.2273 13.9264C14.1158 12.1825 17.6231 8.92142 17.6231 6.51483C17.6231 5.70088 17.2762 4.92065 16.6595 4.34756C16.0429 3.77447 15.2075 3.45603 14.3391 3.463C12.8928 3.58885 11.5872 4.32756 10.7947 5.46849C10.7059 5.57721 10.5686 5.64154 10.4226 5.64288H10.0039C9.78656 5.64233 9.58123 5.54931 9.44574 5.39001C8.66578 4.29113 7.39669 3.58257 5.99433 3.463C4.19606 3.463 2.73828 4.82935 2.73828 6.51483C2.73828 8.92142 6.24551 12.1825 8.13402 13.9264L10.1807 15.8185Z"
+                          d="M18.8511 2.76364C18.3652 3.34806 17.7778 3.85785 17.1117 4.27332C17.1117 4.42599 17.1117 4.57865 17.1117 4.7398C17.1171 7.51216 15.8889 10.1705 13.7026 12.1189C11.5163 14.0672 8.55473 15.1426 5.48182 15.104C3.7053 15.1093 1.95152 14.7436 0.357882 14.0353C0.271953 14.0015 0.21653 13.9249 0.216856 13.8403V13.747C0.216856 13.6252 0.326298 13.5265 0.461301 13.5265C2.20758 13.4746 3.89156 12.9286 5.27498 11.9659C3.69436 11.9372 2.2722 11.0929 1.61771 9.79467C1.58465 9.72377 1.59495 9.64244 1.64487 9.58008C1.6948 9.51771 1.77714 9.48333 1.86216 9.48935C2.34254 9.53289 2.82773 9.49257 3.29122 9.37061C1.54634 9.04402 0.235262 7.73787 0.0476256 6.13922C0.0409567 6.06253 0.0790718 5.98825 0.148201 5.94321C0.217331 5.89817 0.307482 5.88888 0.386087 5.9187C0.854336 6.105 1.35981 6.20313 1.87156 6.20707C0.342633 5.30223 -0.317761 3.58118 0.263865 2.01729C0.323903 1.86532 0.468142 1.75306 0.643579 1.72175C0.819016 1.69045 0.999771 1.74472 1.11942 1.86462C3.18261 3.84457 6.01746 5.02442 9.02626 5.15538C8.94919 4.87809 8.91128 4.59312 8.91344 4.30725C8.94158 2.80828 9.97018 1.47297 11.5177 0.926459C13.0652 0.379947 14.8254 0.730395 15.9741 1.81373C16.7572 1.67923 17.5142 1.44206 18.2211 1.10978C18.2729 1.08063 18.3386 1.08063 18.3904 1.10978C18.4227 1.1565 18.4227 1.21573 18.3904 1.26245C18.048 1.96946 17.4695 2.56244 16.7357 2.95872C17.3783 2.89152 18.0096 2.75484 18.616 2.55161C18.6671 2.52027 18.7342 2.52027 18.7852 2.55161C18.828 2.56926 18.86 2.603 18.8727 2.64386C18.8854 2.68471 18.8774 2.72853 18.8511 2.76364Z"
                           fill="#7B88A8"
                         />
                       </svg>
@@ -475,46 +511,23 @@
             </div>
             <div class="information__menu">
               <ul>
-                <li class="information__menu-item">
-                  <a href="#" class="header__box--green">
-                    <p>Description</p>
-                  </a>
+                <li class="information__menu-item header__box--green">
+                  <!-- class="header__box--green"> -->
+                  <p>Description</p>
                 </li>
-                <li class="information__menu-item">
-                  <a href="#">Aditional Information</a>
-                </li>
-                <li class="information__menu-item">
-                  <a href="#">Reviews</a>
-                </li>
-                <li class="information__menu-item">
-                  <a href="#">Shipping Rates</a>
-                </li>
+                <li class="information__menu-item">Aditional Information</li>
+                <li class="information__menu-item">Reviews</li>
+                <li class="information__menu-item">Shipping Rates</li>
               </ul>
             </div>
             <div class="information__description">
-              <div class="row">
-                <div
-                  class="col"
-                  style="--col-xs: 12; --col-sm: 12; --col-md: 6; --col-lg: 6"
-                >
-                  <div class="information__description-text">
-                    It’s our brightest innovation yet. The sensor pulls in more
-                    light, the Super Clear Glass dials down lens flare, and
-                    fast-acting AI delivers near-instant intelligent processing.
-                  </div>
-                </div>
-                <div
-                  class="col"
-                  style="--col-xs: 12; --col-sm: 12; --col-md: 6; --col-lg: 6"
-                >
-                  <div class="information__description-text">
-                    Sunlight, meet Galaxy S22's bright and Galaxy S22+'s
-                    brightest display*. The stunning Dynamic AMOLED 2X display
-                    is crafted specifically for high outdoor visibility, keeping
-                    the view clear in bright daylight.
-                  </div>
-                </div>
-              </div>
+              It’s our brightest innovation yet. The sensor pulls in more light,
+              the Super Clear Glass dials down lens flare, and fast-acting AI
+              delivers near-instant intelligent processing. <br />
+              Sunlight, meet Galaxy S22's bright and Galaxy S22+'s brightest
+              display*. The stunning Dynamic AMOLED 2X display is crafted
+              specifically for high outdoor visibility, keeping the view clear
+              in bright daylight.
             </div>
             <h5 class="information__similar">
               Here you can buy similar products
@@ -530,8 +543,8 @@
                       <img src="./src/img/Img (22).png" alt="" />
                     </a>
                   </div>
-                  <h5 class="product__name">S22+ 256GB</h5>
-                  <div class="product__price">From $799</div>
+                  <h5 class="product__name"><a href="#">S22+ 256GB</a></h5>
+                  <div class="product__price"><a href="#">From $799 </a></div>
                 </div>
               </div>
               <div
@@ -544,8 +557,8 @@
                       <img src="./src/img/Img (23).png" alt="" />
                     </a>
                   </div>
-                  <h5 class="product__name">Z Fold 2</h5>
-                  <div class="product__price">From $499</div>
+                  <h5 class="product__name"><a href="#">Z Fold 2</a></h5>
+                  <div class="product__price"><a href="#">From $499 </a></div>
                 </div>
               </div>
               <div
@@ -558,8 +571,8 @@
                       <img src="./src/img/Img (24).png" alt="" />
                     </a>
                   </div>
-                  <h5 class="product__name">Tab S7 FE</h5>
-                  <div class="product__price">From $699</div>
+                  <h5 class="product__name"><a href="#">Tab S7 FE</a></h5>
+                  <div class="product__price"><a href="#">From $699 </a></div>
                 </div>
               </div>
               <div
@@ -572,8 +585,8 @@
                       <img src="./src/img/Img (25).png" alt="" />
                     </a>
                   </div>
-                  <h5 class="product__name">S22 Ultra</h5>
-                  <div class="product__price">From $999</div>
+                  <h5 class="product__name"><a href="#">S22 Ultra</a></h5>
+                  <div class="product__price"><a href="#">From $999 </a></div>
                 </div>
               </div>
             </div>
@@ -604,10 +617,7 @@
       <div class="footer">
         <div class="container">
           <div class="row footer__line">
-            <div
-              class="col"
-              style="--col-xs: 12; --col-sm: 6; --col-md: 3; --col-lg: 2"
-            >
+            <div class="col" style="--col-xs: 12; --col-sm: 12; --col-md: 12; --col-lg: 2">
               <div class="footer__logo">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -639,10 +649,7 @@
                 <div>Pollock</div>
               </div>
             </div>
-            <div
-              class="col"
-              style="--col-xs: 12; --col-sm: 6; --col-md: 3; --col-lg: 2"
-            >
+            <div class="col" style="--col-xs: 6; --col-sm: 4; --col-md: 4; --col-lg: 2">
               <div class="footer__item">
                 <div class="footer__title">Company</div>
                 <div class="footer__center">
@@ -654,10 +661,7 @@
                 </div>
               </div>
             </div>
-            <div
-              class="col"
-              style="--col-xs: 12; --col-sm: 6; --col-md: 3; --col-lg: 2"
-            >
+            <div class="col" style="--col-xs: 6; --col-sm: 4; --col-md: 4; --col-lg: 2">
               <div class="footer__item">
                 <div class="footer__title">Services</div>
                 <div class="footer__center">
@@ -669,10 +673,7 @@
                 </div>
               </div>
             </div>
-            <div
-              class="col"
-              style="--col-xs: 12; --col-sm: 6; --col-md: 3; --col-lg: 2"
-            >
+            <div class="col" style="--col-xs: 12; --col-sm: 4; --col-md: 4; --col-lg: 2">
               <div class="footer__item">
                 <div class="footer__title">Contact</div>
                 <div class="footer__center">
@@ -684,10 +685,7 @@
                 </div>
               </div>
             </div>
-            <div
-              class="col"
-              style="--col-xs: 12; --col-sm: 12; --col-md: 12; --col-lg: 4"
-            >
+            <div class="col" style="--col-xs: 12; --col-sm: 12; --col-md: 12; --col-lg: 4">
               <div class="footer__item">
                 <div class="footer__title">Newsletter</div>
                 <div class="footer__text">

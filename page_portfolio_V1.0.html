@@ -66,15 +66,17 @@
                     <a href="./index.html">Home</a>
                   </li>
                   <li class="header__item">
-                    <a href="./page_portfolio_V1.0.html">Services</a>
+                    <a
+                      href="./page_portfolio_V1.0.html"
+                      class="header__box--green"
+                      ><p>Services</p></a
+                    >
                   </li>
                   <li class="header__item">
                     <a href="#">About</a>
                   </li>
                   <li class="header__item">
-                    <a href="./page_shop_V1.0.html" class="header__box--green"
-                      ><p>Pages</p></a
-                    >
+                    <a href="./page_shop_V1.0.html">Pages</a>
                   </li>
                   <li class="header__item">
                     <a href="./page_block_V1.0.html">Blog</a>
@@ -148,7 +150,7 @@
       <section class="page-section">
         <div class="background">
           <div class="container">
-            <div class="banner">
+            <div class="banner banner__extend">
               <h4 class="banner__title">Our Work</h4>
               <div class="banner__text">
                 <a href="#">homepage</a><span>/</span>
@@ -367,11 +369,13 @@
             </div>
             <div class="row">
               <div
-                class="col project__flex"
-                style="--col-xs: 12; --col-sm: 12; --col-md: 4; --col-lg: 4"
+                class="col"
+                style="--col-xs: 12; --col-sm: 6; --col-md: 4; --col-lg: 4"
               >
                 <div class="project__item">
-                  <img src="./src/img/pj1.png" alt="" width="100%" />
+                  <div class="project__img">
+                    <img src="./src/img/pj1.png" alt="" width="100%" />
+                  </div>
                   <div class="project__item-text">
                     <div class="project__item-top">Collaboration App</div>
                     <div class="project__item-bottom">
@@ -381,11 +385,13 @@
                 </div>
               </div>
               <div
-                class="col project__flex"
-                style="--col-xs: 12; --col-sm: 12; --col-md: 4; --col-lg: 4"
+                class="col"
+                style="--col-xs: 12; --col-sm: 6; --col-md: 4; --col-lg: 4"
               >
                 <div class="project__item">
-                  <img src="./src/img/pj2.png" alt="" width="100%" />
+                  <div class="project__img">
+                    <img src="./src/img/pj2.png" alt="" width="100%" />
+                  </div>
                   <div class="project__item-text">
                     <div class="project__item-top">Learning Mobile</div>
                     <div class="project__item-bottom">
@@ -395,11 +401,13 @@
                 </div>
               </div>
               <div
-                class="col project__flex"
-                style="--col-xs: 12; --col-sm: 12; --col-md: 4; --col-lg: 4"
+                class="col"
+                style="--col-xs: 12; --col-sm: 6; --col-md: 4; --col-lg: 4"
               >
                 <div class="project__item">
-                  <img src="./src/img/pj3.png" alt="" width="100%" />
+                  <div class="project__img">
+                    <img src="./src/img/pj3.png" alt="" width="100%" />
+                  </div>
                   <div class="project__item-text">
                     <div class="project__item-top">Abstract Waves</div>
                     <div class="project__item-bottom">
@@ -425,14 +433,11 @@
                 style="--col-xs: 12; --col-sm: 12; --col-md: 4; --col-lg: 4"
               >
                 <div class="secrets">
-                  <a href="#" class="secrets__img">
-                    <img
-                      class="secrets__pb"
-                      src="./src/img/Rectangle 66.png"
-                      alt=""
-                      width="100%"
-                    />
-                  </a>
+                  <div class="secrets__img">
+                    <a href="#">
+                      <img src="./src/img/Rectangle 66.png" alt="" />
+                    </a>
+                  </div>
                   <h5 class="secrets__title">
                     <a href="#">
                       10 secrets to connect with your audience through your
@@ -560,14 +565,11 @@
                 style="--col-xs: 12; --col-sm: 12; --col-md: 4; --col-lg: 4"
               >
                 <div class="secrets">
-                  <a href="#" class="secrets__img">
-                    <img
-                      class="secrets__pb"
-                      src="./src/img/Rectangle 66 (1).png"
-                      alt=""
-                      width="100%"
-                    />
-                  </a>
+                  <div class="secrets__img">
+                    <a href="#">
+                      <img src="./src/img/Rectangle 66 (1).png" alt="" />
+                    </a>
+                  </div>
 
                   <h5 class="secrets__title">
                     <a href="#">
@@ -701,7 +703,7 @@
                       class="col"
                       style="--col-xs: 8; --col-sm: 8; --col-md: 8; --col-lg: 8"
                     >
-                      <h5 class="secrets__title">
+                      <h5 class="secrets__title secrets__title-extend">
                         <a href="#">
                           10 secrets to connect with your audience through your
                           website and blog
@@ -820,12 +822,9 @@
                       class="col"
                       style="--col-xs: 4; --col-sm: 4; --col-md: 4; --col-lg: 4"
                     >
-                      <img
-                        src="./src/img/Img (29).png"
-                        alt=""
-                        width="100px"
-                        height="100px"
-                      />
+                      <div class="secrets__img">
+                        <img src="./src/img/Img (29).png" alt="" />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -836,8 +835,8 @@
                       class="col"
                       style="--col-xs: 8; --col-sm: 8; --col-md: 8; --col-lg: 8"
                     >
-                      <div class="solution__body-padding">
-                        <h5 class="secrets__title">
+                      <div class="secrets__pt">
+                        <h5 class="secrets__title secrets__title-extend">
                           <a href="#">
                             What are the differences between Google Analytics
                             and Analytics 360
@@ -957,13 +956,10 @@
                       class="col"
                       style="--col-xs: 4; --col-sm: 4; --col-md: 4; --col-lg: 4"
                     >
-                      <div class="solution__body-padding">
-                        <img
-                          src="./src/img/Img (30).png"
-                          alt=""
-                          width="100px"
-                          height="100px"
-                        />
+                      <div class="secrets__pt">
+                        <div class="secrets__img">
+                          <img src="./src/img/Img (30).png" alt="" />
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -975,8 +971,8 @@
                       class="col"
                       style="--col-xs: 8; --col-sm: 8; --col-md: 8; --col-lg: 8"
                     >
-                      <div class="solution__body-padding">
-                        <h5 class="secrets__title">
+                      <div class="secrets__pt">
+                        <h5 class="secrets__title secrets__title-extend">
                           <a href="#">
                             Niche Coworking: 4 shared workspaces for designers
                             and developers
@@ -1097,13 +1093,10 @@
                       class="col"
                       style="--col-xs: 4; --col-sm: 4; --col-md: 4; --col-lg: 4"
                     >
-                      <div class="solution__body-padding">
-                        <img
-                          src="./src/img/Img (31).png"
-                          alt=""
-                          width="100px"
-                          height="100px"
-                        />
+                      <div class="secrets__pt">
+                        <div class="secrets__img">
+                          <img src="./src/img/Img (31).png" alt="" />
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1120,7 +1113,7 @@
           <div class="row footer__line">
             <div
               class="col"
-              style="--col-xs: 12; --col-sm: 6; --col-md: 3; --col-lg: 2"
+              style="--col-xs: 12; --col-sm: 12; --col-md: 12; --col-lg: 2"
             >
               <div class="footer__logo">
                 <svg
@@ -1155,7 +1148,7 @@
             </div>
             <div
               class="col"
-              style="--col-xs: 12; --col-sm: 6; --col-md: 3; --col-lg: 2"
+              style="--col-xs: 6; --col-sm: 4; --col-md: 4; --col-lg: 2"
             >
               <div class="footer__item">
                 <div class="footer__title">Company</div>
@@ -1170,7 +1163,7 @@
             </div>
             <div
               class="col"
-              style="--col-xs: 12; --col-sm: 6; --col-md: 3; --col-lg: 2"
+              style="--col-xs: 6; --col-sm: 4; --col-md: 4; --col-lg: 2"
             >
               <div class="footer__item">
                 <div class="footer__title">Services</div>
@@ -1185,7 +1178,7 @@
             </div>
             <div
               class="col"
-              style="--col-xs: 12; --col-sm: 6; --col-md: 3; --col-lg: 2"
+              style="--col-xs: 12; --col-sm: 4; --col-md: 4; --col-lg: 2"
             >
               <div class="footer__item">
                 <div class="footer__title">Contact</div>

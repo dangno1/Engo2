@@ -27,11 +27,13 @@ function boxGreen() {
   const priceTwo = document.querySelector(".price-2");
 
   if (boxGreen.classList.contains("moving")) {
+    // greenBox.style.transform = "translateX(0)"; 
     boxGreen.classList.remove("moving");
     price.innerHTML = "19";
     priceTwo.innerHTML = "49";
   } else {
     boxGreen.classList.add("moving");
+    // greenBox.style.transform = "translateX(100%)";
     price.innerHTML = "15.2";
     priceTwo.innerHTML = "39.8";
   }

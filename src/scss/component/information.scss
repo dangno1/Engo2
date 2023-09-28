@@ -32,7 +32,6 @@
   font-weight: 400;
   letter-spacing: -0.3px;
   line-height: 1.71;
-  padding-right: 29px;
 }
 
 .information__categories {
@@ -99,8 +98,8 @@
 
 .information__right-zoom {
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 20px;
+  right: 20px;
 }
 
 .information__menu ul {
@@ -123,12 +122,13 @@
   letter-spacing: 0.4px;
 }
 
-.information__menu-item a {
+.information__menu-item  {
   color: #2d3958;
   text-decoration: none;
+  cursor: pointer;
 }
 
-.information__menu-item a:hover {
+.information__menu-item:hover {
   transition: 0.3s;
   color: #204de0;
 }
@@ -138,13 +138,16 @@
   padding-bottom: 60px;
   border-top: 1px solid #e7e5ea;
   border-bottom: 1px solid #e7e5ea;
+  font-size: 16px;
+  column-count: 2;
+  column-gap: 30px;
 }
 
-.information__description-text {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.62;
-}
+// .information__description-text {
+//   font-size: 16px;
+//   font-weight: 400;
+//   line-height: 1.62;
+// }
 
 .information__similar {
   padding-top: 70px;

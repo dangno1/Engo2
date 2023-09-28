@@ -24,10 +24,32 @@
   }
 }
 
+.product__name {
+  a:hover {
+    color: blue;
+    transition: 0.3s;
+  }
+}
+
 .product__price {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.62;
+  a {
+    text-decoration: none;
+    color: #7b88a8;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.62;
+  }
+}
+
+.product__price {
+  a:hover {
+    color: blue;
+    transition: 0.3s;
+  }
 }
 
 .product__img {

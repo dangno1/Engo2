@@ -89,7 +89,6 @@
   border-radius: 5px;
   border: 1px solid #e7e5ea;
   background: #fff;
-
   font-size: 16px;
   font-weight: 400;
   line-height: 1.62;
@@ -99,9 +98,19 @@
 .comment__input--texta {
   resize: vertical;
   outline: none;
+  min-height: 170px;
 }
 
 .comment__button {
   padding-top: 30px;
   padding-bottom: 40px;
+}
+
+.comment__avt {
+  img {
+    height: 80px;
+    width: 80px;
+    flex-shrink: 0;
+    border-radius: 50%;
+  }
 }

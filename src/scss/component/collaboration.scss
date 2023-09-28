@@ -7,10 +7,10 @@
     padding-left: 30px;
     padding-right: 30px;
   }
-  @media (max-width: 768px) {
-    padding-left: 160px;
-    padding-right: 160px;
-  }
+  // @media (max-width: 768px) {
+  //   padding-left: 160px;
+  //   padding-right: 160px;
+  // }
   @media (max-width: 375px) {
     padding-left: 0;
     padding-right: 0;
@@ -32,13 +32,11 @@
   bottom: 0px;
   right: -7px;
   border-radius: 50px 50px 50px 0px;
-  @media (max-width: 576px) {
+  @media (max-width: 1200px) {
     width: 0;
     height: 0;
   }
-  @media (max-width: 768px) {
-    right: 90px;
-  }
+
 }
 
 .collaboration__item {

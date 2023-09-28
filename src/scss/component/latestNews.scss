@@ -42,7 +42,6 @@
 
 .latestnews__name {
   color: #7b88a8;
-  font-feature-settings: "clig" off, "liga" off;
   font-family: Outfit;
   font-size: 15px;
   font-weight: 500;
@@ -54,7 +53,6 @@
 .latestnews__day {
   color: #7b88a8;
   text-align: right;
-  font-feature-settings: "clig" off, "liga" off;
   font-family: Outfit;
   font-size: 14px;
   font-weight: 500;
@@ -130,6 +128,9 @@
   letter-spacing: -0.3px;
   padding-left: 90px;
   padding-right: 90px;
+  @media (max-width: 576px) {
+    padding: unset;
+  }
 }
 
 .latestnews__line {

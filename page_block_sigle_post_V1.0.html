@@ -148,7 +148,7 @@
       <section class="page-section">
         <div class="background">
           <div class="container">
-            <div class="banner">
+            <div class="banner banner__extend">
               <h4 class="banner__title">Our Latest News</h4>
               <div class="banner__text">
                 <a href="#">homepage</a><span>/</span>
@@ -164,7 +164,7 @@
             <div class="row">
               <div
                 class="col"
-                style="--col-xs: 12; --col-sm: 8; --col-md: 8; --col-lg: 9"
+                style="--col-xs: 12; --col-sm: 12; --col-md: 8; --col-lg: 9"
               >
                 <div>
                   <div class="latestnews__line">
@@ -173,7 +173,9 @@
                     </div>
                     <div class="latestnews__owner">
                       <div class="latestnews__avt">
-                        <img src="./src/img/Group 15 2.png" alt="" />
+                        <div>
+                          <img src="./src/img/Group 15 2.png" alt="" />
+                        </div>
                         <div class="latestnews__name">Written By Admin</div>
                       </div>
                       <div class="latestnews__day">10 July, 2022</div>
@@ -323,29 +325,61 @@
                   </div>
                   <div class="articles">
                     <div class="articles__title">Related Articles</div>
-                    <div class="articles__content">
-                      <div class="articles__item">
-                        <div class="articles__img">
-                          <img src="./src/img/Img (9).png" alt="" />
-                        </div>
-                        <div class="articles__name">
-                          Start Your First Week Of A New Job Like A Boss
+                    <div class="row articles__content">
+                      <div
+                        class="col"
+                        style="
+                          --col-xs: 12;
+                          --col-sm: 12;
+                          --col-md: 4;
+                          --col-lg: 4;
+                        "
+                      >
+                        <div class="articles__item">
+                          <div class="articles__img">
+                            <img src="./src/img/Img (9).png" alt="" />
+                          </div>
+                          <div class="articles__name">
+                            Start Your First Week Of A New Job Like A Boss
+                          </div>
                         </div>
                       </div>
-                      <div class="articles__item">
-                        <div class="articles__img">
-                          <img src="./src/img/Img (10).png" alt="" />
-                        </div>
-                        <div class="articles__name">
-                          Pioneering A New Twist On Coworking Models
+
+                      <div
+                        class="col"
+                        style="
+                          --col-xs: 12;
+                          --col-sm: 12;
+                          --col-md: 4;
+                          --col-lg: 4;
+                        "
+                      >
+                        <div class="articles__item">
+                          <div class="articles__img">
+                            <img src="./src/img/Img (10).png" alt="" />
+                          </div>
+                          <div class="articles__name">
+                            Pioneering A New Twist On Coworking Models
+                          </div>
                         </div>
                       </div>
-                      <div class="articles__item">
-                        <div class="articles__img">
-                          <img src="./src/img/Img (11).png" alt="" />
-                        </div>
-                        <div class="articles__name">
-                          The White-Label Software Model In Fintech
+
+                      <div
+                        class="col"
+                        style="
+                          --col-xs: 12;
+                          --col-sm: 12;
+                          --col-md: 4;
+                          --col-lg: 4;
+                        "
+                      >
+                        <div class="articles__item">
+                          <div class="articles__img">
+                            <img src="./src/img/Img (11).png" alt="" />
+                          </div>
+                          <div class="articles__name">
+                            The White-Label Software Model In Fintech
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -354,7 +388,7 @@
                     <h4 class="comment__title">Comments</h4>
                     <div class="comment__child">
                       <div class="comment__col">
-                        <div>
+                        <div class="comment__avt">
                           <img src="./src/img/Ellipse 10.png" alt="" />
                         </div>
                         <div>
@@ -385,7 +419,7 @@
                         </div>
                       </div>
                       <div class="comment__col">
-                        <div>
+                        <div class="comment__avt">
                           <img src="./src/img/Ellipse 5.png" alt="" />
                         </div>
                         <div>
@@ -417,7 +451,7 @@
                         </div>
                       </div>
                       <div class="comment__col comment__padding">
-                        <div>
+                        <div class="comment__avt">
                           <img src="./src/img/Ellipse 18.png" alt="" />
                         </div>
                         <div>
@@ -527,7 +561,7 @@
               </div>
               <div
                 class="col"
-                style="--col-xs: 12; --col-sm: 4; --col-md: 4; --col-lg: 3"
+                style="--col-xs: 12; --col-sm: 12; --col-md: 4; --col-lg: 3"
               >
                 <div class="information__right">
                   <div class="search">
@@ -565,34 +599,40 @@
                   <div class="search">
                     <h5 class="search__title">Latest News</h5>
                     <div class="information__latest">
-                      <img
-                        src="./src/img/Img (4).png"
-                        alt=""
-                        width="50px"
-                        height="50px"
-                      />
+                      <div class="search__width">
+                        <img
+                          src="./src/img/Img (4).png"
+                          alt=""
+                          width="50px"
+                          height="50px"
+                        />
+                      </div>
                       <div class="information__latest-text">
                         Start Your First Week Of A New Job Like A Boss
                       </div>
                     </div>
                     <div class="information__latest">
-                      <img
-                        src="./src/img/Img (5).png"
-                        alt=""
-                        width="50px"
-                        height="50px"
-                      />
+                      <div class="search__width">
+                        <img
+                          src="./src/img/Img (5).png"
+                          alt=""
+                          width="50px"
+                          height="50px"
+                        />
+                      </div>
                       <div class="information__latest-text">
                         Pioneering A New Twist On Coworking Models
                       </div>
                     </div>
                     <div class="information__latest">
-                      <img
-                        src="./src/img/Img (6).png"
-                        alt=""
-                        width="50px"
-                        height="50px"
-                      />
+                      <div class="search__width">
+                        <img
+                          src="./src/img/Img (6).png"
+                          alt=""
+                          width="50px"
+                          height="50px"
+                        />
+                      </div>
                       <div class="information__latest-text">
                         The White-Label Software Model In Fintech
                       </div>
@@ -679,7 +719,7 @@
           <div class="row footer__line">
             <div
               class="col"
-              style="--col-xs: 12; --col-sm: 6; --col-md: 3; --col-lg: 2"
+              style="--col-xs: 12; --col-sm: 12; --col-md: 12; --col-lg: 2"
             >
               <div class="footer__logo">
                 <svg
@@ -714,7 +754,7 @@
             </div>
             <div
               class="col"
-              style="--col-xs: 12; --col-sm: 6; --col-md: 3; --col-lg: 2"
+              style="--col-xs: 6; --col-sm: 4; --col-md: 4; --col-lg: 2"
             >
               <div class="footer__item">
                 <div class="footer__title">Company</div>
@@ -729,7 +769,7 @@
             </div>
             <div
               class="col"
-              style="--col-xs: 12; --col-sm: 6; --col-md: 3; --col-lg: 2"
+              style="--col-xs: 6; --col-sm: 4; --col-md: 4; --col-lg: 2"
             >
               <div class="footer__item">
                 <div class="footer__title">Services</div>
@@ -744,7 +784,7 @@
             </div>
             <div
               class="col"
-              style="--col-xs: 12; --col-sm: 6; --col-md: 3; --col-lg: 2"
+              style="--col-xs: 6; --col-sm: 4; --col-md: 4; --col-lg: 2"
             >
               <div class="footer__item">
                 <div class="footer__title">Contact</div>

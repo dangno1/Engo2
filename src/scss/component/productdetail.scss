@@ -1,3 +1,9 @@
+.productdetail {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+
 .productdetail__img {
   position: relative;
 }
@@ -5,15 +11,30 @@
 .productdetail__imgs {
   display: flex;
   gap: 30px;
+  padding-top: 30px;
   @media (max-width: 500px) {
     flex-wrap: wrap;
+  }
+}
+
+.productdetail__img-hover {
+  overflow: hidden;
+  img {
+    width: 100%;
+    transition: 0.5s;
+  }
+}
+
+.productdetail__img-hover:hover {
+  img {
+    transform: scale(1.1);
   }
 }
 
 .productdetail__right {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
   padding-left: 100px;
   padding-bottom: 100px;
   @media (max-width: 500px) {
@@ -43,7 +64,7 @@
 }
 
 .productdetail__text {
-  width: 85%;
+  width: 100%;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.62;
@@ -86,12 +107,27 @@
   background-color: #f7f5f1;
 }
 
+.productdetail__box--yellow:hover {
+  transition: 0.5s;
+  box-shadow: 0px 20px 50px rgba(79, 119, 255, 0.2);
+}
+
 .productdetail__box--green {
   background-color: #5e756f;
 }
 
+.productdetail__box--green:hover {
+  transition: 0.5s;
+  box-shadow: 0px 20px 50px rgba(79, 119, 255, 0.2);
+}
+
 .productdetail__box--pink {
   background-color: #f2e0dc;
+}
+
+.productdetail__box--pink:hover {
+  transition: 0.5s;
+  box-shadow: 0px 20px 50px rgba(79, 119, 255, 0.2);
 }
 
 .productdetail__operation {
@@ -109,23 +145,12 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  //   input {
-  //     width: 98px;
-  //     height: 48px;
-  //     flex-shrink: 0;
-  //     border-radius: 5px;
-  //     border: 1px solid #e7e5ea;
-  //     background: #fff;
-  //     padding: 20px;
-  //     font-size: 16px;
-  //     color: #7B88A8;
-  //   }
 }
 
 .productdetail__number {
   color: #7b88a8;
   padding-left: 34px;
-  padding-right: 25px;
+  border: none;
 }
 
 .productdetail__increase {
@@ -138,9 +163,32 @@
   top: -3px;
 }
 
+.productdetail__bottom-bf::before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: #E7E5EA;
+  display: block;
+}
+
 .productdetail__bottom {
+  svg {
+    width: 20px;
+    height: 18px;
+  }
+  padding-left: 3px;
   padding-top: 30px;
   padding-bottom: 20px;
+  display: flex;
+  gap: 27px;
+}
+
+.productdetail__bottom {
+  svg:hover {
+    path {
+      fill: #4f77ff;
+    }
+  }
 }
 
 .productdetail__end {

@@ -6,7 +6,7 @@
 
 :root {
   --grid: 12;
-  --grid-container-width: 1400px;
+  --grid-container-width: 1200px;
   --grid-container-gap: 15px;
   --grid-col-gap-vertical: 30px;
   --grid-col-gap-horizontal: 30px;
@@ -27,7 +27,7 @@ h4,
 h5,
 h6 {
   font-family: Outfit, sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.4;
   color: #2D3958;
   margin: 0;
@@ -66,14 +66,16 @@ ul {
 }
 
 img {
-  // width: 100%;
+  width: 100%;
   vertical-align: middle;
 }
 
 input {
+  width: 100%;
   outline: none;
 }
 
 select {
+  width: 100%;
   outline: none;
 }
